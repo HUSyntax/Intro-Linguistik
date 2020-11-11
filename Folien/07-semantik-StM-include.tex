@@ -1881,77 +1881,88 @@ Determinatoren: \zb Quantoren (ein, alle), definite Artikel
 %
 \subsection{Hausaufgabe}
 %
-\iftoggle{toc}{
-	\frame{
-		\begin{multicols}{2}
-			\frametitle{~}
-			\tableofcontents[currentsection]
-		\end{multicols}
-	}
-}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{frame}
 \frametitle{Hausaufgabe}
 
 \begin{itemize}
-	\item Welche semantischen Relationen bestehen zwischen den folgenden Wortpaaren? Definieren Sie diese.
+	\item Welche semantischen Relationen bzw. Ambiguitätsarten bestehen zwischen den folgenden Ausdrücken? Nennen Sie diese.
 \end{itemize}
 
-\eal 
-\ex betrunken -- nüchtern
-\ex Orange -- Apfelsine
-\ex Vogel -- Feder
-\ex volljährig -- minderjährig
-\ex mehr -- Meer	
-\zl 
+\ea 
+\ea \label{ex:07HA1} betrunken -- nüchtern
+\ex \label{ex:07HA2} Orange -- Apfelsine
+\ex \label{ex:07HA3} Vogel -- Feder
+\ex \label{ex:07HA4} volljährig -- minderjährig
+\ex \label{ex:07HA5} mehr -- Meer
+\ex \label{ex:07HA12} Er studiert an der Universität. -- Unsere Universität steht unter Denkmalschutz.
+\ex \label{ex:07HA13} umfahren -- umfahren
+\z 	
+\z 
 \end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Hausaufgabe}
 
 \begin{itemize}
-	\item Welche semantischen Relationen bestehen zwischen den folgenden Sätzen? Definieren Sie diese.
+	\item Welche semantischen Relationen bestehen zwischen den folgenden Sätzen? Nennen Sie diese.
 \end{itemize}
 
-\eal 
-	\ex Auf dem Tisch liegt eine Rose.
-	\ex Auf dem Tisch liegt eine Blume.
-	\zl 
-	
-	\eal
-        \ex Alle Vögel können fliegen.
-	\ex Kein Vogel kann nicht fliegen.
-	\zl 
-	
-	\eal
-\ex Einige Tiere haben Federn.
-	\ex Alle Tiere haben Federn.
-\zl 
+\ea
+	\ea \label{ex:07HA6} Auf dem Tisch liegt eine Rose.
+	\ex \label{ex:07HA7} Auf dem Tisch liegt eine Blume.
+\z
+
+\ex
+	\ea \label{ex:07HA8} Alle Vögel können fliegen.
+	\ex \label{ex:07HA9} Kein Vogel kann nicht fliegen.
+\z
+
+\ex
+	\ea \label{ex:07HA10} Einige Tiere haben Federn.
+	\ex \label{ex:07HA11} Alle Tiere haben Federn.
+\z
+
+\ex
+	\ea \label{ex:07HA14} Die Wand ist blau.
+	\ex \label{ex:07HA15} Die Wand ist rot.
+\z
+
+\ex
+	\ea \label{ex:07HA16} Der Mann ist ledig.
+	\ex \label{ex:07HA17} Der Mann ist verheiratet.
+\z
+\z 
 \end{frame}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Hausaufgabe}
 \begin{itemize}
-	\item Überprüfen Sie die Richtigkeit der folgenden Aussagen:
+	\item Überprüfen Sie die Richtigkeit der folgenden Aussagen.
 	
 	\vspace{1em}
 	
 	\begin{itemize}
-		\item Die komplexe Aussage (\ref{ex:Tau3}) ist \textbf{tautologisch}:
+		\item Die komplexe Aussage (\ref{ex:Tau3}) ist \textbf{tautologisch}.
 		
 		\ea\label{ex:Tau3} $\lnot (p \land \lnot p)$
 		\z
 		
-		\item Die komplexe Aussage (\ref{ex:Kon2}) ist \textbf{kontradiktorisch}:
+		\item Die komplexe Aussage (\ref{ex:Kon2}) ist \textbf{kontradiktorisch}.
 		
 		\ea\label{ex:Kon2} $\lnot ((p \lor q) \leftrightarrow (q \lor p))$
 		\z
 		
-		\item Die komplexe Aussage (\ref{ex:Con2}) ist \textbf{kontingent}:
+		\item Die komplexe Aussage (\ref{ex:Con2}) ist \textbf{kontingent}.
 		
 		\ea\label{ex:Con2} $((p \rightarrow q) \leftrightarrow (q \rightarrow p))$
 		\z
@@ -1963,6 +1974,7 @@ Determinatoren: \zb Quantoren (ein, alle), definite Artikel
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{frame}
 \frametitle{Hausaufgabe}
 
@@ -1980,11 +1992,13 @@ Determinatoren: \zb Quantoren (ein, alle), definite Artikel
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \iftoggle{ha-loesung}{
-	\input{loesungen/07-ha-loesung-StM-include}
-}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{loesungen/07-ha-loesung-include}
+
+}%% END LOESUNG
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Abbildungen}
 \begin{frame}{Abbildungen}
