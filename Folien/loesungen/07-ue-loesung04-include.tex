@@ -1,0 +1,118 @@
+%%%%%%%%%%%%%%%%%%%%%%%%
+%Semantik 07-ue-loesung04
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}
+\frametitle{Übung -- Lösung}
+
+\begin{itemize}
+	\item Überprüfen Sie die Richtigkeit der folgenden Aussagen.
+	
+	\begin{itemize}
+		\item Die komplexen Aussagen (\ref{ex:Tau1}) und (\ref{ex:Tau2}) sind \textbf{Tautologien}.
+		
+		\begin{exe}
+		\exr{ex:Tau1} (p $\lor \lnot$ p)
+		\exr{ex:Tau2} (p $\rightarrow$ p)
+		\end{exe}
+		
+	\end{itemize}
+\end{itemize}
+
+\begin{table}
+	\centering	
+	%	\scalebox{0.8}{
+	\begin{tabular}{c|c|c}
+		\textbf{p}& \textbf{$\lnot$p} &\textbf{(p $\lor \lnot$p)} \\ 
+		\hline 
+		1 & 0 & \alertgreen{1}\\ 
+		\hline 
+		0 & 1 & \alertgreen{1} \\
+	\end{tabular} 
+	%	}
+\end{table}
+\begin{itemize}
+	\item[]  \alertgreen{Der Satz ist eine Tautologie, weil die Aussage immer wahr ist (immer Wahrheitswert 1).}
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Übung -- Lösung}
+
+\begin{itemize}
+	\item Überprüfen Sie die Richtigkeit der folgenden Aussagen.
+	
+	\begin{itemize}
+		\item Die komplexe Aussagen (\ref{ex:Kon1}) ist eine \textbf{Kontradiktion}.
+		
+		\begin{exe}
+		\exr{ex:Kon1} $\lnot$ (p $\lor \lnot$ p)
+		\end{exe}
+		
+	\end{itemize}	
+	
+\end{itemize}
+
+\begin{table}
+	\centering	
+	%	\scalebox{0.8}{
+	\begin{tabular}{c|c|c|c}
+		\textbf{p}& \textbf{$\lnot$p} &\textbf{(p $\lor \lnot$p)} & $\lnot$ \textbf{(p $\lor \lnot$p)}\\ 
+		\hline 
+		1 & 0 & 1& \alertgreen{0} \\ 
+		\hline 
+		0 & 1 & 1 & \alertgreen{0} \\
+	\end{tabular} 
+	%	}
+\end{table}
+\begin{itemize}
+	\item[] \alertgreen{Der Satz ist ein Kontradiktion, weil der Wahrheitswert immer 0 ist. Die Aussage ist immer falsch.}
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Übung -- Lösung}
+
+\begin{itemize}
+	\item Überprüfen Sie die Richtigkeit der folgenden Aussagen.
+	
+	\begin{itemize}
+		\item Die komplexe Aussage (\ref{ex:Con1}) ist eine \textbf{Kontingenz}.
+		
+		\begin{exe}
+		\exr{ex:Con1} ((p $\lor$ q) $\rightarrow$ q)
+		\end{exe}
+		
+	\end{itemize}	
+	
+\end{itemize}
+
+\begin{table}
+	\centering	
+	%	\scalebox{0.8}{
+	\begin{tabular}{c|c|c|c}
+		\textbf{p}& \textbf{q} & \textbf{(p $\lor$ q)} & \textbf{(p $\lor$ q) \ras q}\\ 
+		\hline 
+		1 & 0 & 1& \alertgreen{0} \\ 
+		\hline 
+		1 & 1 & 1 & \alertgreen{1} \\
+		\hline 
+		0 & 0 & 0 & \alertgreen{1}\\
+		\hline 
+		0 & 1 &  1 &  \alertgreen{1}\\
+	\end{tabular} 
+	%	}
+\end{table}
+
+\begin{itemize}
+\item \alertgreen{Der Satz ist kontingent, d.\,h., dass sich unterschiedliche Wahrheitwerte ergeben können, die von der Welt abhängig sind. }
+\end{itemize}
+
+\end{frame}

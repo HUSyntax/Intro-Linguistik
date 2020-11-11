@@ -1,0 +1,321 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% UE 3 - 09 Übungen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Übung: Morphologie -- Lösung}
+
+\begin{itemize}
+	\item[8.] Welche Wortbildungsprozesse haben hier stattgefunden?
+	
+	\begin{exe}
+		\exr{ex:08}
+	\settowidth \jamwidth{\alertgreen{\only<2->{Derivation (Präfigierung) oder Partikelverbbildung}}}
+	
+		\begin{xlist}
+			\ex übersetz(-en)  \jambox{\alertgreen{\only<2->{Derivation (Präfigierung) oder Partikelverbbildung}}}
+			\ex bleifrei \jambox{\alertgreen{\only<3->{Rektionskompositum}}}
+			\ex Tanz \jambox{\alertgreen{\only<4->{Konversion}}}
+			\ex Bearbeitung \jambox{\alertgreen{\only<5->{1. Derivation (Präfigierung),}}}
+			\jambox{\alertgreen{\only<5->{2. Derivation (Suffigierung)}}}
+		\end{xlist}
+	
+	\end{exe}
+
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	
+\begin{itemize}
+	\item[9.] Geben Sie die Konstituentenstruktur der folgenden Wörter an und bestimmen Sie die Wortbildungstypen an jedem Knoten des Baumes so genau wie möglich.
+	
+	\begin{exe}
+		\exr{ex:09}
+		
+		\begin{xlist}
+			\ex Unbeweisbarkeitsannahmen
+			\ex (mit den) Blickbewegungsmessern
+		\end{xlist}
+
+	\end{exe}
+
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+\begin{itemize}
+	\item Analyse mit Fugenelement \\
+	(9a): Unbeweisbarkeitsannahmen
+
+	\scalebox{.68}{
+	\alertgreen{
+	\begin{forest} MyP edges,
+		[N, name=N1
+			[N, name=N2
+				[N
+					[N, name=N3
+						[A, name=A1
+							[A\MyPup{af} [un-, tier=word]]
+							[A, name=A2
+								[V, name=V3
+									[A\MyPup{af} [be-, tier=word]]
+									[V [weis, tier=word]]
+								]
+								[A\MyPup{af} [-bar, tier=word]]
+							]
+						]
+						[N\MyPup{af} [-keit, tier=word]]
+					]
+					[FE [-s, tier=word]]
+				]
+				[N, name=N4
+					[V, name=V1
+						[V\MyPup{af} [an-, tier=word]]
+						[V, name=V2 [nahm/nehm, tier=word]]
+					]
+					[N [-e, tier=word]]
+				]
+			]
+			[FI [-n, tier=word]]
+		]
+	\draw[<-, HUgreen] (N1.west)--++(-12.5em,0pt)
+	node[anchor=east,align=center]{Flexion (KEIN Wortbildungsprozess)};
+	\draw[<-, HUgreen] (N2.west)--++(-13.5em,0pt)
+	node[anchor=east,align=center]{Rektionskompositum};
+	\draw[<-, HUgreen] (N3.west)--++(-9em,0pt)
+	node[anchor=east,align=center]{Derivation};
+	\draw[<-, HUgreen] (A1.west)--++(-4.7em,0pt)
+	node[anchor=east,align=center]{Derivation};
+	\draw[<-, HUgreen] (A2.east)--++(2.5em,0pt)--++(0pt,-22.5ex)
+	node[anchor=north,align=center]{Derivation};
+	\draw[<-, HUgreen](N4.east)--++(3.5em,0pt)--++(0pt,-43.5ex)
+	node[anchor=north,align=center]{Derivation};
+	\draw[<-, HUgreen](V1.west)--++(-2.5em,0pt)--++(0pt,-36.7ex)
+	node[anchor=north,align=center]{Derivation};
+	\draw[<-, HUgreen](V2.west)--++(-2em,0pt)--++(0pt,-32ex)
+	node[anchor=north,align=center]{implizite Derivation};
+	\draw[<-, HUgreen](V3.west)--++(-2em,0pt)--++(0pt,-15.5ex)
+	node[anchor=north,align=center]{Derivation};
+	\end{forest} 
+	} }
+	
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+\begin{itemize}
+	\item Analyse mit Kompositionsstammform \\
+	(9a): Unbeweisbarkeitsannahmen
+	
+	\scalebox{.75}{
+	\alertgreen{
+	\begin{forest} MyP edges,
+		[N, name=N1
+			[N, name=N2
+				[N, name=N3
+					[A, name=A1
+						[A\MyPup{af} [un-, tier=word]]
+						[A, name=A2
+							[V, name=V3
+								[A\MyPup{af} [be-, tier=word]]
+								[V [weis, tier=word]]
+							]
+							[A\MyPup{af} [-bar, tier=word]]
+						]
+					]
+					[N\MyPup{af} [-keit(-s), tier=word]]
+				]
+				[N, name=N4
+					[V, name=V1
+						[V\MyPup{af} [an-, tier=word]]
+						[V, name=V2 [nahm/nehm, tier=word]]
+					]
+					[N [-e, tier=word]]
+				]
+			]
+			[FI [-n, tier=word]]
+		]
+	\draw[<-, HUgreen] (N1.west)--++(-13em,0pt)
+	node[anchor=east,align=center]{Flexion (KEIN Wortbildungsprozess)};
+	\draw[<-, HUgreen] (N2.west)--++(-13.5em,0pt)
+	node[anchor=east,align=center]{Rektionskompositum};
+	\draw[<-, HUgreen] (N3.west)--++(-11em,0pt)
+	node[anchor=east,align=center]{Derivation};
+	\draw[<-, HUgreen] (A1.west)--++(-6.5em,0pt)
+	node[anchor=east,align=center]{Derivation};
+	\draw[<-, HUgreen] (A2.east)--++(2.5em,0pt)--++(0pt,-22.5ex)
+	node[anchor=north,align=center]{Derivation};
+	\draw[<-, HUgreen](N4.east)--++(3.5em,0pt)--++(0pt,-36.5ex)
+	node[anchor=north,align=center]{Derivation};
+	\draw[<-, HUgreen](V1.west)--++(-2.5em,0pt)--++(0pt,-29.7ex)
+	node[anchor=north,align=center]{Derivation};
+	\draw[<-, HUgreen](V2.west)--++(-2em,0pt)--++(0pt,-25ex)
+	node[anchor=north,align=center]{implizite Derivation};
+	\draw[<-,HUgreen](V3.west)--++(-2em,0pt)--++(0pt,-15.5ex)
+	node[anchor=north,align=center]{Derivation};
+	\end{forest} 
+	} }
+
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+\begin{itemize}
+	\item Analyse mit Fugenelement \\
+	(9b): (mit den) Blickbewegungsmessern
+			
+	\scalebox{.85}{
+	\alertgreen{
+	\begin{forest} MyP edges,
+		[N, name=N1
+			[N, name=N2
+				[N
+					[N, name=N3
+						[N [blick, tier=word]]
+						[N, name=N4
+							[V [beweg, tier=word]]
+							[N\MyPup{af} [-ung, tier=word]]
+						]
+					]
+					[FE [-s, tier=word]]
+				]
+				[N, name=N5
+					[V [mess, tier=word]]
+					[N\MyPup{af} [-er, tier=word]]
+				]
+			]
+			[FI [-n, tier=word]]
+		]
+	\draw[<-, HUgreen](N1.west)--++(-11.8em,0pt)
+	node[anchor=east,align=center]{Flexion (KEIN Wortbildungsprozess)};
+	\draw[<-, HUgreen](N2.west)--++(-14.5em,0pt)
+	node[anchor=east,align=center]{Rektionskompositum};
+	\draw[<-, HUgreen](N3.west)--++(-7em,0pt)
+	node[anchor=east,align=center]{Rektionskompositum};
+	\draw[<-, HUgreen](N4.east)--++(2.5em,0pt)--++(0pt,-16.2ex)
+	node[anchor=north,align=center]{Derivation};
+	\draw[<-, HUgreen](N5.east)--++(2em,0pt)--++(0pt,-30ex)
+	node[anchor=north,align=center]{Derivation};
+	\end{forest}
+	} }
+
+\end{itemize}
+
+\end{frame}	
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+\begin{itemize}
+	\item Analyse mit Kompositionsstammform \\
+	(9b): (mit den) Blickbewegungsmessern
+	
+	\scalebox{.9}{
+	\alertgreen{
+	\begin{forest} MyP edges,
+		[N, name=N1
+			[N, name=N2
+				[N, name=N3
+					[N [blick, tier=word]]
+					[N, name=N4
+						[V [beweg, tier=word]]
+						[N\MyPup{af} [-ung(-s), tier=word]]
+					]
+				]
+				[N, name=N5
+					[V [mess, tier=word]]
+					[N\MyPup{af} [-er, tier=word]]
+				]
+			]
+			[FI [-n, tier=word]]
+		]
+	\draw[<-, HUgreen](N1.west)--++(-11em,0pt)
+	node[anchor=east,align=center]{Flexion (KEIN Wortbildungsprozess)};
+	\draw[<-, HUgreen](N2.west)--++(-13em,0pt)
+	node[anchor=east,align=center]{Rektionskompositum};
+	\draw[<-, HUgreen](N3.west)--++(-7.7em,0pt)
+	node[anchor=east,align=center]{Rektionskompositum};
+	\draw[<-, HUgreen](N4.east)--++(3.5em,0pt)--++(0pt,-16.2ex)
+	node[anchor=north,align=center]{Derivation};
+	\draw[<-, HUgreen](N5.east)--++(2em,0pt)--++(0pt,-23ex)
+	node[anchor=north,align=center]{Derivation};
+	\end{forest}
+	} }
+	
+\end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+	
+\begin{itemize}
+	\item[10.] Geben Sie Beispiele für die folgenden Kompositionsarten an:
+	
+	\begin{exe}
+		\exr{ex:10}
+	\settowidth \jamwidth{\alertgreen{Romanleser, Tierkennerin, Konfliktbewältigung, \dots}}
+	
+		\begin{xlist}
+			\ex Determinativkomposition \\ 
+			\only<2->{\jambox{\alertgreen{Apfelsaft, Taschenlampe, Hundeleine, \dots}}}
+\medskip	
+			\ex Rektionskomposition \\ 
+			\only<3->{\jambox{\alertgreen{Romanleser, Tierkennerin, Konfliktbewältigung, \dots}}}
+\medskip	
+			\ex Possessivkomposition \\ 
+			\only<4->{\jambox{\alertgreen{Dickkopf, Grünschnabel, Milchgesicht, \dots}}}
+\medskip	
+			\ex Kopulativkomposition \\ 
+			\only<5->{\jambox{\alertgreen{nordost, Berlin-Brandenburg, blaugrau, \dots}}}
+		\end{xlist}
+
+	\end{exe}
+
+\end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+\begin{itemize}
+	\item[11.] Geben Sie je ein Beispiel für einen Stamm, für eine Wurzel, für eine Basis und für ein unikales Morphem an.
+	
+	\begin{exe}
+		\exr{ex:11}	
+	\settowidth \jamwidth{Handyvertrags-laufzeit [hinsichtl. Komposition]X}
+	
+		\begin{xlist}	
+			\ex Stamm: \jambox{\only<2->{\alertgreen{Handyvertrags}-\alertgreen{laufzeit} [hinsichtl. Komposition]}} 
+			\jambox{\only<2->{\alertgreen{Handyvertragslaufzeit}-en [hinsichtl. Flexion]}}
+	
+			\ex Wurzel: \jambox{\only<3->{un-be-\alertgreen{weis}-bar-es}}
+	
+			\ex Basis: \jambox{\only<4->{un-\alertgreen{beweisbar}}}
+	
+			\ex unikales Morphem: \jambox{\only<5->{ver-\alertgreen{letz}-en}}
+		\end{xlist}
+	
+	\end{exe}
+	
+\end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

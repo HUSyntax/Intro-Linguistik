@@ -1,0 +1,43 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile: PDFLaTeX BibTeX PDFLaTeX(x2)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,11pt, bibtotoc]{beamer}
+%\documentclass[10pt,a4paper]{beamer}
+%\documentclass[10pt,handout]{beamer}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%     PACKAGES       %%
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{../localpackages}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Preamble's End                   %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\begin{document}
+
+\input{../localcommands}
+
+\input{MyP-GKLing_03aPhonologie_text}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%References%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Literatur}
+\begin{frame}[allowframebreaks]
+\frametitle{Literatur}
+	\footnotesize
+
+	%German
+	\bibliographystyle{../deChicagoMyP}
+
+%	%English
+%	\bibliographystyle{chicago} 
+
+	\bibliography{../gkbib}
+	
+\end{frame}
+
+
+\end{document}

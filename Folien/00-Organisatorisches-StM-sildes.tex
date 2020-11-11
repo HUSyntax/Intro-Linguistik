@@ -1,0 +1,62 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile: XeLaTeX BibTeX XeLaTeX XeLaTeX
+%% Slides: Stefan Müller
+%% Course: GK Linguistik
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,10pt, bibtotoc]{beamer}
+%\documentclass[10pt,handout]{beamer}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%     PACKAGES & COMMANDS
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{localpackages}
+
+\input{localcommands}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Preamble's End                   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\begin{document}
+	
+	
+%%%% ue-loesung
+%%%% true: Übung & Lösungen (slides) / false: nur Übung (handout)
+\toggletrue{ue-loesung}
+
+%%%% ha-loesung
+%%%% true: Hausaufgabe & Lösungen (slides) / false: nur Hausaufgabe (handout)
+\toggletrue{ha-loesung}
+
+%%%% toc
+%%%% true: TOC am Anfang von Slides / false: keine TOC am Anfang von Slides
+\toggletrue{toc}
+
+%%%% sectoc
+%%%% true: TOC für Sections / false: keine TOC für Sections (StM handout)
+\toggletrue{sectoc}
+
+%%%% gliederung
+%%%% true: Gliederung für Sections / false: keine Gliederung für Sections
+%	\toggletrue{gliederung}
+
+
+
+\author[St.Mü.]{
+	{Stefan Müller}
+%	\\
+%	{\footnotesize \url{http://www.linguistik.hu-berlin.de/staff/amyp}\\
+%	\href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
+}
+
+\institute{Institut für deutsche Sprache und Linguistik}
+
+
+\input{00-Organisatorisches-StM-include}
+
+\input{gk-literatur}
+
+\end{document}

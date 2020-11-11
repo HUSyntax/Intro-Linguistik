@@ -1,0 +1,157 @@
+%%%%%%%%%%%%%%%%%%%%%%%
+%Semantik 07 ue-loesung03
+%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}
+\frametitle{Übung -- Lösung}
+
+\begin{exe}
+\exr{ex:AL1} Christiane schläft.
+\exr{ex:AL2} Norbert raucht nicht.
+\end{exe}
+
+\begin{minipage}{0.4\textwidth}
+	\centering
+	\begin{itemize}
+		\item[] \small{p: Christiane schläft.}
+	\end{itemize}
+	\scalebox{0.8}{
+		\begin{tabular}{l}
+			p\\
+			\hline
+			1\\
+			\hline
+			0\\
+		\end{tabular}
+	}
+\end{minipage}
+%	
+\begin{minipage}{0.5\textwidth}
+	\centering
+	\begin{itemize}
+		\item[] \small{p: Norbert raucht.}
+	\end{itemize}
+	\scalebox{0.8}{
+		\begin{tabular}[b]{l|l}
+			p & $ \lnot $p \\
+			\hline
+			0 & 1 \\
+			\hline
+			1 & 0 \\
+	\end{tabular}
+	}
+
+\end{minipage}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+\begin{frame}
+\frametitle{Übung -- Lösung}
+
+\begin{exe}
+	\exr{ex:AL3} Norbert raucht und Christiane schläft nicht.
+	\exr{ex:AL4} Wenn Norbert nicht raucht, schläft Christiane nicht.
+\end{exe}
+
+\begin{minipage}{0.45\textwidth}
+	\centering
+	\begin{itemize}
+		\item[] \small{p: Norbert raucht.\\
+			q: Christiane schläft.}
+	\end{itemize}
+	\scalebox{0.8}{
+		\begin{tabular}{l|l|l|c}
+			p & q & $\lnot$ q & p $\land \lnot $q\\
+			\hline
+			1 & 1 & 0 & 0\\
+			\hline
+			1 & 0 & 1 & 1\\
+			\hline
+			0 & 1 & 0 & 0 \\
+			\hline
+			0 & 0 & 1 & 0 \\
+		\end{tabular}
+	}
+\end{minipage}
+%%
+%%
+\begin{minipage}{0.5\textwidth}
+	\centering
+	\begin{itemize}
+		\item[] \small{p: Norbert raucht.\\
+			q: Christiane schläft.}
+	\end{itemize}
+	\scalebox{0.8}{
+		\begin{tabular}{l|l|c|c|c}
+			p & q & $ \lnot $p& $ \lnot $q &$ \lnot $p \ras $ \lnot $q\\
+			\hline
+			1 & 1 & 0 & 0 & 1 \\
+			\hline
+			1 & 0 & 0 & 1 & 1\\
+			\hline
+			0 & 1 & 1 & 0 & 0 \\
+			\hline
+			0 & 0 & 1 & 1 & 1 \\
+	\end{tabular}
+	}
+\end{minipage}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+\begin{frame}
+\frametitle{Übung -- Lösung}
+
+\begin{exe}
+	\exr{ex:AL5} Wenn ich schlafe, träume ich.
+	\exr{ex:AL6} Ich schlafe nicht oder ich träume.
+\end{exe}
+
+
+\begin{minipage}{0.48\textwidth}
+\centering
+\begin{itemize}
+	\item[] \small{$p$: Ich schlafe.\\
+	$q$: Ich träume.}
+\end{itemize}
+
+\scalebox{0.8}{
+\begin{tabular}[b]{c|c|c}
+	$p$ & $q$ & $p \ras q$ \\
+	\hline
+	1 & 1 & 1 \\
+	\hline
+	1 & 0 & 0 \\
+	\hline
+	0 & 1 & 1 \\
+	\hline
+	0 & 0 & 1 \\
+\end{tabular}}
+\end{minipage}
+%%
+%%
+\begin{minipage}{0.48\textwidth}
+\centering
+\begin{itemize}
+	\item[] \small{p: Ich schlafe.\\
+	q: Ich träume.}
+\end{itemize}
+
+\scalebox{0.8}{
+\begin{tabular}{c|c|c|c}
+	$p$ & $q$ & $\lnot p$ & $ \lnot p \lor q$\\
+	\hline
+	1 & 1 & 0 & 1 \\
+	\hline
+	1 & 0 & 0 & 0 \\
+	\hline
+	0 & 1 & 1 & 1 \\
+	\hline
+	0 & 0 & 1& 1 \\
+\end{tabular}}
+\end{minipage}
+
+\end{frame}

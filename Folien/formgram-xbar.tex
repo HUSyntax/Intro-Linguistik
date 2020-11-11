@@ -1,0 +1,881 @@
+\subsection{\xbar-Syntax}
+
+\subsubsection{Nominalphrasen}
+\label{sec-psg-np}
+
+\frame{
+\frametitle{Nominalphrasen}
+
+\begin{itemize}
+\item Bisher NPen immer Det + N, Nominalphrasen können aber wesentlich komplexer sein:
+\eal
+\ex eine Frau
+\ex eine Frau, die wir kennen
+\ex eine Frau aus Stuttgart
+\ex eine kluge Frau
+\ex eine Frau aus Stuttgart, die wir kennen
+\ex eine kluge Frau aus Stuttgart
+\ex eine kluge Frau, die wir kennen
+\ex eine kluge Frau aus Stuttgart, die wir kennen
+\zl
+
+Zusätzliches Material in (\mex{0}) sind Adjunkte.
+
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Adjektive in NPen}
+
+\begin{itemize}
+\item Vorschlag:
+\eal
+\ex NP $\to$ Det N
+\ex NP $\to$ Det A N
+\zl
+\pause
+\item Was ist mit (\mex{1})?
+\ea
+alle weiteren schlagkräftigen Argumente
+\z
+\pause
+\item Für die Analyse von (\mex{0}) müsste man eine Regel wie (\mex{1}) haben:
+\ea 
+NP $\to$ Det A A N
+\z
+\pause
+\item Wir wollen keine Höchtszahl für Adjektive in NPen angeben: 
+\ea 
+NP $\to$ Det A* N
+\z
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Adjektive in NPen}
+
+\begin{itemize}
+
+\item Problem: Adjektiv und Nomen bilden bei Annahme von (\mex{1}) keine Konstituente.
+\ea 
+NP $\to$ Det A* N
+\z
+Konstituententests legen aber Konstituentenstatus von A + N nahe:
+\ea
+alle [[geschickten Kinder] und [klugen Frauen]]
+\z
+
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Adjektiv + Nomen als Konstituente}
+
+\begin{itemize}
+\item Besser geeignete Regeln:
+\eal
+\ex NP $\to$ Det \nbar
+\ex \nbar $\to$ A \nbar
+\ex \nbar $\to$ N
+\zl
+
+
+\hfill%
+\scalebox{.65}{%
+\begin{forest}
+sm edges
+[NP
+   [Det [eine] ]
+   [\nbar
+      [N [Frau] ] ] ]
+\end{forest}}
+\hfill
+\scalebox{.65}{%
+\begin{forest}
+sm edges
+[NP
+   [Det [eine] ]
+   [\nbar
+      [A [kluge] ]
+      [\nbar
+        [N [Frau] ] ] ] ]
+\end{forest}}
+%
+\hfill
+\scalebox{.65}{%
+\begin{forest}
+sm edges
+[NP
+  [Det [eine] ]
+    [\nbar
+    [A [glückliche] ]
+       [\nbar
+       [A [kluge] ]
+         [\nbar
+         [N [Frau] ] ] ] ] ]
+\end{forest}}
+\hfill\mbox{}
+%
+\end{itemize}
+
+}
+
+
+
+
+
+% Das Adjektiv \emph{klug} schränkt die Menge der Bezugselemente der Nominalgruppe ein. Nimmt man ein
+% weiteres Adjektiv wie \emph{glücklich} dazu, dann bezieht man sich nur auf die Frauen, die sowohl glücklich
+% als auch klug sind. Solche Nominalphrasen können \zb in Kontexten wie dem folgenden verwendet
+% werden:
+% \ea
+% \label{Beispiel-Iteration-Adjektive}
+% A: Alle klugen Frauen sind unglücklich.\\
+% B: Nein, ich kenne eine glückliche kluge Frau.
+% \z
+% Man kann sich nun überlegen, dass dieses schöne Gespräch mit Sätzen wie \emph{Aber alle glücklichen
+%   klugen Frauen sind schön} und einer entsprechenden Antwort weitergehen kann. Die Möglichkeit,
+% Nominalphrasen wie \emph{eine glückliche kluge Frau} weitere Adjektive hinzuzufügen, ist im
+% Regelsystem in (\mex{-1}) angelegt.
+
+% Wir haben jetzt eine wunderschöne kleine Grammatik entwickelt, die Nominalphrasen mit
+% Adjektivmodifikatoren analysieren kann. Dabei wird der Kombination von Adjektiv und Nomen
+% Konstituentenstatus zugesprochen. Der Leser wird sich jetzt vielleicht fragen, ob man nicht genauso
+% gut die Kombination aus Determinator und Adjektiv als Konstituente behandeln könnte, denn es gibt
+% auch Nominalgruppen der folgenden Art:
+% \ea
+% diese schlauen und diese neugierigen Frauen
+% \z
+% Hier liegt jedoch noch eine andere Struktur vor: Koordiniert sind zwei vollständige Nominalphrasen,
+% wobei im ersten Konjunkt ein Teil gelöscht wurde:% \footnote{
+% %   Außerdem gibt es bei entsprechendem Kontext natürlich noch die Lesart, in der sich \emph{diese schlauen} nicht auf Frauen
+% %   sondern \zb auf Männer bezieht:
+% % \ea
+% % Hier stehen mehrere Gruppen von Männern
+% \ea
+% diese schlauen \st{Frauen} und diese neugierigen Frauen
+% \z
+% Man findet ähnliche Phänomene im Satzbereich und sogar bei Wortteilen:
+% \eal
+% \ex dass Peter dem Mann das Buch \st{gibt} und Maria der Frau die Schallplatte gibt
+% \ex be- und entladen
+% \zl
+% % Dass in (\mex{-1}) wirklich keine normale symmetrische Koordination vorliegt, sieht man, wenn man
+% % (\mex{-1}) mit (\mex{1}) vergleicht:
+% % \ea
+% % diese schlauen Frauen und klugen Männer
+% % \z
+% % Mit (\mex{0}) verweist man auf eine Gruppe, die aus schlauen Frauen und klugen Männern besteht,
+% % wohingegen man mit (\mex{-2}) auf zwei Gruppen verweist, nämlich
+
+\frame{
+\frametitle{Andere Adjunkte}
+
+
+\begin{itemize}
+\item Andere Adjunkte analog:
+\eal
+\ex \nbar $\to$ \nbar PP
+\ex \nbar $\to$ \nbar Relativsatz
+\zl
+\pause
+\ex Mit den bisher aufgeführten Regeln können wir alle bisher genannten
+Determinator-Adjunkt-Nomen-Kombinationen analysieren.
+
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Komplemente}
+
+
+\begin{itemize}
+\item Bisher besteht \nbar nur aus einem Nomen,\\
+      aber einige Nomina erlauben neben Adjunkten auch Argumente:
+\eal
+\ex der Vater von Peter
+\ex das Bild vom Gleimtunnel
+\ex das Kommen des Installateurs
+\zl
+
+\pause
+\item Deshalb:
+\ea
+\nbar $\to$ N PP
+\z
+
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Komplemente (und Adjunkte)}
+
+\hfill
+
+\centerfit{%
+\begin{forest}
+sm edges
+[NP
+ [Det [das] ]
+ [\nbar
+   [N [Bild] ]
+   [PP [vom Gleimtunnel,roof ] ] ] ]
+\end{forest}%
+\hspace{2em}%
+\begin{forest}
+sm edges
+[NP
+  [Det [das] ]
+  [\nbar
+    [\nbar
+      [N [Bild] ]
+      [PP [vom Gleimtunnel,roof ] ] ] 
+    [PP [im Gropiusbau,roof ] ] ] ]
+\end{forest}}
+
+
+}
+
+\frame[shrink=25]{
+\frametitle{Fehlende Nomina}
+
+\savespace
+\begin{itemize}
+\item Nomen fehlt, aber Adjunkte sind vorhanden:
+\eal
+\ex eine kluge \_
+\ex eine kluge \_ aus Hamburg
+\ex eine kluge \_, die alle kennen
+\zl
+\pause
+\item Nomen fehlt, aber Komplement des Nomens ist vorhanden:
+\eal
+\ex (Nein, nicht der Vater von Klaus),
+    der \_ von Peter war gemeint.
+\ex (Nein, nicht das Bild von der Stadtautobahn),
+    das \_ vom Gleimtunnel war beeindruckend.
+\ex (Nein, nicht das Kommen des Tischlers),
+    das \_ des Installateurs ist wichtig.
+\zl
+\pause
+\item PSG: \alert{Epsilonproduktion}
+\pause
+\item Notationsvarianten:
+\eal
+\ex N $\to$
+\ex N $\to$ $\epsilon$
+\zl 
+
+\pause
+\item Regeln in (\mex{0}) = leeren Schachteln, die aber dieselbe
+Beschriftung tragen, wie die Schachteln normaler Nomina. 
+
+\end{itemize}
+}
+
+\frame{
+\frametitle{Analysen mit leerem Nomen}
+
+\hfill
+\begin{forest}
+sm edges
+[NP
+  [Det [eine] ]
+  [\nbar
+    [A [kluge] ]
+    [\nbar
+      [N [\trace ] ] ] ] ]
+\end{forest}
+\hfill
+\begin{forest}
+sm edges
+[NP
+  [Det [das] ]
+  [\nbar
+    [N [\trace] ]
+    [PP [vom Gleimtunnel,roof] ] ] ]
+\end{forest}
+\hfill%
+\mbox{}
+
+}
+
+
+\frame{
+\frametitle{Fehlende Determinatoren}
+
+\begin{itemize}
+\item Auch Determinatoren können weggelassen werden.
+
+Plural:
+\eal
+\ex Frauen
+\ex Frauen, die wir kennen
+\ex kluge Frauen
+\ex kluge Frauen, die wir kennen
+\zl
+
+\pause
+\item Bei Stoffnomen auch im Singular:
+\eal
+\ex Getreide
+\ex Getreide, das gerade gemahlen wurde
+\ex frisches Getreide
+\ex frisches Getreide, das gerade gemahlen wurde
+\zl
+
+\end{itemize}
+
+}
+
+
+\frame{
+\frametitle{Fehlende Determinatoren}
+
+
+\centering
+\begin{forest}
+sm edges
+[NP
+  [Det [\trace] ]
+  [\nbar
+    [N [Frauen] ] ] ]
+\end{forest}
+
+}
+
+\frame{
+\frametitle{Fehlende Determinatoren und fehlende Nomina}
+
+Determinator und Nomen können auch gleichzeitig weggelassen werden:
+\eal
+\ex Ich helfe klugen.
+\ex Dort drüben steht frisches, das gerade gemahlen wurde.
+\zl
+
+\centerline{%
+\scalebox{.9}{%
+\begin{forest}
+sm edges
+[NP
+  [Det [\trace] ]
+  [\nbar
+    [A [klugen] ]
+    [\nbar
+      [N [\trace] ] ] ] ]
+\end{forest}}
+}
+}
+
+% % Mit diesen wenigen Phrasenstrukturregeln sind die wesentlichen Aspekte der Nominalsyntax
+% % abgedeckt. Zwei Probleme werden dem aufmerksamen Leser nicht entgangen sein: Erstens muss man, wenn
+% % eine Nominalstruktur kein Adjektiv enthält, ausschließen, dass sowohl der Determinator als auch das
+% % Nomen leer sind, denn ansonsten würde man eine leere Nominalphrase ableiten. Das kann man mit
+% % zusätzlichen Merkmalen sicherstellen \citep{Netter98a}.\NOTE{genaue Quellenangabe} Zweitens darf das
+% % Nomen nicht entfallen, wenn kein Adjektiv in der Nominalgruppe gibt:
+% % \eal
+% % \ex[]{
+% % Wir helfen den Männern.
+% % }
+% % \ex[]{
+% % Wir helfen den schlauen.
+% % }
+% % \ex[*]{
+% % Wir helfen den.
+% % }
+% % \ex[]{
+% % Wir helfen denen.
+% % }
+% % \ex[]{
+% % Wir helfen denen mit Hut.
+% % }
+% % \ex[]{
+% % Wir helfen denen, die wir kennen.
+% % }
+% % \zl
+% % In den Fällen ohne Adjektiv muss das Demonstrativpronomen verwendet werden.
+% %
+% %
+% % Da man in elliptischen Kontexten beim
+% % Auspacken einer ähnlich beschrifteten Schachtel bereits etwas gefunden hat, muss man die leere
+% % Schachtel nicht mehr auspacken und so fällt es nicht auf, dass sie nichts enthält.
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Adjektivphrasen}
+
+\frame[shrink]{
+\frametitle{Adjektivphrasen}
+
+\begin{itemize}
+\item Bisher nur einfache Adjektive wie \emph{klug}.
+\pause
+\item Mitunter sind Adjektivphrasen aber sehr komplex:
+\eal
+\ex der [seiner Frau treue] Mann
+\ex der [auf seinen Sohn stolze] Mann
+\ex der [seine Frau liebende] Mann
+\ex der [von seiner Frau geliebte] Mann
+\zl
+\pause
+\item \dash, Regel für attributive Adjektive muss angepasst werden:
+\ea
+\nbar $\to$ AP \nbar
+\z
+\pause
+\item
+Regeln für AP:
+\eal
+\ex AP $\to$ NP A
+\ex AP $\to$ PP A
+\ex AP $\to$ A
+\zl
+
+\end{itemize}
+
+}
+
+\if 0
+
+In den bisher ausgearbeiteten Regeln gibt es zwei Unschönheiten. Das sind die Regeln für Adjektive
+bzw.\ Nomina ohne Komplemente in (\mex{0}c) bzw.\ (\ref{NP-Regeln-Nbar-N}) --  hier als (\mex{1}) wiederholt:
+\ea
+\nbar $\to$ N
+\z
+Werden diese Regeln angewendet, ergeben sich Teilbäume mit unärer Verzweigung, \dash mit einer Mutter,
+die nur eine Tochter hat. Für ein Beispiel siehe Abbildung~\ref{Abbildung-Adjektive-in-NP}. Wenn wir
+bei unserem Gleichnis mit den Schachteln bleiben, heißt das, dass es eine Schachtel gibt, die eine
+Schachtel enthält, in der dann der eigentlich relevante Inhalt steckt. 
+
+Im Prinzip hindert uns aber nichts, den Inhalt gleich in die größere Schachtel zu tun. Statt der
+Regeln in (\mex{1}) verwenden wir einfach die Regeln in (\mex{2}):
+\eal
+\ex A $\to$ kluge
+\ex N $\to$ Mann
+\zl
+\eal
+\label{Lexikon-Projektion}
+\ex AP $\to$ kluge
+\ex \nbar $\to$ Mann
+\zl
+Mit (\mex{0}a) wird ausgedrückt, dass \emph{kluge} dieselben Eigenschaften wie vollständige
+Adjektivphrasen hat, insbesondere kann es nicht mehr mit einem Komplement kombiniert werden. Das ist
+parallel zur Kategoriesierung des Pronomens \emph{er} als NP in den Grammatiken
+(\ref{bsp-grammatik-psg}) und (\ref{psg-binaer}).
+
+
+Die Einordnung von Nomina, die kein Komplement verlangen, als \nbar hat außerdem auch den Vorteil,
+dass man nicht erklären muss, warum es neben (\mex{1}a) auch noch die Analyse (\mex{1}b) geben soll, obwohl es
+keinen Bedeutungsunterschied gibt.
+\eal
+\ex {}[\sub{NP} einige [\sub{\nbar} kluge [\sub{\nbar} [\sub{\nbar} Frauen ] und [\sub{\nbar} Männer
+]]]]
+\ex {}[\sub{NP} einige [\sub{\nbar} kluge [\sub{\nbar} [\sub{N} [\sub{N} Frauen ] und [\sub{N} Männer
+]]]]]
+\zl
+In (\mex{0}a) sind zwei Nomina der Kategorie \nbar koordinativ verknüpft worden. Das Ergebnis einer
+Koordination zweier Konstituenten gleicher syntaktischer Kategorie ist immer einer neue Konstituente
+derselben syntaktischen Kategorie, in (\mex{0}a) also ebenfalls eine \nbar. Diese wird dann mit dem
+Adjektiv und dem Determinator kombiniert.
+In (\mex{0}b)) wurden die Nomina kombiniert. Das Ergebnis ist wieder eine Konstituente, die dieselbe
+Kategorie hat, wie ihre Teile, also ein N. Dieses N wird zur \nbar, die dann mit dem Adjektiv
+verbunden wird. Wenn man Nomina, die kein Komplement verlangen, nicht als N sondern als \nbar
+kategorisiert, ergibt sich das beschriebene Problem mit sogenannten unechten Mehrdeutigkeiten
+nicht. 
+
+\fi
+
+\subsubsection{Präpositionalphrasen}
+
+\frame[shrink=5]{
+\frametitle{Präpositionalphrasen}
+
+\savespace
+\begin{itemize}
+\item PP-Syntax ist relativ einfach. Erster Vorschlag:
+\ea
+PP $\to$ P NP
+\z
+\pause
+\item Allerdings können PPen durch Maßangaben oder andere Angaben,\\
+      die den Bedeutungsbeitrag der Präposition konkretisieren, erweitert werden:
+\eal
+\ex {}[[Einen Schritt] vor dem Abgrund] blieb er stehen.\label{Beispiel-Schritt-vor-dem-Abgrund}
+\ex {}[[Kurz] nach dem Start] fiel die Klimaanlage aus.
+\ex {}[[Schräg] hinter der Scheune] ist ein Weiher.
+\ex {}[[Mitten] im Urwald] stießen die Forscher auf einen alten Tempel.
+\zl
+
+% Man könnte jetzt für die Analyse von (\mex{0}a,b) eine Regel wie in (\mex{1}) vorschlagen:
+% \eal
+% \ex PP $\to$ NP PP
+% \ex PP $\to$ AP PP
+% \zl
+% Die Regeln kombinieren eine PP mit einer Maßangabe. Das Ergebnis ist wieder eine PP. Mit den Regeln
+% könnte man zwar die Präpositionalphrasen in (\mex{-1}a,b) analysieren, aber leider auch die in
+% (\mex{1}):
+% \eal
+% \ex[*]{
+% einen Schritt kurz vor dem Abgrund
+% }
+% \ex[*]{
+% kurz einen Schritt vor dem Abgrund
+% }
+% \zl
+% In (\mex{0}) wurden jeweils beide Regeln aus (\mex{-1}) angewendet.
+
+% Durch Umformulierung der bisherigen Regeln kann man diesen Nebeneffekt vermeiden:
+\eal
+\ex PP $\to$ NP \pbar
+\ex PP $\to$ AP \pbar
+\ex PP $\to$ \pbar\label{Regel-PP-P}
+\ex \pbar $\to$ P NP
+\zl
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Präpositionalphrasen}
+
+\hfill
+\hfill
+\begin{forest}
+sm edges
+[PP
+  [\pbar
+    [P [vor] ]
+    [NP [dem Abgrund,roof] ] ] ]
+\end{forest}
+\hfill
+\begin{forest}
+sm edges
+[PP
+  [AP [kurz,roof] ]
+  [\pbar
+    [P [vor] ]
+    [NP [dem Abgrund,roof] ] ] ]
+\end{forest}
+\hfill
+\mbox{}
+
+}
+
+
+
+\subsubsection{Die \xbar-Theorie}
+\label{sec-xbar}
+
+\frame{
+\frametitle{Generalisierungen über Regeln}
+
+\begin{itemize}
+\item Kopf + Komplement = Zwischenstufe:
+\eal
+\ex \nbar $\to$ N PP
+\ex \pbar $\to$ P NP
+\zl
+\pause
+\item Zwischenstufe + weiter Konstituente = Maximalprojektion
+\eal
+\ex NP $\to$ Det \nbar
+\ex PP $\to$ NP \pbar
+\zl
+\pause
+\item parallele Strukturen auch für AP und VP im Englischen
+\end{itemize}
+
+}
+
+
+\frame{
+\frametitle{Adjektivphrasen im Englischen}
+
+\eal
+\ex He is proud.
+\ex He is very proud.
+\ex He is proud of his son.
+\ex He is very proud of his son.
+\zl
+
+\pause
+
+\eal
+\ex AP $\to$ \abar
+\ex AP $\to$ Adv \abar
+\ex \abar $\to$ A PP
+\ex \abar $\to$ A
+\zl
+
+}
+
+
+\frame{
+\frametitle{Adjektivphrasen im Englischen}
+
+\eal
+\ex AP $\to$ \abar
+\ex AP $\to$ AdvP \abar
+\ex \abar $\to$ A PP
+\ex \abar $\to$ A
+\zl
+
+
+\hfill
+\begin{forest}
+sm edges
+[AP
+  [\abar
+    [A [proud] ] ] ]
+\end{forest}
+\hfill
+\begin{forest}
+sm edges
+[AP
+  [AdvP [very] ]
+  [\abar
+    [A [proud] ] ] ]
+\end{forest}
+\hfill
+\begin{forest}
+sm edges
+[AP
+  [\abar
+    [A [proud] ]
+    [PP [of his son,roof] ] ] ]
+\end{forest}
+\hfill
+\begin{forest}
+sm edges
+[AP
+  [AdvP [very] ]
+  [\abar
+    [A [proud] ]
+    [PP [of his son,roof] ] ] ]
+\end{forest}
+\hfill
+\mbox{}
+\hfill
+\mbox{}
+
+}
+
+\frame{
+\frametitle{Weitere Abstraktion}
+
+\begin{itemize}
+\item Haben gesehen, wie man über Kasus- und Genuswerte u.\,ä. abstrahieren kann (Variablen in
+  Regelschemata).
+
+\ea
+NP({3},{Num},{Kas}) $\to$ D(Gen,{Num},{Kas}), N(Gen,{Num},{Kas})
+\z
+
+\pause
+\item Genauso kann man über Wortart abstrahieren.\\
+      Statt AP, NP, PP, VP schreibt man XP.
+\pause
+\item Satt (\mex{1}), schreibt man (\mex{2}):
+\eal
+\ex PP $\to$ \pbar
+\ex AP $\to$ \abar
+\zl
+\ea
+XP $\to$ \xbar
+\z
+\end{itemize}
+
+
+}
+
+
+\frame{
+\frametitle{\xbar-Theorie: Annahmen (II)}
+
+Phrasen sind mindestens dreistöckig:
+\begin{itemize}
+\item X$^0$ = Kopf
+\item X$'$ = Zwischenebene (= \xbar, sprich X-Bar, X-Strich; $\to$ Name des Schemas) 
+\item XP = oberster Knoten (=~X$''$ = $\overline{\overline{\mbox{X}}}$), auch Maximalprojektion genannt
+\end{itemize}
+%Neuere Analysen $\to$ teilweise Verzicht auf nichtverzweigende X$'$-Knoten
+\nocite{Muysken82a}
+
+
+}
+
+\frame[shrink]{
+\frametitle{Minimaler und maximaler Ausbau von Phrasen}
+
+\bigskip
+
+\small\hfill
+\begin{forest}
+sm edges
+[XP
+  [\xbar [X] ] ]
+\end{forest}
+\hfill
+\begin{forest}
+%where n children=0{}{},
+%sm edges
+%for tree={parent anchor=south, child anchor=north,align=center,base=bottom}
+[XP
+  [specifier]
+  [\xbar
+    [adjunct]
+    [\xbar
+      [complement] [X] ] ] ]
+\end{forest}
+\hfill\mbox{}
+
+
+\begin{itemize}
+\item Adjunkte sind optional\\
+$\to$ muss nicht unbedingt ein X$'$ mit Adjunkttochter geben.
+\pause
+\item Für manche Kategorien gibt es keinen Spezifikator, oder er ist optional (\zb A).\\
+%(Zusätzliche Regel nötig $\overline{\overline{\mbox{X}}} \rightarrow \xbar$)
+\pause
+\item zusätzlich mitunter: Adjunkte an XP und Kopfadjunkte an X. 
+\iftoggle{gb-intro}{
+(dazu \hyperlink{inkorporation}{später})
+}
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{\xbar-Theorie: Regeln nach \citew{Jackendoff77a}}\nocite{KP90a}\nocite{Pullum85a}
+
+
+
+\oneline{\(
+\begin{array}{@{}l@{\hspace{1cm}}l@{\hspace{1cm}}l}
+\xbar\mbox{-Regel} & \mbox{mit Kategorien} & \mbox{Beispiel}\\[2mm]
+\overline{\overline{\mbox{X}}} \rightarrow \overline{\overline{\mbox{Spezifikator}}}~~\xbar & \overline{\overline{\mbox{N}}} \rightarrow \overline{\overline{\mbox{DET}}}~~\overline{\mbox{N}} & \mbox{das [Bild von Maria]} \\
+\xbar \rightarrow \xbar~~\overline{\overline{\mbox{Adjunkt}}}             & \overline{\mbox{N}} \rightarrow \overline{\mbox{N}}~~\overline{\overline{\mbox{REL\_SATZ}}} & \mbox{[Bild von Maria] [das alle kennen]}\\
+\xbar \rightarrow \overline{\overline{\mbox{Adjunkt}}}~~\xbar             & \overline{\mbox{N}} \rightarrow \overline{\overline{\mbox{ADJ}}}~~\overline{\mbox{N}} & \mbox{schöne [Bild von Maria]}\\
+\xbar \rightarrow \mbox{X}~~\overline{\overline{\mbox{Komplement}}}*               & \overline{\mbox{N}} \rightarrow \mbox{N}~~\overline{\overline{\mbox{P}}} & \mbox{Bild [von Maria]}\\\\
+\end{array}
+\)}
+
+X steht für beliebige Kategorie, X ist Kopf,\\
+`*' steht für beliebig viele Wiederholungen
+
+\medskip
+X kann links oder rechts in Regeln stehen
+
+}
+
+
+\if 0
+\begin{figure}[htb]
+\hfill
+\begin{tabular}[b]{@{}ccccc@{}}
+\multicolumn{2}{c}{\node{np}{NP}}\\[3ex]
+%
+\node{detp}{DetP}    & \multicolumn{2}{c}{\node{nbar}{\nbar}}\\[3ex]
+%
+\node{detbar}{\detbar} & \node{ap}{AP}     & \multicolumn{2}{c}{\node{nbar2}{\nbar}}\\[3ex]
+%
+\node{det}{Det}     & \node{abar}{\abar}  & \node{n}{N}    & \multicolumn{2}{c}{\node{pp}{PP}}\\[3ex]
+%
+                    & \node{A}{A}         &                & \multicolumn{2}{c}{\node{pbar}{\pbar}}\\[3ex]
+%
+                    &                     &      & \node{p}{P}   & \node{npmaria}{NP}\\[3ex]
+%
+        &        &      &     & \node{nbar3}{\nbar}\\[3ex]
+%
+        &        &      &     & \node{n2}{N}\\[3ex]
+%
+\node{das}{das}     & \node{schoene}{schöne} & \node{Bild}{Bild} & \node{von}{von} & \node{maria}{Paris}\\
+\end{tabular}
+\nodeconnect{np}{detp}\nodeconnect{np}{nbar}%
+\nodeconnect{detp}{detbar}\nodeconnect{detbar}{det}\nodeconnect{det}{das}%
+\nodeconnect{nbar}{ap}\nodeconnect{nbar}{nbar2}%
+\nodeconnect{nbar2}{n}\nodeconnect{nbar2}{pp}%
+\nodeconnect{pp}{pbar}\nodeconnect{pbar}{p}%
+\nodeconnect{pbar}{npmaria}\nodeconnect{p}{von}%
+\nodeconnect{npmaria}{nbar3}\nodeconnect{nbar3}{n2}\nodeconnect{n2}{maria}%
+\nodeconnect{ap}{abar}\nodeconnect{abar}{A}\nodeconnect{A}{schoene}%
+\nodeconnect{n}{Bild}
+%
+%
+\hfill
+\begin{tabular}[b]{@{}cc@{}}
+\multicolumn{2}{c}{\node{np-sim}{NP}}\\[3ex]
+%
+\node{detp-sim}{DetP}    & \node{nbar-sim}{\nbar}\\[3ex]
+%
+\node{detbar-sim}{\detbar} & \node{n-sim}{N}\\[3ex] 
+%
+\node{det-sim}{Det}\\[3ex]
+%
+\node{das-sim}{das}     & \node{Bild-sim}{Bild}\\
+\end{tabular}
+\nodeconnect{np-sim}{detp-sim}\nodeconnect{np-sim}{nbar-sim}%
+\nodeconnect{detp-sim}{detbar-sim}\nodeconnect{detbar-sim}{det-sim}\nodeconnect{det-sim}{das-sim}%
+\nodeconnect{nbar-sim}{n-sim}\nodeconnect{n-sim}{Bild-sim}%
+\hfill\mbox{}
+\caption{\label{Abb-das-schoene-Bild-von-Paris}\xbar"=Analyse von \emph{das schöne Bild von Paris}
+  und \emph{das Bild}}
+\end{figure}
+In der abgebildeten Analyse geht man davon aus, dass wirklich alle Nicht"=Köpfe Phrasen sind, man
+nimmt also auch an, dass es eine Determinatorphrase gibt, obwohl die Determinatoren nicht mit
+anderen Elementen kombiniert werden. Abbildung~\vref{Abb-GB-Min-Max} zeigt den minimalen und
+maximalen Ausbau von Phrasen.
+\begin{figure}[htb]
+\centerline{%
+\begin{tabular}[t]{c}
+\node{xp}{XP}\\[5ex]
+\node{xs}{X$'$}\\[5ex]
+\node{x}{X}\\
+\end{tabular}%
+\nodeconnect{xp}{xs}\nodeconnect{xs}{x}\hspace{10ex}%
+\begin{tabular}[t]{cccc}
+\multicolumn{2}{c}{\hspace{18mm}\node{xp2}{XP}}\\[5ex]
+\node{spec}{Spezifikator} & \multicolumn{2}{c}{\node{xs2}{X$'$}}\\[5ex]
+                          & \node{adj}{Adjunkt} & \multicolumn{2}{c}{~~~~~\node{xs22}{X$'$}}\\[5ex]
+                          &                     & \node{comp}{Komplement} & \node{x2}{X}\\
+\end{tabular}
+\nodeconnect{xp2}{spec}\nodeconnect{xp2}{xs2}%
+\nodeconnect{xs2}{adj}\nodeconnect{xs2}{xs22}%
+\nodeconnect{xs22}{comp}\nodeconnect{xs22}{x2}}
+\caption{\label{Abb-GB-Min-Max}Minimaler und maximaler Ausbau von Phrasen}
+\end{figure}
+Beispiele für den minimalen Ausbau stellen die Determinatorenphrasen in
+Abbildung~\ref{Abb-das-schoene-Bild-von-Paris}, der Baum für \emph{proud} in
+Abbildung~\ref{Abbildung-AP} dar.
+Adjunkte sind optional, weshalb es nicht unbedingt ein X$'$ mit Adjunkttochter geben muss. Für manche
+Kategorien gibt es keinen Spezifikator, oder er ist optional.
+%(Zusätzliche Regel nötig $\overline{\overline{\mbox{X}}} \rightarrow \xbar$)
+Zusätzlich zu den eingezeichneten Verzweigungen werden mitunter Adjunkte an XP und Kopfadjunkte an X
+zugelassen.
+
+Die unären Verzweigungen bei Determinatoren sind unschön, aber konsequent.\footnote{
+  Zu alternativen Varianten der \xbart, die ohne elaborierte Strukturen für Determinatoren
+  auskommen, siehe auch \citew{Muysken82a}.
+}
+Die unären Verzweigungen für die NP für \emph{Paris} in
+Abbildung~\ref{Abb-das-schoene-Bild-von-Paris} mögen ebenfalls Befremden auslösen, erscheinen aber
+bei Berücksichtigung folgender stärker ausgebauter Nominalphrasen plausibler:
+\eal
+\ex das Paris der dreißiger Jahre
+\ex die Maria aus Hamburg
+\zl
+Die unären Projektionen sind dennoch hässlich, was uns hier aber nicht weiter beunruhigen soll, denn
+wir haben bei der Diskussion der Lexikoneinträge in (\ref{Lexikon-Projektion}) gesehen, dass sich unär verzweigende
+Knoten zu einem großen Teil vermeiden lassen und dass es sogar erstrebenswert ist, diese Strukturen
+zu vermeiden, da man sich ansonsten unechte Mehrdeutigkeiten einhandeln würde. In den kommenden
+Kapiteln werden wir Ansätze wie Kategorialgrammatik und HPSG kennenlernen, die keine unären
+Regeln für Adjektive und Nomina annehmen. 
+
+
+\fi

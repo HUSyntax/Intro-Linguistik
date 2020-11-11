@@ -1,0 +1,54 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile: XeLaTeX BibTeX XeLaTeX XeLaTeX
+%% Handout: Antonio Machicao y Priemer
+%% Course: GK Linguistik
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\documentclass[a4paper,10pt, bibtotoc]{beamer}
+\documentclass[10pt,handout]{beamer}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%     PACKAGES & COMMANDS
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{localpackages}
+
+\input{localcommands}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Preamble's End                   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\begin{document}
+	
+	
+%%%% ue-loesung
+%%%% true: Fragen & Lösungen / false: nur Uebung
+%\toggletrue{ue-loesung}
+
+%%%% ha-loesung
+%%%% true: Fragen & Lösungen / false: nur Hausaufgabe
+%\toggletrue{ha-loesung}
+
+%%%% toc
+%%%% true: TOC am Anfang von Slides / false: keine TOC nicht am Anfang von Slides
+\toggletrue{toc}
+%	\togglefalse{toc}
+
+%%%% sectoc
+%%%% true: TOC für Sections (MyP) / false: keine TOC für Sections (MyP)
+\toggletrue{sectoc}
+%	\togglefalse{sectoc}
+
+%%%% gliederung
+%%%% true: Gliederung für Sections (StM) / false: keine Gliederung für Sections (StM)
+%	\toggletrue{gliederung}
+
+
+\input{05c-morphologie-include}
+
+\input{gk-literatur}
+
+\end{document}
+

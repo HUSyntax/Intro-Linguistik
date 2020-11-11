@@ -1,0 +1,157 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile: XeLaTeX BibTeX XeLaTeX XeLaTeX
+%% Loesung-Handout: Antonio Machicao y Priemer
+%% Course: GK Linguistik
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\documentclass[a4paper,10pt, bibtotoc]{beamer}
+\documentclass[10pt,handout]{beamer}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%     PACKAGES      
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{../localpackages}
+
+\input{../localcommands}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Preamble's End                   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\begin{document}
+	
+	
+%%%% ue-loesung
+%%%% true: Übung & Lösungen (slides) / false: nur Übung (handout)
+%	\toggletrue{ue-loesung}
+
+%%%% ha-loesung
+%%%% true: Hausaufgabe & Lösungen (slides) / false: nur Hausaufgabe (handout)
+%	\toggletrue{ha-loesung}
+
+%%%% toc
+%%%% true: TOC am Anfang von Slides / false: keine TOC am Anfang von Slides
+\toggletrue{toc}
+
+%%%% sectoc
+%%%% true: TOC für Sections / false: keine TOC für Sections (StM handout)
+%	\toggletrue{sectoc}
+
+%%%% gliederung
+%%%% true: Gliederung für Sections / false: keine Gliederung für Sections
+%	\toggletrue{gliederung}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Metadata                         
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
+
+\title{Grundkurs Linguistik}
+
+\subtitle{Lösungen -- Übungen}
+
+\author[A. Machicao y Priemer]{
+	{\small Antonio Machicao y Priemer}
+	\\
+	{\footnotesize \url{http://www.linguistik.hu-berlin.de/staff/amyp}}
+	%	\\
+	%	\href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
+}
+
+\institute{Institut für deutsche Sprache und Linguistik}
+
+
+% bitte lassen, sonst kann man nicht sehen, von wann die PDF-Datei ist.
+%\date{ }
+
+%\publishers{\textbf{6. linguistischer Methodenworkshop \\ Humboldt-Universität zu Berlin}}
+
+%\hyphenation{nobreak}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Preamble's End                  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%      
+\huberlintitlepage[22pt]
+\iftoggle{toc}{
+	\frame{
+\frametitle{Inhaltsverzeichnis}
+
+		\begin{multicols}{6}
+			\tableofcontents
+			%[pausesections]
+			\columnbreak
+			\textcolor{white}{
+				\ea\label{ex:01}
+				\ex\label{ex:02}
+				\ex\label{ex:03}
+				\ex\label{ex:04}
+				\ex\label{ex:05}
+				\ex\label{ex:06}
+				\ex\label{ex:07}
+				\ex\label{ex:08}
+				\ex\label{ex:09}
+				\ex\label{ex:10}
+				\ex\label{ex:11}
+				\ex\label{ex:12}
+				\ex\label{ex:13}
+				\ex\label{ex:14}
+				\ex\label{ex:15}
+				\ex\label{ex:16}
+				\ex\label{ex:17}
+				\ex\label{ex:18}
+				\ex\label{ex:19}
+				\ex\label{ex:20}
+				\ex\label{ex:21}
+				\ex\label{ex:22}
+				\ex\label{ex:23}
+				\ex\label{ex:24}
+				\ex\label{ex:25}
+				\ex\label{ex:26}
+				\ex\label{ex:27}
+				\ex\label{ex:28}
+				\ex\label{ex:29}
+				\z
+			}
+		\end{multicols}
+	}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Phonetik/Phonologie}
+
+\input{09-ue-loesung01-include}
+
+\section{Graphematik}
+
+\input{09-ue-loesung02-include}
+
+\section{Morphologie}
+
+\input{09-ue-loesung03-include}
+
+\section{Syntax}
+
+\input{09-ue-loesung04-include}
+
+\section{Semantik/Pragmatik}
+
+\input{09-ue-loesung05-include}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Hausaufgaben}
+
+
+\input{loesungen-gk-literatur}
+
+
+\end{document}

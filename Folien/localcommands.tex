@@ -1,0 +1,415 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%            MyP-Commands                     
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Delete Caption from Figures and Tables
+\setbeamertemplate{caption}{\centering\insertcaption\par }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% German quotation marks:
+\newcommand{\gqq}[1]{\glqq{}#1\grqq{}}		%double
+\newcommand{\gq}[1]{\glq{}#1\grq{}}			%simple
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Abbreviations in German
+% package needed: xspace
+% Short space in German abbreviations: \,	
+\newcommand{\idR}{\mbox{i.\,d.\,R.}\xspace}
+\newcommand{\su}{\mbox{s.\,u.}\xspace}
+%\newcommand{\ua}{\mbox{u.\,a.}\xspace}       % in abbrev
+\newcommand{\vgl}{\mbox{vgl.}\xspace}       % in abbrev
+%\newcommand{\zB}{\mbox{z.\,B.}\xspace}       % in abbrev
+%\newcommand{\s}{s.~}
+%not possibel: \dh --> d.\,h.
+
+%rot unterstrichen
+%\newcommand{\rotul}[1]{\textcolor{red}{\underline{#1}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Abbreviations in English
+\newcommand{\ao}{a.o.\ }	% among others
+%\newcommand{\cf}[1]{(cf.~#1)}	% confer = compare
+\renewcommand{\ia}{i.a.}	% inter alia = among others
+%\newcommand{\ie}{i.e.~}	% id est = that is
+\newcommand{\fe}{e.g.~}	% exempli gratia = for example
+%not possible: \eg --> e.g.~
+\newcommand{\vs}{vs.\ }	% versus
+\newcommand{\wrt}{w.r.t.\ }	% with respect to
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dash:
+\newcommand{\gs}[1]{--\,#1\,--}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Rightarrow with and without space
+\def\ra{\ensuremath\rightarrow}			%without space
+\def\ras{\ensuremath\rightarrow\ }		%with space
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% X-bar notation
+
+%% Notation with primes (not emphasized): \xbar{X}
+\newcommand{\MyPxbar}[1]{#1$^{\prime}$}
+\newcommand{\xxbar}[1]{#1$^{\prime\prime}$}
+\newcommand{\xxxbar}[1]{#1$^{\prime\prime\prime}$}
+
+%% Notation with primes (emphasized): \exbar{X}
+\newcommand{\exbar}[1]{\emph{#1}$^{\prime}$}
+\newcommand{\exxbar}[1]{\emph{#1}$^{\prime\prime}$}
+\newcommand{\exxxbar}[1]{\emph{#1}$^{\prime\prime\prime}$}
+
+% Notation with zero and max (not emphasized): \xbar{X}
+\newcommand{\zerobar}[1]{#1$^{0}$}
+\newcommand{\maxbar}[1]{#1$^{\textsc{max}}$}
+
+% Notation with zero and max (emphasized): \xbar{X}
+\newcommand{\ezerobar}[1]{\emph{#1}$^{0}$}
+\newcommand{\emaxbar}[1]{\emph{#1}$^{\textsc{max}}$}
+
+%% Notation with bars (already implemented in gb4e):
+% \obar{X}, \ibar{X}, \iibar{X}, \mbar{X} %Problems with \mbar!
+%
+%% Without gb4e:
+\newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
+%
+%% OR:
+\newcommand{\MyPibar}[1]{$\overline{\textrm{#1}}$}
+\newcommand{\MyPiibar}[1]{$\overline{\overline{\textrm{#1}}}$}
+%% (emphasized):
+\newcommand{\eibar}[1]{$\overline{#1}$}
+\newcommand{\eiibar}[1]{\overline{$\overline{#1}}$}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Subscript & Superscript: no italics
+\newcommand{\MyPdown}[1]{\textsubscript{#1}}
+\newcommand{\MyPup}[1]{\textsuperscript{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Small caps subscripts & superscripts
+\newcommand{\scdown}[1]{\textsubscript{\textsc{#1}}}
+\newcommand{\scup}[1]{\textsuperscript{\textsc{#1}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Objekt language marking:
+%\newcommand{\obj}[1]{\glqq{}#1\grqq{}}	%German double quotes
+%\newcommand{\obj}[1]{``#1''}			%English double quotes
+%\newcommand{\MyPobj}[1]{\emph{#1}}		%Emphasising
+\newcommand{\MyPobj}[1]{\textit{#1}}		%Emphasising
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Size:
+\newcommand{\size}[1]{#1}	% f.e. resize citations
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Semantic types (<e,t>), features, variables and graphemes in angled brackets 
+
+%%% types and variables, in math mode: angled brackets + italics + no space
+%\newcommand{\type}[1]{$<#1>$}
+
+%%% OR more correctly: 
+%%% types and variables, in math mode: chevrons! + italics + no space
+\newcommand{\MyPtype}[1]{$\langle #1 \rangle$}
+
+%%% features and graphemes, in math mode: chevrons! + italics + no space
+\newcommand{\abe}[1]{$\langle #1 \rangle$}
+
+
+%%% features and graphemes, in math mode: chevrons! + no italics + space
+\newcommand{\ab}[1]{$\langle$#1$\rangle$}  %%same as \abu  
+\newcommand{\abu}[1]{$\langle$#1$\rangle$} %%Umlaute
+
+
+%% Presuppositions
+\newcommand{\prspp}{$\gg$} 
+
+%% Implicature
+\newcommand{\implc}{$+ \mkern-5mu >$} 
+
+%% Enttailment
+\newcommand{\ent}{$\vDash$}
+
+%% Other semantic symbols: 
+%% entailment: $\Rightarrow$ $\vDash$
+%% equivalence: $\Leftrightarrow$ $\equiv$
+%% biconditional: $\leftrightarrow$ 
+%% lexical rule: $\mapsto$
+%% greater/less/equal: $>$ $\geq$ $<$ $\leq$
+%% definition: $:=$ $=$\textsubscript{def}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Marking text with colour:
+% package needed: xcolor
+% Command \alert{} in Beamer >> FU-grün (leider!! @Stefan)
+
+%%%neue Farbbefehle in Anlehnung an rotul
+%%%(s. hu-beamer-includes-pdflatex.sty in texmf)
+
+%% Farbdefinitionen:
+
+\definecolor{HUred}{RGB}{138,15,20}
+\definecolor{HUblue}{RGB}{0,55,108}
+\definecolor{HUgreen}{RGB}{0,87,44}
+
+%\newcommand{\alertred}[1]{\textcolor{red}{#1}}  % basic red
+\newcommand<>{\alertred}[1]{{\color#2[RGB]{138,15,20}#1}}  %HU rot + overlay
+
+%\newcommand{\alertblue}[1]{\textcolor{blue}{#1}} 		% basic blue
+\newcommand<>{\alertblue}[1]{{\color#2[RGB]{0,55,108}#1}} %HU blue + overlay
+
+%\newcommand{\alertgreen}[1]{\textcolor{green}{#1}}	% basic green
+\newcommand<>{\alertgreen}[1]{{\color#2[RGB]{0,87,44}#1}} %HU green + overlay
+
+
+%%% Verwendung der oben definierten Farben mit Unterschied in Handout und Beamer:
+
+\mode<handout>{%
+	\newcommand<>{\hured}[1]{\only#2{\underline{#1}}}
+	\newcommand<>{\hublue}[1]{\only#2{\textbf{#1}}}
+	\newcommand<>{\hugreen}[1]{\only#2{\textsc{#1}}}
+}
+%
+\mode<beamer>{%
+	\newcommand<>{\hured}[1]{\alertred#2{#1}}
+	\newcommand<>{\hublue}[1]{\alertblue#2{#1}}
+	\newcommand<>{\hugreen}[1]{\alertgreen#2{#1}}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Outputbox
+\newcommand{\outputbox}[1]{\noindent\fbox{\parbox[t][][t]{0.98\linewidth}{#1}}\vspace{0.5em}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% (Syntactic) Trees
+% package needed: forest
+%
+%% Setting for simple trees
+\forestset{
+	MyP edges/.style={for tree={parent anchor=south, child anchor=north}}
+}
+
+%% this is taken from langsci-setup file
+%% Setting for complex trees
+%% \forestset{
+%% 	sm edges/.style={for tree={parent anchor=south, child anchor=north,align=center}}, 
+%% background tree/.style={for tree={text opacity=0.2,draw opacity=0.2,edge={draw opacity=0.2}}}
+%% }
+
+\newcommand\HideWd[1]{%
+	\makebox[0pt]{#1}%
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%solutions in green + w/ jambox
+\newcommand{\loesung}[2]{\jambox{\visible<#1->{\alertgreen{#2}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TIPA Lösungen           
+
+%%Tipa serif font fixed (requires package 'Linux Libertine B')
+
+%% Solution 1 (RF)
+%% Tipa font:
+%\renewcommand\textipa[1]{{\fontfamily{cmr}\tipaencoding #1}}
+
+%% Solution 2 (RF): older code for texlive 2017?
+%\newfontfamily{\tipacm}[Scale=MatchUppercase]{Linux Libertine B}
+%\renewcommand\useTIPAfont{\tipacm}
+
+%\NewEnviron{IPA}{\expandafter\textipa\expandafter{\BODY}} %% not needed anymore
+
+%% Solution 3 (RF): this solution is working but with problems with ligatures
+%%% works for texlive 2018
+\newfontfamily{\ipafont}[Scale=MatchUppercase]{Linux Libertine B}
+\def\useTIPAfont{\ipafont}
+
+%% Solution 4 (Kopecky & MyP): Test package: tipx (s. localpackages) and comment "Solution 3" 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Toggles                  
+
+
+\newtoggle{uebung}
+\newtoggle{loesung}\togglefalse{loesung}
+
+\newtoggle{hausaufgabe}
+
+%\newtoggle{ha-loesung}\togglefalse{ha-loesung}
+\newtoggle{phonologie-loesung}
+\newtoggle{graphematik-loesung}
+
+
+%% Neue Toggle-Struktur
+\newtoggle{toc}
+\newtoggle{sectoc}
+\newtoggle{gliederung}
+
+\newtoggle{ue-loesung}
+\newtoggle{ha-loesung}
+%%
+
+% The toc is not needed on Handouts. Save trees.
+\mode<handout>{
+\togglefalse{toc}
+}
+
+\newtoggle{hpsgvorlesung}\togglefalse{hpsgvorlesung}
+\newtoggle{syntaxvorlesungen}\togglefalse{syntaxvorlesungen}
+
+%\includecomment{psgbegriffe}
+%\excludecomment{konstituentenprobleme}
+%\includecomment{konstituentenprobleme-hinweis}
+
+\newtoggle{konstituentenprobleme}\togglefalse{konstituentenprobleme}
+\newtoggle{konstituentenprobleme-hinweis}\toggletrue{konstituentenprobleme-hinweis}
+
+%\includecomment{einfsprachwiss-include}
+%\excludecomment{einfsprachwiss-exclude}
+\newtoggle{einfsprachwiss-include}\toggletrue{einfsprachwiss-include}
+\newtoggle{einfsprachwiss-exclude}\togglefalse{einfsprachwiss-exclude}
+
+\newtoggle{psgbegriffe}\toggletrue{psgbegriffe}
+
+\newtoggle{gb-intro}\togglefalse{gb-intro}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Useful commands                    
+
+%%%%%%%%%%%%%%%%%%%%%
+%% FOR ITEMS:
+%\begin{itemize}
+%  \item<2-> from point 2
+%  \item<3-> from point 3 
+%  \item<4-> from point 4 
+%\end{itemize}
+%
+% or: \onslide<2->
+% or \only<2->{Text}
+% or: \pause
+
+%%%%%%%%%%%%%%%%%%%%%
+%% VERTICAL SPACE:
+% \vspace{.5cm}
+% \vfill
+
+%%%%%%%%%%%%%%%%%%%%%
+% RED MARKING OF TEXT:
+%\alert{bis spätestens Mittwoch, 18 Uhr}
+%\newcommand{\alertred}[1]{\textcolor{red}{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%
+%% RESCALE BIG TABLES:
+%\scalebox{0.8}{
+%For Big Tables
+%}
+
+%%%%%%%%%%%%%%%%%%%%%
+%% BLOCKS:
+%\begin{alertblock}{Title}
+%Text
+%\end{alertblock}
+%
+%\begin{block}{Title}
+%Text
+%\end{block}
+%
+%\begin{exampleblock}{Title}
+%Text
+%\end{exampleblock}
+
+%%%%%%%%%%%%%%%%%%%%%
+%% JAMBOX FOR EXAMPLES:
+%\ea 
+%\settowidth\jamwidth{Test} 
+%Die Studierenden, die weitgehend von Stipendien leben, erhalten einen Mietzuschuss. 
+%\jambox{Test}
+%\z 
+
+%%%%%%%%%%%%%%%%%%%%%
+%% TOGGLES:
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{Übung}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\iftoggle{uebung}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{Übung}
+%
+%\end{frame}
+%
+%} 
+%%% END true = Q
+%%% BEGIN false = Q + A
+%{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{Übung}
+%
+%\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}
+%\frametitle{Lösung}
+%
+%\end{frame}
+%
+%}%% END LOESUNG	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{Hausaufgabe}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\iftoggle{hausaufgabe}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}
+%\frametitle{Hausaufgabe}
+%
+%\end{frame}
+%
+%} 
+%%% END true = Q
+%%% BEGIN false = Q + A
+%{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}
+%\frametitle{Hausaufgabe}
+%
+%\end{frame}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection*{Lösung der Hausaufgabe}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}
+%\frametitle{Lösung}
+%
+%\end{frame}
+%
+%}%% END LOESUNG	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,0 +1,1281 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile the master file!
+%% 		Slides: Antonio Machicao y Priemer
+%% 		Course: GK Linguistik
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Metadata                         
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
+
+\title{Grundkurs Linguistik}
+
+\subtitle{Syntax VII: X-Bar-Theorie - Funktionale Phrasen II}
+
+\author[A. Machicao y Priemer]{
+	{\small Antonio Machicao y Priemer}
+	\\
+	{\footnotesize \url{http://www.linguistik.hu-berlin.de/staff/amyp}}
+%	\\
+%	{\footnotesize \href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
+}
+
+\institute{Institut für deutsche Sprache und Linguistik}
+
+\date{ }
+
+%\publishers{\textbf{6. linguistischer Methodenworkshop \\ Humboldt-Universität zu Berlin}}
+
+%\hyphenation{nobreak}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Preamble's End                   %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%      
+\huberlintitlepage[22pt]
+\iftoggle{toc}{
+\frame{
+\begin{multicols}{2}
+	\frametitle{Inhaltsverzeichnis}\tableofcontents
+	%[pausesections]
+\end{multicols}
+	}
+	}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%LITERATURE:
+
+%\nocite{Altmann&Hofmann08a}
+%\nocite{Altmann93a}
+\nocite{Brandt&Co06a}
+\nocite{Glueck05a} 
+\nocite{Grewendorf&Co91a} 
+\nocite{Luedeling2009a} 
+%\nocite{Meibauer&Co07a}
+\nocite{MuellerS13f} 
+\nocite{MuellerS15b}
+%% Allgemein
+\nocite{Glueck&Roedel16a}
+%\nocite{Meibauer&Co07a} 
+\nocite{Repp&Co15a} 
+
+%% Morphologie
+%\nocite{Eisenberg04}
+
+%% Syntax
+\nocite{Adger04a}
+%\nocite{Altmann&Hofmann08a} % Satztypen & Satzmodi
+%\nocite{Altmann93a} % Satztypen & Satzmodi
+\nocite{Brandt&Co06a} 
+\nocite{Fanselow&Sascha87a}
+\nocite{Fanselow&Sascha93a}
+%\nocite{Fries&MyP16b} % Akzeptabilität
+%\nocite{Fries16a} % Grammatikalität
+%\nocite{Fries&MyP16d} % Kompetenz vs Performanz
+\nocite{Fries&MyP16c} % GG
+\nocite{Fries&MyP16a} % X-Bar-Theorie
+%\nocite{Fries16e} % Satztyp
+%\nocite{Fries16d} % Satzmodus 
+\nocite{Grewendorf&Co91a} 
+%\nocite{MyP17b} % Kerngrammatik
+%\nocite{MyP18a} % Konstituententest
+\nocite{MyP18b} % Kopf
+\nocite{MyP18c} % Phrase
+\nocite{MyP18s} % Funktionale Kategorie
+\nocite{MyP18t} % Argumentstruktur
+%\nocite{MuellerS13f} 
+%\nocite{MuellerS15b}
+\nocite{Stechow&Sternefeld88a}
+\nocite{Sternefeld06a}
+\nocite{Sternefeld06b}
+%\nocite{Woellstein10a} % Topologisches Feldermodell
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Begleitlektüre}
+
+	\begin{itemize}
+		\item \textbf{obligatorisch:}
+			\begin{itemize}
+				\item[] AM S.~86--94
+				\item[] \cite{Luedeling2009a}: Kapitel 12 \& 13 (S.~142--158)
+			\end{itemize}
+	\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Syntax VII}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Move $\alpha$}
+
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Move $\alpha$}
+	
+	\begin{itemize}
+		\item Lexikalische Einheiten werden aus dem Lexikon entnommen und in die \textbf{syntaktische Struktur} eingesetzt.
+		\item[]
+		\item Abhängig von der \textbf{Position}, die die lexikalischen Einheiten in der syntaktischen Struktur belegen, erfüllen sie eine \textbf{Funktion} (Position \ras Funktion).
+	\end{itemize}
+	
+	\begin{block}{Basisposition}
+		Syntaktische Position, an der eine Phrase basisgeneriert wird, d.\,h. an die sie in der syntaktischen Struktur eingefügt wird\\
+		%Die Basisposition wird von der Struktur bestimmt und ist im Subkategorisierungsrahmen kodiert:\\
+		%\textbf{schenken:}\\
+		%DP$_{\textsc{nom,ag}}$ DP$_{\textsc{dat,ziel}}$  DP$_{\textsc{akk,th}}$ $\underline{\qquad}$ 
+	\end{block}
+	
+	\nocite{Fries16h}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	
+	\begin{itemize}
+		\item Die Basisposition wird von der Struktur bestimmt und ist im Subkategorisierungsrahmen kodiert:\\
+		\textbf{schenken:} DP$_{\textsc{nom,ag}}$ DP$_{\textsc{dat,ziel}}$  DP$_{\textsc{akk,th}}$ $\underline{\qquad}$
+	\end{itemize} 
+	
+	\begin{figure}
+		\centering
+		\scalebox{.7}{
+			\begin{forest}
+				sm edges,
+				[IP [\alertgreen{DP} [Die Dame,roof]]{\draw[<-,HUred] (.south west)--++(0em,-1.3ex)--++(-5em,0pt)
+					node[anchor=east,align=center]{\textsc{nom}\\ \textsc{agens}};}
+				[\MyPxbar{I} 		
+				[VP [AdvP [schnell,roof]]
+				[VP [\alertgreen{DP} [dem Jungen,roof]]{\draw[<-,HUred] (.south west)--++(0em,-1.3ex)--++(-15.5em,0pt)
+					node[anchor=east,align=center]{\textsc{dat}\\ \textsc{ziel}};}
+				[\MyPxbar{V}	[\alertgreen{DP} [den Wagen,roof]]{\draw[<-,HUred] (.south west)--++(0em,-1.3ex)--++(-21em,0pt)
+					node[anchor=east,align=center]{\textsc{akk}\\ \textsc{thema}};}				
+				[\zerobar{V} [geschenkt]]
+				]]
+				]
+				[\zerobar{I} [hat]]
+				]]			 
+			\end{forest}
+		}
+		%\caption{Adjunkt und Komplement}     
+	\end{figure}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Move $\alpha$}
+	
+	\begin{itemize}
+		\item Nach der \textbf{Insertion} der lexikalischen Einheiten generiert die syntaktische Komponente eine \textbf{Tiefenstruktur} (Deep Structure, Abk. DS)
+	\end{itemize}
+	
+	\begin{block}{Tiefenstruktur}
+		Zugrunde liegende Struktur, die die (gesamte) für den Satz/""die Phrase benötigte Information enthält
+	\end{block}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	
+	
+	\begin{minipage}[b]{.45\textwidth}
+		Aus der DS können unterschiedliche \textbf{tatsächliche Realisierungen} generiert werden (vgl.\ Phonem -- Phon).
+	\end{minipage}
+	%%
+	%%
+	\begin{minipage}[b]{0.5\textwidth}
+		\centering
+		\scalebox{.8}{
+			\begin{forest}
+				sm edges,
+				[IP [DP [Maria,roof]]
+				[\MyPxbar{I} 
+				[VP 
+				[\MyPxbar{V} 
+				[DP [Peter,roof]]
+				[\zerobar{V} [geschlagen]]
+				]
+				]
+				[\zerobar{I} [hat]]
+				]
+				]
+			\end{forest}
+		}
+		%\caption{DS}
+	\end{minipage}  
+	
+	
+	\eal
+	\ex Maria Peter geschlagen hat
+	\ex Maria hat Peter geschlagen.
+	\ex (Den) Peter hat (die) Maria geschlagen.
+	\zl
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Move $\alpha$}
+	
+	\begin{itemize}
+		\item Von der Tiefenstruktur gelangt man mithilfe von \textbf{Transformationen}/""\textbf{Bewegungen} zur \textbf{tatsächlichen Realisierung} des Satzes, genannt: \textbf{Oberflächenstruktur} (Surface Structure, Abk. SS).
+		\item[]
+		\item Regel der Bewegung \ras \textbf{Move} $\alpha$
+	\end{itemize}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	
+	\begin{block}{Move $\alpha$}
+		Bewege irgendetwas irgendwohin.
+	\end{block}
+	
+	\begin{itemize}
+		\item \textbf{Beschränkungen für Move} $\alpha$
+		\begin{enumerate}
+			\item \textbf{Köpfe} können nur in Kopfpositionen bewegt werden;
+			\item \textbf{Phrasen} können nur in Phrasenpositionen bewegt werden;
+			\item wenn ein Element von \emph{A} nach \emph{B} bewegt wurde, hinterlässt es in \emph{A} eine mit dem Element koindizierte \textbf{Spur} (\emph{t}, von \gqq{trace}), sodass die Basisposition besetzt ist;
+			\item die Spur muss von seinem Antezedens \textbf{c-kommandiert} werden; \dots
+		\end{enumerate}
+		\item[]
+		\item Die \textbf{Spuren} sind wichtig, damit die Relation zwischen einem Kopf und seinen Argumenten auf allen Ebenen der Repräsentation zugänglich ist.
+		
+	\end{itemize}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Move $\alpha$}
+	\begin{itemize}
+		\item Beispiel \textbf{Kopfbewegung}: \zerobar{V}-zu-\zerobar{I}-Bewegung
+	\end{itemize}
+	
+	\begin{figure}[b]
+		%	\begin{minipage}[b]{0.05\textwidth}
+		%	\hfill
+		%	\end{minipage} 
+		%
+		\begin{minipage}[b]{0.45\textwidth}
+			\centering
+			\footnotesize{
+				\begin{forest}
+					sm edges,
+					[IP [DP [Peter,roof]]
+					[\MyPxbar{I} [VP
+					[\MyPxbar{V} [DP [den Wagen,roof]]
+					[\zerobar{V} [\alertgreen{kaufen}]]{\draw[<-,HUred] (.south east)--++(0em,-1.5ex)--++(+2.5em,0pt)
+						node[anchor=west,align=center]{infinit};}
+					]]
+					[\zerobar{I} [$\emptyset$]]
+					]
+					]
+				\end{forest}
+			}
+			\caption{Noch ungrammatisch}	
+		\end{minipage}  
+		%
+		\pause 
+		%  
+		\begin{minipage}[b]{0.05\textwidth}
+			\hfill
+		\end{minipage}  
+		%
+		\begin{minipage}[b]{0.45\textwidth}
+			\centering
+			\footnotesize{
+				\begin{forest}
+					sm edges,
+					[IP [DP [Peter,roof]]
+					[\MyPxbar{I} [VP 
+					[\MyPxbar{V} [DP [den Wagen,roof]]
+					[\zerobar{V} [t$_{i}$,draw]{
+						\draw[->,dotted] () to[out=south east,in=south] (IHead);}]
+					]]
+					[\zerobar{I} [\alertgreen{kauft}$_{i}$,name=IHead]]{\draw[<-,HUred] (.south east)--++(0em,-1.5ex)--++(+1.5em,0pt)
+						node[anchor=west,align=center]{finit};}
+					]
+					]
+				\end{forest}
+			}
+			\caption{Kopfbewegung}	
+		\end{minipage}  
+		%         
+		%  	\begin{minipage}[b]{0.05\textwidth}
+		%	\hfill
+		%	\end{minipage}  
+	\end{figure}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{T-Modell}
+
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%%\frametitle{T-Modell}
+%
+%\begin{figure}
+%	\includegraphics[scale=.43]{material/11tmodell}
+%	\caption{T-Modell \citep[vgl.][]{MuellerS15b}}
+%\end{figure}
+%	
+%\end{frame}
+
+\begin{frame}
+	%\frametitle{T-Modell}
+	
+	\begin{figure}
+		%\begin{tikzpicture}
+		%\node at (0,0) {D-structure};
+		%\draw[->] (0,-0.3)--(0,-1.5);
+		%\node[right] at (0,-0.9) {move $\alpha$};
+		%\node at (0,-1.8) {S-structure};
+		%\draw[->] (0,-2.1)--(-1.5-3);
+		%\draw[->] (0,-2.1)--(1.5,-3);
+		%\end{tikzpicture}
+		\begin{forest}
+			sm edges,
+			[D-structure, [S-structure,edge label={node[midway,right]{move $\alpha$} }
+			[{Deletion rules,}\\{Filter, phonol. rules} [Phonetic Form (PF)], align=center]
+			[{Anaphoric rules,}\\{rules of quantification and control}, align=center [Logical Form (LF)] ]
+			]]
+		\end{forest}
+		\caption{T-Modell \citep[vgl.][]{MuellerS15b}}
+	\end{figure}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Funktionale Phrasen II}
+
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Funktionale Phrasen II}
+	
+	\begin{itemize}
+		\item Bisher \ras Nebensatzstellung im Deutschen
+		\item Wann kommt die NS-Stellung vor? \ras Complementizer!
+		
+		\eal
+		\ex[]{(Ich denke,) \alertred{dass} Syntax Spaß machen sollte.}
+		\ex[]{Syntax \alertred{sollte} Spaß machen.}
+		\ex[]{(Ich frage mich,) \alertred{ob} der Winter jemals enden wird.}
+		\ex[]{Der Winter \alertred{wird} niemals enden.}
+		\ex[*]{Der Winter \alertred{ob wird} niemals enden.}
+		\zl
+		
+		\item Complementizer und finite Verben (in V2- und V1-Sätzen) sind \textbf{komplementär}!
+		
+	\end{itemize}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Complementizer Phrase}
+%\frame{
+%\frametitle{~}
+%	\tableofcontents[currentsection]
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Complementizer Phrase (CP)}
+	
+	\begin{itemize}
+		\item C nimmt eine IP als Komplement
+	\end{itemize}
+	
+	\begin{minipage}[b]{0.45\textwidth}
+		\begin{figure}
+			\centering
+			\scalebox{.6}{
+				\begin{forest}
+					sm edges,
+					[IP [DP [Peter,roof]]
+					[\MyPxbar{I} [VP 
+					[\MyPxbar{V} [DP [den Wagen,roof]]
+					[\zerobar{V} [gekauft]]
+					]]
+					[I [hat]]
+					]
+					]
+				\end{forest}
+			}
+			\caption{NS als IP}	
+		\end{figure}		
+	\end{minipage}  
+	%  
+	\pause
+	%
+	\begin{minipage}[b]{0.45\textwidth}
+		\begin{figure}
+			\centering
+			\scalebox{.6}{
+				\begin{forest}
+					sm edges,
+					[CP	[\MyPxbar{C}	[\zerobar{C} [\alertred{dass}\\ \alertred{ob}\\ \alertred{weil}]]	
+					[IP [DP [Peter,roof]]
+					[\MyPxbar{I} [VP
+					[\MyPxbar{V} [DP [den Wagen,roof]]
+					[\zerobar{V} [gekauft]]
+					]]
+					[\zerobar{I} [\alertgreen{hat}]]
+					]
+					]
+					]
+					]
+				\end{forest}
+			}
+			\caption{NS als CP}	
+		\end{figure}		
+	\end{minipage}  
+	
+	\nocite{Fries&MyP16i}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Complementizer Phrase}
+	
+	\begin{itemize}
+		\item Die CP ist für den Satzmodus zuständig.
+		\begin{itemize}
+			\item Eingebetteter Satz
+			\item Eingebetteter Fragesatz
+			\item Deklarativsatz
+			\item E- oder K-Fragesatz
+			\item Imperativsatz
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	%\frametitle{Complementizer Phrase}
+	
+	\begin{itemize}
+		\item Die CP bestimmt die \textbf{Form} der IP. \ras Finit
+	\end{itemize}
+	
+	\begin{figure}[b]
+		
+		\begin{minipage}[b]{0.45\textwidth}
+			\centering
+			\tiny{
+				\begin{forest}
+					sm edges,
+					[*CP	[\MyPxbar{C}	[\zerobar{C} [dass]]
+					[IP [DP [Peter,roof]]
+					[\MyPxbar{I} [VP 
+					[\MyPxbar{V} [DP [den Wagen,roof]]
+					[\zerobar{V} [\alertgreen{kaufen}]]{\draw[<-,HUred] (.south east)--++(0em,-1.5ex)--++(+3em,0pt)
+						node[anchor=west,align=center]{infinit};}
+					]]
+					[\zerobar{I} [$\emptyset$]]
+					]
+					]
+					]
+					]		
+				\end{forest}
+			}
+			\caption{Ungrammatisch}	
+		\end{minipage}  
+		%  
+		%
+		\begin{minipage}[b]{0.45\textwidth}
+			\centering
+			\tiny{
+				\begin{forest}
+					sm edges,
+					[CP	[\MyPxbar{C}	[\zerobar{C} [dass]]	
+					[IP [DP [Peter,roof]]
+					[\MyPxbar{I} [VP 
+					[\MyPxbar{V} [DP [den Wagen,roof]]
+					[\zerobar{V} [t$_{i}$]]
+					]]
+					[\zerobar{I} [\alertgreen{kauft}$_{i}$]]{\draw[<-,HUred] (.south east)--++(0em,-1.5ex)--++(+2em,0pt)
+						node[anchor=west,align=center]{finit};}
+					]
+					]
+					]
+					]
+				\end{forest}
+			}
+			\caption{Grammatisch}	
+		\end{minipage}  
+		
+	\end{figure}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	%\frametitle{Complementizer Phrase}
+	
+	\begin{itemize}
+		\item Korrelation zwischen \textbf{Verbzweit- und Verbletztstruktur}
+		\item Kopfbewegung
+	\end{itemize}
+	
+	
+	\begin{minipage}[b]{0.49\textwidth}
+		\begin{figure}
+			\centering
+			\tiny{
+				\begin{forest}
+					sm edges,
+					[CP	[\MyPxbar{C}	[\zerobar{C} [\alertgreen{dass}]]{\draw[<-,HUred] (.south west)--++(0em,-2.5ex)--++(-1.5em,0pt)
+						node[anchor=east,align=center]{besetzt! \ras \\ keine I-C-Bewegung};}
+					[IP [DP [Peter,roof]]
+					[\MyPxbar{I} [VP 
+					[\MyPxbar{V} [DP [den Wagen,roof]]
+					[\zerobar{V} [t$_{i}$]]
+					]]
+					[\zerobar{I} [\alertgreen{kauft$_{i}$}]]
+					]
+					]
+					]
+					]		
+				\end{forest}
+			}
+			\caption{V-I-Bewegung}	
+		\end{figure}		
+	\end{minipage}  
+	%  
+	%
+	\begin{minipage}[b]{0.49\textwidth}
+		\begin{figure}
+			\centering
+			\tiny{
+				\begin{forest}
+					sm edges,
+					[CP	[\MyPxbar{C}	[\zerobar{C} [\alertgreen{kauft$_{i}$}]]{\draw[<-,HUred] (.south west)--++(0em,-2.5ex)--++(-1.5em,0pt)
+						node[anchor=east,align=center]{frei! \ras \\ I-C-Bewegung};}
+					[IP [DP [Peter,roof]]
+					[\MyPxbar{I} [VP 
+					[\MyPxbar{V} [DP [den Wagen,roof]]
+					[\zerobar{V} [t$_{i}$]]
+					]]
+					[\zerobar{I} [\alertgreen{t$_{i}$}]]
+					]
+					]
+					]
+					]
+				\end{forest}
+			}
+			\caption{V-I-C-Bewegung}
+		\end{figure}			
+	\end{minipage}  
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	
+	\begin{itemize}
+		\item \textbf{Weitere Position} für Verbzweitsätze \ras aber \textbf{nur eine} Phrasenposition
+		\ea[*]{[Den Wagen] [Peter] kauft gestern.}
+		\z
+		
+	\end{itemize}
+	
+	\begin{figure}[b]
+		
+		\begin{minipage}[b]{0.49\textwidth}
+			\centering
+			\scalebox{.55}{
+				\begin{forest}
+					sm edges,
+					[CP	[\alertgreen{DP$_{i}$} [Peter,roof]]{\draw[<-,HUred] (.south west)--++(0em,-1.5ex)--++(-2em,0pt)
+						node[anchor=east,align=center]{Phrase};}
+					[\MyPxbar{C} [\zerobar{C} [kauft$_{ii}$]]
+					[IP 
+					[,empty nodes [\alertgreen{t$_{i}$}]]
+					[\MyPxbar{I} [VP 
+					[\MyPxbar{V} [DP [den Wagen,roof]]
+					[\zerobar{V} [t$_{ii}$]]
+					]]
+					[\zerobar{I} [t$_{ii}$]]
+					]
+					]
+					]
+					]		
+				\end{forest}
+			}
+			\caption{Subjektbewegung}	
+		\end{minipage}  
+		%%
+		\pause
+		%%
+		\begin{minipage}[b]{0.49\textwidth}
+			\centering
+			\scalebox{.55}{
+				\begin{forest}
+					sm edges,
+					[CP	[\alertgreen{DP$_{ii}$} [den Wagen,roof]]{\draw[<-,HUred] (.south west)--++(0em,-1.5ex)--++(-2em,0pt)
+						node[anchor=east,align=center]{Phrase};}
+					[\MyPxbar{C}	[\zerobar{C} [kauft$_{i}$]]
+					[IP [DP [Peter,roof]]
+					[\MyPxbar{I} [VP 
+					[\MyPxbar{V} 
+					[,empty nodes [\alertgreen{t$_{ii}$}]]
+					[\zerobar{V} [t$_{i}$]]
+					]]
+					[\zerobar{I} [t$_{i}$]]
+					]
+					]
+					]
+					]
+				\end{forest}
+			}
+			\caption{Objektbewegung}	
+		\end{minipage}  
+		
+	\end{figure}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Complementizer Phrase}
+	
+	\begin{itemize}
+		\item Die CP ist für den \textbf{Satzmodus} und die \textbf{illokutionäre Kraft} zuständig.
+	\end{itemize}
+	
+	\begin{figure}[b]
+		
+		\begin{minipage}[b]{0.45\textwidth}
+			\centering
+			\scriptsize{
+				\begin{forest}
+					MyP edges,
+					[CP [$\emptyset$]{\draw[<-,HUred] (.south west)--++(0em,-1.5ex)--++(-2em,0pt)
+						node[anchor=east,align=center]{leer};}
+					[C' [C [dass]]{\draw[<-,HUred] (.south west)--++(0em,-1.5ex)--++(-2em,0pt)
+						node[anchor=east,align=center]{Subjunktion};}
+					[IP [Peter den Wagen kauft,roof]]]]
+				\end{forest}
+			}
+			\caption{Eingebetteter Satz}	
+		\end{minipage}  
+		%  
+		\pause            
+		%         
+		\begin{minipage}[b]{0.45\textwidth}
+			\centering
+			\scriptsize{
+				\begin{forest}
+					MyP edges,
+					[CP [$\emptyset$]{\draw[<-,HUred] (.south west)--++(0em,-1.5ex)--++(-2em,0pt)
+						node[anchor=east,align=center]{leer};}
+					[C' [C [kauft$_{i}$]]{\draw[<-,HUred] (.south west)--++(0em,-1.5ex)--++(-2em,0pt)
+						node[anchor=east,align=center]{Verb};}
+					[IP [Peter den Wagen t$_{i}$,roof]]]]
+				\end{forest}
+			}
+			\caption{Entscheidungsfrage}
+		\end{minipage}  
+		
+	\end{figure}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Complementizer Phrase}
+	
+	\begin{itemize}
+		\item Die CP ist für den \textbf{Satzmodus} und die \textbf{illokutionäre Kraft} zuständig.
+	\end{itemize}
+	
+	\begin{figure}[b]
+		
+		\begin{minipage}[b]{0.45\textwidth}
+			\centering
+			\scriptsize{
+				\begin{forest}
+					MyP edges,
+					[CP [DP$_{ii}$ [was,roof]]{\draw[<-,HUred] (.south west)--++(0em,-1.5ex)--++(-2em,0pt)
+						node[anchor=east,align=center]{W-Wort};}
+					[C' [C [kauft$_{i}$]]{\draw[<-,HUred] (.south west)--++(0em,-1.5ex)--++(-2em,0pt)
+						node[anchor=east,align=center]{Verb};}
+					[IP [Peter t$_{ii}$ t$_{i}$,roof]]]]
+				\end{forest}
+			}
+			\caption{Konstituentenfrage}	
+		\end{minipage}  
+		%  
+		\pause            
+		%         
+		\begin{minipage}[b]{0.49\textwidth}
+			\centering
+			\scriptsize{
+				\begin{forest}
+					MyP edges,
+					[CP [DP$_{ii}$ [Den Wagen,roof]]{\draw[<-,HUred] (.south west)--++(0em,-1.5ex)--++(-2em,0pt)
+						node[anchor=east,align=center]{Konstituente};}
+					[C' [C [kauft$_{i}$]]{\draw[<-,HUred] (.south west)--++(0em,-1.5ex)--++(-2em,0pt)
+						node[anchor=east,align=center]{Verb};}
+					[IP [Peter t$_{ii}$ t$_{i}$,roof]]]]
+				\end{forest}
+			}
+			\caption{Aussagesatz}
+		\end{minipage}  
+		
+	\end{figure}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Erklärungspotential}
+
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Erklärungspotential}
+	
+	\begin{itemize}
+		\item Warum ist eine \textbf{VP mit Subjekt} nicht möglich?
+		\eal 
+		\ex[]{\dots\ (dass) [Peter den Wagen \alertred{kauft}]$_{IP}$.}
+		\ex[*]{\dots\ (dass) [Peter den Wagen \alertred{kaufen}]$_{VP}$.}
+		\zl
+		
+		\pause
+		\begin{itemize}
+			\item \textbf{Kasus} und \textbf{$\theta$-Rolle} werden \textbf{strukturell} vergeben.
+			\item[]
+			\item Erst durch die \textbf{Subjekt-Verb-Kongruenz} erhält das Subjekt \textsc{nom}-Kasus.
+			\item[]
+			\item Subjekt-Verb-Kongruenz geschieht durch die \textbf{SpecIP-I$^{0}$-Relation} (strukturelle/lokale Relation).
+		\end{itemize}
+	\end{itemize}		
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	
+	\begin{itemize}
+		\item Warum ist eine \textbf{VP mit Subjekt} nicht möglich?
+		\eal 
+		\ex[]{\dots\ (dass) [Peter den Wagen \alertred{kauft}]$_{IP}$.}
+		\ex[*]{\dots\ (dass) [Peter den Wagen \alertred{kaufen}]$_{VP}$.}
+		\zl
+		
+	\end{itemize}
+	
+	\begin{figure}[b]
+		%	\begin{minipage}[b]{0.80\textwidth}
+		\centering
+		\scriptsize{
+			\begin{forest}
+				MyP edges,
+				[IP 
+				[DP [Peter,roof]]{\draw[<-,HUred] (.north west)--++(0em,+1.5ex)--++(-2em,0pt)
+					node[anchor=east,align=center]{\textsc{agens}- \& \\ \textsc{akk}-Vergabe};}
+				[\MyPxbar{I} 
+				[VP 					
+				[\MyPxbar{V} 
+				[DP [den Wagen,roof]]{\draw[<-,HUred] (.north west)--++(0em,+1.5ex)--++(-2em,0pt)
+					node[anchor=east,align=center]{\textsc{patiens}- \& \\ \textsc{akk}-Vergabe};}
+				[\zerobar{V} [gekauft]]
+				]
+				]
+				[\zerobar{I} [hat]]
+				]
+				]
+			\end{forest}
+		}
+		\caption{Position und Funktion im X-Bar-Schema} 
+		%  	\end{minipage}  
+		
+	\end{figure}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Erklärungspotential}
+	
+	
+	\begin{itemize}
+		\item Warum ist die \textbf{Vorfeldbesetzung durch VP mit Subjekt} nicht möglich?
+		\eal 
+		\ex[]{[Den Wagen \alertred{gekauft}]$_{VP}$ hat Peter gestern.}
+		\ex[*]{[Peter den Wagen \alertred{gekauft}]$_{VP}$ hat gestern.}
+		\zl
+		
+		\pause
+		\item Damit das Subjekt sichtbar (overt realisiert) wird, muss es \textbf{in SpecIP} \textsc{nom} \textbf{erhalten} \ras Es ist nicht (mehr) in der VP!
+		
+	\end{itemize}		
+	
+	\pause
+	\begin{itemize}
+		\item \textbf{Gewinn} \ras Elegante und restriktive Theorie \nocite{Haspelmath94a}
+		
+		\begin{itemize}
+			\item Keine \textbf{Köpfe} ohne Phrasen
+			\item Keine \textbf{Phrasen} ohne Köpfe (exozentrische Phrasen)
+			\item Strukturelle \textbf{Position} bestimmt Funktion
+			\item \textbf{Einheitlichkeit} der X-Bar-Struktur
+		\end{itemize}		
+		
+	\end{itemize}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	
+	\begin{itemize}
+		\item \textbf{Grammatikalisierung} \ras ein seltenes Argument \citep{Haspelmath94a}
+		\item Hilfsverben, Tempus- und Aspektaffixe werden \textbf{aus Vollverben} grammatikalisiert \ras \textbf{Unterschied zwischen Wort oder Affix} ist nicht von Bedeutung.
+		\item Die \textbf{Kopf-Dependent-Relation} bleibt bei der Grammatikalisierung immer erhalten \ras Hilfsverben und weitere Affixe sind Köpfe.
+	\end{itemize}
+	
+	
+	\begin{figure}[b]
+		
+		\begin{minipage}[b]{0.40\textwidth}
+			\centering
+			\scalebox{.8}{
+				\begin{forest}
+					MyP edges,
+					[VP [DP [Julia,roof]]
+					[\MyPxbar{V} [VP [cantare,roof]]
+					[\zerobar{V} [\alertgreen{habet}]]		{\draw[<-,HUred] (.south east)--++(0em,-1.5ex)--++(+2em,0pt)
+						node[anchor=west,align=center]{Kopf};}
+					]
+					]
+				\end{forest}
+			}
+			\caption{Latein}	
+		\end{minipage}  
+		%  
+		\pause            
+		%         
+		\begin{minipage}[b]{0.40\textwidth}
+			\centering
+			\scalebox{.8}{
+				\begin{forest}
+					MyP edges,
+					[IP [DP [Julia,roof]]
+					[\MyPxbar{I} [VP [cant-,roof]]
+					[\zerobar{I} [\alertgreen{-ará}]]{\draw[<-,HUred] (.south east)--++(0em,-1.5ex)--++(+2em,0pt)
+						node[anchor=west,align=center]{Kopf};}
+					]
+					]
+				\end{forest}
+			}
+			\caption{Spanisch}
+		\end{minipage}  
+		
+	\end{figure}
+	
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Mehr funktionale Kategorien}
+
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{Mehr funktionale Kategorien}
+%\nocite{Lenerz93a}
+%
+%\begin{figure}[b]
+%	\begin{minipage}[b]{0.48\textwidth}
+%		\includegraphics[scale=0.06]{material/Haftka95CP}
+%		\caption{CP-Struktur (Haftka 1995)}
+%		%\label{Zeichen1}
+%	\end{minipage}
+%	%
+%	%				
+%	\begin{minipage}[b]{0.48\textwidth}
+%		\includegraphics[scale=0.06]{material/Lenerz93DP}
+%		\caption{DP-Struktur \citep{Lenerz93a}}
+%		%\label{Zeichen2}
+%	\end{minipage}                        
+%\end{figure}
+%
+%\end{frame}
+
+
+\begin{frame}
+	\nocite{Lenerz93a}
+	
+	\begin{minipage}[c]{0.48\textwidth}
+		\begin{figure}
+			\centering
+			\scalebox{.45}{\begin{forest}MyP edges,
+					[DP
+					[]
+					[D'
+					[\zerobar{D} [d-, name=d] ]
+					[DAGRP
+					[]
+					[DAGRP'
+					[\zerobar{DAGRP} [-er, name=er] ]
+					[{AAGRP}\\{AP}, align=center [NAGRP, edge=dotted
+					[]
+					[NAGR'
+					[\zerobar{NAGR} [-en, name=en] ]
+					[NP
+					[]
+					[N' [\zerobar{N} [Frau, name=Frau] ] ]
+					]
+					]
+					] ]
+					]
+					]
+					] ]{
+						\draw[->] (Frau) to [out=south west, in=south] (en.south);
+						\draw[->] (er) to [out=south west, in=south] (d.south);}
+			\end{forest}}
+			\caption{DP-Struktur \citep{Lenerz93a}}
+		\end{figure}
+	\end{minipage}
+	%
+	%				
+	\begin{minipage}[c]{0.48\textwidth}
+		\begin{figure}
+			\centering 
+			\scalebox{.19}{	\begin{forest}
+					[CP
+					[SpecCP]
+					[C'
+					[{\zerobar{C}}\\{dass}, align=center]
+					[TopP
+					[SpecTop \\ \textit{der Mann\textsubscript{i}}, align=center, name=Mann]
+					[Top'
+					[\zerobar{Top}]
+					[AgrSP
+					[SpecAgrSP \\ t\textsubscript{i}, align=center, name=Agr]
+					[AgrS'
+					[\zerobar{AgrS}]
+					[AgrOP
+					[SpecAgrOP \\ \textit{ihr\textsubscript{j}}, align=center, name=ihr]
+					[AgrO'
+					[\zerobar{AgrO}]
+					[TP
+					[SpecTP \\ t\textsubscript{i}, align=center, name=i1]
+					[T'
+					[\zerobar{T}]
+					[Foc\textsubscript{c}P
+					[SAdvP\\ \textit{offenbar}, align=center]
+					[Foc\textsubscript{c}P
+					[SpecFoc\textsubscript{c}P \\ \textit{einen TEUeren Ring\textsubscript{k}}, align=center, name=ring]
+					[Foc\textsubscript{c}'
+					[\zerobar{Foc\textsubscript{c}}]
+					[PosP
+					[PosAdvP \\ \textit{tatsächlich}, align=center]
+					[PosP
+					[SpecPosP]
+					[Pos'
+					[\zerobar{Pos}\\nicht, align=center]
+					[VP	
+					[VPAdvP]
+					[VP
+					[SpecVP\\ t\textsubscript{i}, align=center, name=i2]
+					[V'
+					[DP\textsubscript{IO} \\ t\textsubscript{j}, align=center, name=j]
+					[V'
+					[DP\textsubscript{DO} \\ t\textsubscript{k}, align=center, name=k]
+					[\zerobar{V}\\\textit{gegönnt hätte}, align=center]
+					]
+					]
+					]
+					]
+					]
+					]
+					]
+					]
+					]	
+					]
+					]
+					]			
+					]
+					]
+					]
+					]
+					]
+					]
+					]
+					]
+					{\draw (i2) to [out=south west, in=south] (i1) to [out=south west, in=south] (Agr) to [out=south west, in=south] (Mann);
+						\draw[dashed, thick] (j) to [out=south west, in=south] (ihr);
+						\draw[dotted, thick] (k) to [out=south west, in=south] (ring);
+					}
+			\end{forest}}
+			\caption{CP-Struktur (Haftka 1995)}
+		\end{figure}
+	\end{minipage}                        
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Übung}
+
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Übung}
+	
+	\begin{itemize}
+		\item Erklären Sie mithilfe des X-Bar-Schemas die \textbf{Ambiguität} im folgenden Satz:
+		
+		\ea Das Kind küsst die Mama.
+		\z
+		
+	\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\iftoggle{ue-loesung}{
+	
+	\input{loesungen/06g-ue-loesung01-include}
+	
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+	\frametitle{Übung}
+	
+	\begin{itemize}
+		
+		\item Erklären Sie mithilfe des X-Bar-Schemas, warum der folgende Satz \textbf{ungrammatisch} ist:
+		
+		\ea Im Auto ich habe heute geschlafen.
+		\z
+		
+	\end{itemize}
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\iftoggle{ue-loesung}{
+	
+	\input{loesungen/06g-ue-loesung02-include}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Übung}
+	
+	\begin{itemize}
+		\item Was ist an dieser Struktur misslungen? Beziehen Sie sich in Ihrer Antwort \ua auf die in der Sitzung behandelten Köpfigkeitsmerkmale und Strukturaufbaugesetzmäßigkeiten.
+	\end{itemize}
+	
+	\begin{figure}
+		\scalebox{.75}{\begin{forest} sm edges,
+				[S
+				[VP [V [Tea] ] ]
+				[NP
+				[P [with]]
+				[Det [some]]
+				[N [lemon]]
+				]
+				[PP
+				[P [tastes]]
+				[NP [Adj [really] ] [N [nice]] ]
+				]
+				]
+		\end{forest}}
+		%	\includegraphics[scale=.45]{material/wrongtree}
+		\caption{vgl.\ \url{http://specgram.com/CLXV.1/05.cruz-ferreira.know22.html}}
+	\end{figure}
+	
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\iftoggle{ue-loesung}{
+	
+	\input{loesungen/06g-ue-loesung03-include}
+	
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Hausaufgabe}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Hausaufgabe}
+	
+	\begin{itemize}
+		\item Geben Sie an, um welchen \textbf{Phrasentyp} es sich bei den folgenden Phrasen handelt, und \textbf{welches Wort} sich in der \textbf{Kopfposition} der Phrasen befindet.
+		
+		\eal
+		\ex viele besorgte Mütter
+		\ex den Menschen in Not helfen
+		\ex Wasser ohne Kohlensäure
+		\ex auf Maria warten
+		\ex ob sie heute kommen werden
+		\ex Peter seine Traumfrau gefunden hat
+		\zl
+		
+	\end{itemize}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Hausaufgabe}
+	
+	\begin{itemize}
+		\item Analysieren Sie die folgenden Phrasen nach dem X-Bar-Schema (ohne Abkürzungen).
+		
+		\ea Peter schläft.
+		\ex Wer schläft?
+		\ex Hat sie dir die schwierige Frage nach den Spuren gestellt?
+		\ex die fast vor dem Mittagessen erstellte Speisekarte
+		\ex weil der Präsident kommt, hat die Polizei die Sicherung des Geländes übernommen
+		\z
+		
+	\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\iftoggle{ha-loesung}{
+	
+	\input{loesungen/06g-ha-loesung-include}
+	
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Schluss!}
+	
+	\begin{figure}
+		\includegraphics[scale=.5]{material/11chomksy}
+		\caption{Geschafft!}
+	\end{figure}
+	
+\end{frame}

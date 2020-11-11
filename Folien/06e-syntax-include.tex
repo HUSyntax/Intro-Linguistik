@@ -1,0 +1,847 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile the master file!
+%% 		Slides: Antonio Machicao y Priemer
+%% 		Course: GK Linguistik
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Metadata                         
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
+
+\title{Grundkurs Linguistik}
+
+\subtitle{Syntax V: X-Bar-Theorie -- Lexikalische Phrasen}
+
+\author[A. Machicao y Priemer]{
+	{\small Antonio Machicao y Priemer}
+	\\
+	{\footnotesize \url{http://www.linguistik.hu-berlin.de/staff/amyp}}
+%	\\
+%	{\footnotesize \href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
+}
+
+\institute{Institut für deutsche Sprache und Linguistik}
+  
+\date{ }
+
+%\publishers{\textbf{6. linguistischer Methodenworkshop \\ Humboldt-Universität zu Berlin}}
+
+%\hyphenation{nobreak}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Preamble's End                   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%      
+\huberlintitlepage[22pt]
+\iftoggle{toc}{
+\frame{
+\begin{multicols}{2}
+	\frametitle{Inhaltsverzeichnis}\tableofcontents
+	%[pausesections]
+\end{multicols}
+	}
+	}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%LITERATURE:
+
+%\nocite{Altmann&Hofmann08a}
+%\nocite{Altmann93a}
+\nocite{Brandt&Co06a}
+\nocite{Glueck05a} 
+\nocite{Grewendorf&Co91a} 
+\nocite{Luedeling2009a}
+\nocite{MyP18a}
+\nocite{MyP18b}
+\nocite{MyP18c} 
+%\nocite{Meibauer&Co07a}
+%\nocite{MuellerS13f}
+%\nocite{MuellerS15b} 
+%% Allgemein
+\nocite{Glueck&Roedel16a}
+\nocite{Luedeling2009a}
+%\nocite{Meibauer&Co07a} 
+\nocite{Repp&Co15a} 
+
+%% Morphologie
+%\nocite{Eisenberg04}
+
+%% Syntax
+\nocite{Adger04a}
+%\nocite{Altmann&Hofmann08a} % Satztypen & Satzmodi
+%\nocite{Altmann93a} % Satztypen & Satzmodi
+\nocite{Brandt&Co06a} 
+\nocite{Fanselow&Sascha87a}
+\nocite{Fanselow&Sascha93a}
+%\nocite{Fries&MyP16b} % Akzeptabilität
+%\nocite{Fries16a} % Grammatikalität
+%\nocite{Fries&MyP16d} % Kompetenz vs Performanz
+\nocite{Fries&MyP16c} % GG
+\nocite{Fries&MyP16a} % X-Bar-Theorie
+%\nocite{Fries16e} % Satztyp
+%\nocite{Fries16d} % Satzmodus 
+\nocite{Grewendorf&Co91a} 
+%\nocite{MyP17b} % Kerngrammatik
+%\nocite{MyP18a} % Konstituententest
+\nocite{MyP18b} % Kopf
+\nocite{MyP18c} % Phrase
+\nocite{MyP18s} % Funktionale Kategorie
+\nocite{MyP18t} % Argumentstruktur
+%\nocite{MuellerS13f} 
+%\nocite{MuellerS15b}
+\nocite{Stechow&Sternefeld88a}
+\nocite{Sternefeld06a}
+\nocite{Sternefeld06b}
+%\nocite{Woellstein10a} % Topologisches Feldermodell
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Begleitlektüre}
+	
+	\begin{itemize}
+		\item \textbf{obligatorisch:}
+			\begin{itemize}
+				\item[] AM S.~86--94
+				\item[] \cite{Luedeling2009a}: Kapitel 12 \& 13 (S.~142--158)
+			\end{itemize}
+	\end{itemize}	
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Syntax V}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Einführendes}
+
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Einführendes}
+
+\begin{itemize}
+	\item Organisation von natürlichen Sprachen auf:
+	\begin{itemize}
+		\item \textbf{lexikalischer Ebene} (Wortebene)\\
+		und auf
+		\item \textbf{phrasaler Ebene} (Wortgruppen, die enger zusammengehören)
+\medskip		
+	\end{itemize}
+	\item Phrasale Organisation \ras \textbf{hierarchische} Organisation
+\medskip	
+	\item Alle in einem Satz auftretenden Elemente bilden Phrasen (in GG).
+\medskip	
+	\item Alle Phrasen haben den gleichen Aufbau (qua X-Bar-Schema)
+\medskip	
+	\item Unterscheidung von
+	\begin{itemize}
+		\item lexikalischen Phrasen \ras NP, VP, AP, (AdvP, PP)\\
+		und
+		\item funktionalen Phrasen \ras DP, IP, CP
+	\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Lexikalische Phrasen}
+
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Lexikalische Phrasen}
+
+\begin{itemize}
+	\item Maximale Projektionen, die eine \textbf{lexikalische Kategorie als Kopf} haben
+\medskip	
+	\item Lexikalische Kategorien haben eine konkrete \textbf{(lexikalische) Bedeutung}
+\medskip	
+	\item Sie sind durch produktive Wortbildungsregeln erweiterbar (\textbf{offene Klasse})
+\medskip	
+	\item Sie können \textbf{$\theta$-Rollen} zuweisen
+\medskip	
+	\item Sie können \textbf{mehrere Argumente} selegieren
+\end{itemize}
+
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Nominalphrase}
+%\frame{
+%\frametitle{~}
+%	\tableofcontents[currentsection]
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Nominalphrase}
+
+\begin{itemize}
+	\item Abk.: NP
+	\item (Der Determinierer wird später analysiert.)
+\end{itemize}
+
+\begin{figure}[b]
+
+	\begin{minipage}[b]{0.13\textwidth}
+	\centering
+	\scalebox{.8}{
+		\begin{forest}
+		MyP edges,
+		[NP [\MyPxbar{N} [\zerobar{N} [Behandlung]]]]
+		\end{forest}
+		}
+		%\caption{VP}	
+  	\end{minipage}  
+  	%  
+  	\pause            
+	\begin{minipage}[b]{0.02\textwidth}
+	\hfill
+  	\end{minipage}
+  	%         
+  	\begin{minipage}[b]{0.30\textwidth}
+	\centering
+	\scalebox{.8}{
+		\begin{forest}
+		MyP edges,
+		[NP [\MyPxbar{N}	[\zerobar{N} [Behandlung]]
+					 	[DP [des Patienten,roof]]
+			]
+		]			 
+		\end{forest}
+		}
+		%\caption{NP}
+  	\end{minipage}  
+  	%              
+	\begin{minipage}[b]{0.02\textwidth}
+	\hfill
+  	\end{minipage}
+  	%  
+  	\pause            
+	\begin{minipage}[b]{0.41\textwidth}
+	\centering
+	\scalebox{.8}{
+		\begin{forest}
+		MyP edges,
+		[NP [AP [effektive,roof]]
+			[NP 
+		    [\MyPxbar{N}	[\zerobar{N} [Behandlung]]
+					 	[DP [des Patienten,roof]]
+			]]
+		]			 
+		\end{forest}
+		}
+		%\caption{Adjunkt und Komplement}	
+  	\end{minipage}
+  	%         
+\end{figure}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Adjektivphrase}
+%\frame{
+%\frametitle{~}
+%	\tableofcontents[currentsection]
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Adjektivphrase}
+
+\begin{itemize}
+	\item Abk.: AP
+\end{itemize}
+
+\begin{figure}[b]
+%	\begin{minipage}[b]{0.05\textwidth}
+%	\end{minipage} 
+%	%
+	\begin{minipage}[b]{0.18\textwidth}
+	\centering
+	\footnotesize{
+		\begin{forest}
+		MyP edges,
+		[AP [\MyPxbar{A} [\zerobar{A} [stolz]]]]
+		\end{forest}
+		}
+		%\caption{VP}	
+  	\end{minipage}  
+  	%  
+  	\pause            
+	\begin{minipage}[b]{0.03\textwidth}
+	\hfill
+  	\end{minipage}
+  	%         
+  	\begin{minipage}[b]{0.30\textwidth}
+	\centering
+	\footnotesize{
+		\begin{forest}
+		MyP edges,
+		[AP [\MyPxbar{A}	[PP [auf seine Tochter,roof]]
+						[\zerobar{A} [stolz]]
+			]
+		]			 
+		\end{forest}
+		}
+		%\caption{NP}
+  	\end{minipage}  
+  	%              
+	\begin{minipage}[b]{0.03\textwidth}
+	\hfill
+  	\end{minipage}
+  	%  
+  	\pause            
+	\begin{minipage}[b]{0.41\textwidth}
+	\centering
+	\footnotesize{
+		\begin{forest}
+		MyP edges,
+		[AP [AdvP [sehr,roof]]
+			[AP 
+		    [\MyPxbar{A}	[PP [auf seine Tochter,roof]]				
+		    			[\zerobar{A} [stolz]]
+			]]
+		]			 
+		\end{forest}
+		}
+		%\caption{Adjunkt und Komplement}	
+  	\end{minipage}
+  	%         
+\end{figure}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Adverbialphrase}
+%\frame{
+%\frametitle{~}
+%	\tableofcontents[currentsection]
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Adverbialphrase}
+
+\begin{itemize}
+	\item Abk.: AdvP
+\end{itemize}
+
+\begin{figure}[b]
+%	\begin{minipage}[b]{0.05\textwidth}
+%	\end{minipage} 
+%	%
+	\begin{minipage}[b]{0.18\textwidth}
+	\centering
+	\footnotesize{
+		\begin{forest}
+		MyP edges,
+		[AdvP [\MyPxbar{Adv} [\zerobar{Adv} [oft]]]]
+		\end{forest}
+		}
+		%\caption{VP}	
+  	\end{minipage}  
+  	%  
+  	\pause            
+	\begin{minipage}[b]{0.03\textwidth}
+	\hfill
+  	\end{minipage}
+  	%         
+	\begin{minipage}[b]{0.41\textwidth}
+	\centering
+	\footnotesize{
+		\begin{forest}
+		MyP edges,
+		[\alertgreen{AdvP} [AdvP [sehr,roof]]
+			[\alertgreen{AdvP} 
+		    [\alertgreen{\MyPxbar{Adv}}	[\alertgreen{\zerobar{Adv}} [oft]]
+			]]
+		]			 
+		\end{forest}
+		}
+		%\caption{Adjunkt und Komplement}	
+  	\end{minipage}
+  	%         
+\end{figure}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Prä- \& Postpositionalphrase}
+%\frame{
+%\frametitle{~}
+%	\tableofcontents[currentsection]
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Prä- \& Postpositionalphrase}
+
+\begin{itemize}
+	\item \textbf{Präpositionalphrase} \ras PP
+	\item \textbf{Postpositionalphrase} \ras PostP
+	\item In unserem Seminar: PP für beide
+\end{itemize}
+
+\begin{figure}[b]
+%	\begin{minipage}[b]{0.05\textwidth}
+%	\end{minipage} 
+%	%
+  	\begin{minipage}[b]{0.30\textwidth}
+	\centering
+	\footnotesize{
+		\begin{forest}
+		MyP edges,
+		[PP [\MyPxbar{P}
+				[\zerobar{P} [mit]]
+				[DP [dem Finger,roof]]
+			]
+		]
+		\end{forest}
+		}
+		%\caption{NP}
+  	\end{minipage}  
+  	%              
+  	\pause            
+	\begin{minipage}[b]{0.30\textwidth}
+	\centering
+	\footnotesize{
+		\begin{forest}
+		MyP edges,
+		[PostP [\MyPxbar{Post} [DP [der Syntax,roof]]
+							[\zerobar{Post} [wegen]]]
+		]	 
+		\end{forest}
+		}
+		%\caption{Adjunkt und Komplement}	
+  	\end{minipage}
+  	%
+ 	\pause            
+	\begin{minipage}[b]{0.30\textwidth}
+	\centering
+	\footnotesize{
+		\begin{forest}
+		MyP edges,
+		[PP
+		[AdvP [kurz,roof]]
+		[PP [\MyPxbar{P}
+				[\zerobar{P} [vor]]
+				[DP [dem Haus,roof]]
+			]
+		]]
+		\end{forest}
+		}
+		%\caption{NP}
+  	\end{minipage}  
+  	%                       
+\end{figure}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Verbalphrase}
+%\frame{
+%\frametitle{~}
+%	\tableofcontents[currentsection]
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Verbalphrase}
+
+\begin{itemize}
+	\item Abk.: VP
+	\item \textbf{Kopf} der VP \ras rechtsperipher 
+\end{itemize}
+
+\begin{figure}[b]
+%	\begin{minipage}[b]{0.05\textwidth}
+%	\end{minipage} 
+%	%
+	\begin{minipage}[b]{0.18\textwidth}
+	\centering
+	\footnotesize{
+		\begin{forest}
+		MyP edges,
+		[VP [\MyPxbar{V} [\zerobar{V} [schlafen]]]]
+		\end{forest}
+		}
+		%\caption{VP}	
+  	\end{minipage}  
+  	%  
+  	\pause            
+	\begin{minipage}[b]{0.03\textwidth}
+	\hfill
+  	\end{minipage}
+  	%         
+  	\begin{minipage}[b]{0.30\textwidth}
+	\centering
+	\footnotesize{
+		\begin{forest}
+		MyP edges,
+		[VP [\MyPxbar{V}	[DP [den Wagen,roof]]
+						[\zerobar{V} [kaufen]]
+			]
+		]			 
+		\end{forest}
+		}
+		%\caption{NP}
+  	\end{minipage}  
+  	%              
+	\begin{minipage}[b]{0.03\textwidth}
+	\hfill
+  	\end{minipage}
+  	%  
+  	\pause            
+	\begin{minipage}[b]{0.41\textwidth}
+	\centering
+	\footnotesize{
+		\begin{forest}
+		MyP edges,
+		[VP [AdvP [schnell,roof]]
+			[VP 
+		    [\MyPxbar{V}	[DP [den Wagen,roof]]				
+		    			[\zerobar{V} [kaufen]]
+			]]
+		]			 
+		\end{forest}
+		}
+		%\caption{Adjunkt und Komplement}	
+  	\end{minipage}
+  	%         
+\end{figure}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Verbalphrase}
+
+\begin{itemize}
+	\item \textbf{Transitive} und \textbf{ditransitive} Verbalphrase
+	\item \textbf{Kopf} der VP \ras rechtsperipher 
+\end{itemize}
+
+\begin{figure}[b]
+%	\begin{minipage}[b]{0.05\textwidth}
+%	\end{minipage} 
+%	%
+	\begin{minipage}[b]{0.4\textwidth}
+	\centering
+	\scalebox{.8}{
+		\begin{forest}
+		sm edges,
+		[VP [AdvP [schnell,roof]]
+			[VP 
+		    [\MyPxbar{V}	[DP [\alertblue{den Wagen},roof]]				
+		    			[\zerobar{V} [kaufen]]
+			]]
+		]			 
+		\end{forest}
+		}
+		\caption{Transitive VP}	
+  	\end{minipage} 
+%  	  %
+%  	\pause            
+%	\begin{minipage}[b]{0.01\textwidth}
+%	\hfill
+%  	\end{minipage}
+%  	  %
+	\begin{minipage}[b]{0.52\textwidth}
+	\centering
+	\scalebox{.8}{
+		\begin{forest}
+		sm edges,
+		[VP [AdvP [schnell,roof]]
+			[VP 
+				[DP [\alertgreen{dem Jungen},roof]]
+				[\MyPxbar{V}	
+					[DP [\alertblue{den Wagen},roof]]				
+		    		[\zerobar{V} [schenken]]
+			]]
+		]			 
+		\end{forest}
+		}
+		\caption{Ditransitive VP}	
+  	\end{minipage}
+  	%         
+\end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Verbalphrase}
+
+\begin{itemize}
+	\item Die Position der Elemente in Phrasen ist \textbf{strukturell} bestimmt
+	%	\item[]
+	\item Position \ras \textbf{Funktion} 
+	%	\item[]
+	\item Die (Basis)Position wird von der Struktur bestimmt und ist im Subkategorisierungsrahmen kodiert:
+	%	\item[]
+	\item[] \textbf{schenken:} {\small DP$_{\textsc{nom,ag}}$ DP$_{\textsc{dat,ziel}}$  DP$_{\textsc{akk,th}}$ $\underline{\qquad}$ }
+	\item[]
+	\item Deutsch \ras SOV-Sprache (später mehr dazu!)
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Verbalphrase}
+
+\begin{figure}[b]
+
+	\begin{minipage}[b]{0.50\textwidth}
+	\begin{itemize}
+
+		\item Position \ras \textbf{Funktion} 
+
+		\item[] \textbf{schenken:}\\
+		{\small \alertred{DP$_{\textsc{nom,ag}}$} DP$_{\textsc{dat,ziel}}$  DP$_{\textsc{akk,th}}$ $\underline{\qquad}$ }
+
+	\end{itemize}
+\end{minipage}  
+  	%  
+  	%  
+	\begin{minipage}[b]{0.48\textwidth}
+	\centering
+	\footnotesize{
+		\begin{forest}
+		MyP edges,
+		[?P [DP [Die Dame,roof]],tikz={\node [draw,HUred,fit=()] {};} 
+			[\MyPxbar{?} 		
+		[VP [AdvP [schnell,roof]]
+			[VP [DP [dem Jungen,roof]]
+		    [\MyPxbar{V}	[DP [den Wagen,roof]]				
+		    			[\zerobar{V} [schenken]]
+			]]
+		]
+			[\zerobar{?}]
+		]]			 
+		\end{forest}
+		}
+%		%\caption{Adjunkt und Komplement}	
+  	\end{minipage}
+%  	%         
+\end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Verbalphrase}
+
+\begin{figure}[b]
+
+	\begin{minipage}[b]{0.50\textwidth}
+	\begin{itemize}
+
+	\item Position \ras \textbf{Funktion} 
+
+	\item[] \textbf{schenken:}\\
+	{\small DP$_{\textsc{nom,ag}}$ \alertred{DP$_{\textsc{dat,ziel}}$}  DP$_{\textsc{akk,th}}$ $\underline{\qquad}$ }
+	\item[]
+
+	\end{itemize}
+  	\end{minipage}  
+  	%  
+  	%  
+	\begin{minipage}[b]{0.48\textwidth}
+	\centering
+	\footnotesize{
+		\begin{forest}
+		MyP edges,
+		[?P [DP [Die Dame,roof]]
+			[\MyPxbar{?} 		
+		[VP [AdvP [schnell,roof]]
+			[VP [DP [dem Jungen,roof]],tikz={\node [draw,HUred,fit=()] {};}
+		    [\MyPxbar{V}	[DP [den Wagen,roof]]				
+		    			[\zerobar{V} [schenken]]
+			]]
+		]
+			[\zerobar{?}]
+		]]			 
+		\end{forest}
+		}
+		%\caption{Adjunkt und Komplement}	
+  	\end{minipage}
+  	%         
+\end{figure}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Verbalphrase}
+
+\begin{figure}[b]
+
+	\begin{minipage}[b]{0.50\textwidth}
+	\begin{itemize}
+
+	\item Position \ras \textbf{Funktion} 
+
+	\item[] \textbf{schenken:}\\
+	{\small DP$_{\textsc{nom,ag}}$ DP$_{\textsc{dat,ziel}}$ \alertred{DP$_{\textsc{akk,th}}$} $\underline{\qquad}$ }
+
+	\end{itemize}
+  	\end{minipage}  
+  	%  
+  	%  
+	\begin{minipage}[b]{0.48\textwidth}
+	\centering
+	\footnotesize{
+		\begin{forest}
+		MyP edges,
+		[?P [DP [Die Dame,roof]]
+			[\MyPxbar{?} 		
+		[VP [AdvP [schnell,roof]]
+			[VP [DP [dem Jungen,roof]]
+		    [\MyPxbar{V}	[DP [den Wagen,roof]],tikz={\node [draw,HUred,fit=()] {};}				
+		    			[\zerobar{V} [schenken]]
+			]]
+		]
+			[\zerobar{?}]
+		]]			 
+		\end{forest}
+		}
+		%\caption{Adjunkt und Komplement}	
+  	\end{minipage}
+  	%         
+\end{figure}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Verbalphrase}
+
+\begin{figure}[b]
+
+	\begin{minipage}[b]{0.50\textwidth}
+	\begin{itemize}
+
+	\item Position \ras \textbf{Funktion} 
+
+	\item[] \textbf{schenken:}\\
+	{\footnotesize DP$_{\textsc{nom,ag}}$ DP$_{\textsc{dat,ziel}}$ DP$_{\textsc{akk,th}}$ \alertred{$\underline{schenken}$} }
+
+	\end{itemize}
+  	\end{minipage}  
+  	%  
+  	%  
+	\begin{minipage}[b]{0.48\textwidth}
+	\centering
+	\footnotesize{
+		\begin{forest}
+		MyP edges,
+		[?P [DP [Die Dame,roof]]
+			[\MyPxbar{?} 		
+		[VP [AdvP [schnell,roof]]
+			[VP [DP [dem Jungen,roof]]
+		    [\MyPxbar{V}	[DP [den Wagen,roof]]				
+		    			[\zerobar{V} [schenken]],tikz={\node [draw,HUred,fit=()] {};}
+			]]
+		]
+			[\zerobar{?}]
+		]]			 
+		\end{forest}
+		}
+		%\caption{Adjunkt und Komplement}	
+  	\end{minipage}
+  	%         
+\end{figure}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Hausaufgabe}
+%\frame{
+%\frametitle{~}
+%	\tableofcontents[currentsection]
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe}
+
+\begin{itemize}
+	\item Analysieren Sie die folgende Phrase nach dem X-Bar-Schema. Verwenden Sie dabei \textbf{keine Abkürzungen}!
+\end{itemize}
+
+\ea kurz vor Weihnachten Otto schöne Blumen schenken
+\z
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\iftoggle{ha-loesung}{
+	
+\input{loesungen/06e-ha-loesung-include}
+
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Schlusswort}
+%\frame{
+%\frametitle{~}
+%	\tableofcontents[currentsection]
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Schlusswort: The Awful German Language}
+
+\begin{scriptsize}
+
+%\begin{quote}
+There are ten parts of speech, and they are all troublesome. An average sentence, in a German newspaper, is a sublime and impressive curiosity; it occupies a quarter of a column; it contains all the ten parts of speech -- not in regular order, but mixed; it is built mainly of compound words constructed by the writer on the spot, and not to be found in any dictionary -- six or seven words compacted into one, without joint or seam -- that is, without hyphens; it treats of fourteen or fifteen different subjects, each enclosed in a parenthesis of its own, with here and there extra parentheses, which re-enclose three or four of the minor parentheses, making pens with pens; finally, all the parentheses and re-parentheses are massed together between a couple of king-parentheses, one of which is placed in the first line of the majestic sentence and the other in the middle of the last line of it -- \emph{after which comes the verb}, and you find out for the first time what the man has been talking about; and after the verb -- merely by way of ornament, as far as I can make out, -- the writer shovels in ``\emph{haben sind gewesen gehabt haben geworden sein},'' or words to that effect, and the monument is finished. I suppose that this closing hurrah is in the nature of the flourish to a man's signature -- not necessary, but pretty. German books are easy enough to read when you hold them before the looking-glass or stand on your head,-- so as to reverse the construction, -- but I think that to learn to read and understand a German newspaper is a thing which must always remain an impossibility to a foreigner.
+%\end{quote}
+
+\hfill \citep{Twain10b}
+\end{scriptsize}
+
+\end{frame}

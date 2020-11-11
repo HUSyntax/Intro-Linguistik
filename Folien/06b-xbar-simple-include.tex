@@ -1,0 +1,1655 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile the master file!
+%% 		Slides: Stefan Müller
+%% 		Course: GK Linguistik
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input formgram-xbar
+
+
+
+\subsubsection{Verbalphrasen}
+
+
+\frame[shrink=13]{
+\frametitle{Verbalphrasen}
+
+Adjunkte (freie Angaben) verbinden sich mit beliebigen V-Projektionen.
+
+\ea
+(dass) der Mann morgen den Jungen trifft
+\z
+
+\centerfit{
+\begin{forest}
+sm edges
+[VP
+  [NP [der Mann,roof]]
+  [V$'$ 
+    [AdvP [morgen,roof]]
+    [V$'$ 
+      [NP [den Jungen,roof]]
+      [V [trifft]]]]]
+\end{forest}
+}
+
+}
+
+
+\frame[shrink=20]{
+\frametitle{Komplementiererphrasen}
+
+Komplementierer verbinden sich mit Verbphrasen:
+
+\centerfit{
+\begin{forest}
+sm edges
+[CP
+  [C$'$
+    [C [dass]]
+    [VP
+      [NP [der Mann,roof]]
+      [V$'$ 
+        [AdvP [morgen,roof]]
+        [V$'$ 
+          [NP [den Jungen,roof]]
+          [V [trifft]]]]]]]
+\end{forest}
+}
+
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%   $RCSfile: 3-gengram-grundfragen.tex,v $
+%%  $Revision: 1.1 $
+%%      $Date: 2004/04/26 14:10:21 $
+%%    Authors: Stefan Mueller (CL Uni Bremen)
+%%    Purpose: course slides
+%%   Language: LaTeX
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Die Struktur des deutschen Satzes}
+
+\subsubsection{Topologie des deutschen Satzes}
+
+\frame{
+\frametitle{Topologie des deutschen Satzes (I)}
+
+Bevor wir uns der Analyse der Satztypen zuwenden,\\
+müssen einige deskriptive Begriffe geklärt werden:
+
+\begin{itemize}
+\item Die Abfolge der Konstituenten im Deutschen wird unter Bezugnahme auf topologische
+Felder erklärt.
+
+\pause
+\item Wichtige Arbeiten zum Thema topologische Felder sind:\\
+\citew{Drach37},  \citew{Reis80a} und \citew{Hoehle86}.
+
+\pause
+\item Im folgenden werden die Begriffe \emph{Vorfeld}, \emph{linke/rechte Satzklammer},
+\emph{Mittelfeld} und \emph{Nachfeld} eingeführt.
+
+\citew{Bech55a} hat noch weitere Felder für die Beschreibung der Abfolgen innerhalb von Verbalkomplexen
+eingeführt, die hier aber vorerst ignoriert werden.
+\end{itemize}
+
+
+}
+
+\frame{
+\frametitle{Verbstellungstypen und Begriffe}
+
+\savespace
+\begin{itemize}
+\item Verbendstellung
+      \ea
+      (Peter hat erzählt,) \rot<5->{dass} er das Eis \braun<5->{\gruen<4>{gegessen} \blauit<-4>{hat}}.
+      \z
+\pause
+\item Verberststellung
+        \ea
+      \rot<4->{\blauit<-3>{Hat}} Peter das Eis \braun<5->{\gruen<4>{gegessen}}?
+      \z
+\pause
+\item Verbzweitstellung
+      \ea
+      Peter \rot<4->{\blauit<-3>{hat}} das Eis \braun<5->{\gruen<4>{gegessen}}.
+      \z
+\end{itemize}
+
+\pause
+\begin{itemize}[<+->]
+\item verbale Elemente nur in (\mex{-2}) kontinuierlich
+\item \rot<5->{linke} und \braun<5->{rechte} Satzklammer
+\item Komplementierer (\emph{weil}, \emph{dass}, \emph{ob}) in der linken Satzklammer
+\item Komplementierer und finites Verb sind komplementär verteilt
+\item Bereiche vor, zwischen u.\ nach Klammern: Vorfeld, Mittelfeld, Nachfeld
+\end{itemize}
+
+
+}
+
+\frame{
+\frametitle{Topologie des deutschen Satzes im Überblick}
+
+
+\resizebox{\textwidth}{!}{
+\begin{tabular}{@{}lllll@{}}
+\rowcolor{structure!15}Vorfeld & linke Klammer & Mittelfeld                             & rechte Klammer & Nachfeld                   \\ 
+\\
+\rowcolor{structure!10}Karl    & schläft.      &                                        &                &                            \\
+                       Karl    & hat           &                                        & geschlafen.    &                            \\
+\rowcolor{structure!10}Karl    & erkennt       & Maria.                                 &                &                            \\
+                       Karl    & färbt         & den Mantel                             & um             & den Maria kennt.           \\
+\rowcolor{structure!10}Karl    & hat           & Maria                                  & erkannt.       &                             \\
+                       Karl    & hat           & Maria als sie aus dem Zug stieg sofort & erkannt.       &                             \\
+\rowcolor{structure!10}Karl    & hat           & Maria sofort                           & erkannt        & als sie aus dem Zug stieg. \\
+                       Karl    & hat           & Maria zu erkennen                      & behauptet.     &            \\
+\rowcolor{structure!10}Karl    & hat           &                                        & behauptet      & Maria zu erkennen.         \\ 
+\\
+\rowcolor{structure!10}        & Schläft       & Karl?                                  &                &                            \\
+                               & Schlaf!       &                                        &                &                             \\
+\rowcolor{structure!10}        & Iß            & jetzt dein Eis                         & auf!           &                             \\
+        & Hat           & er doch das ganze Eis alleine          & gegessen.            &      \\  \\
+\rowcolor{structure!10}        & weil          & er das ganze Eis alleine               & gegessen hat   & ohne sich zu schämen.\\
+        & weil          & er das ganze Eis alleine               & essen können will    & ohne gestört zu werden.    \\
+%\iftoggle{gb-intro}{\rowcolor{structure!10}wer     &               & das ganze Eis alleine                  & gegessen hat.  &                             \\}
+\end{tabular}
+}
+
+}
+
+% \frame{
+% \frametitle{Der Prädikatskomplex}
+% %
+
+
+% \begin{itemize}
+% \item<+-> mehrere Verben in der rechten Satzklammer: Verbalkomplex
+% \item<+-> manchmal wird auch von diskontinuierlichen Verbalkomplexen
+%       gesprochen (Initialstellung das Finitums)
+% \item<+-> auch prädikative Adjektive (\mex{1}a) und Resultativprädikate (\mex{1}b) werden zum Prädikatskomplex gezählt:
+%       \eal
+%       \ex dass Karl seiner Frau treu ist
+%       \ex dass Karl das Glas leer trinkt
+%       \zl
+% \end{itemize}
+
+% }
+
+\frame{
+\frametitle{Die Rangprobe}
+%
+
+
+\begin{itemize}
+\item<+-> Felder nicht immer besetzt
+      \ea
+      \field{Der Mann}{VF} \field{gibt}{LS} \field{der Frau das Buch,}{MF} \field{die er kennt}{NF}.
+      \z
+\item<+-> Test: Rangprobe \citep[S.\,72]{Bech55a}
+\eal
+\ex[]{
+Der Mann hat der Frau das Buch gegeben, die er kennt.
+}
+\ex[*]{
+Der Mann hat der Frau das Buch, die er kennt, gegeben.
+}
+\zl
+Ersetzung des Finitums durch ein Hilfsverb $\to$\\
+Hauptverb besetzt die rechte Satzklammer.
+\end{itemize}
+
+}
+
+
+\frame{
+\frametitle{Rekursives Auf"|tauchen der Felder}
+
+\begin{itemize}
+\item \citet*[S.\,82]{Reis80a}: Rekursion\\
+      Vorfeld kann in Felder unterteilt sein:
+\eal
+\ex Die Möglichkeit, etwas zu verändern, ist damit verschüttet
+      für lange lange Zeit.
+\ex {}[Verschüttet für lange lange Zeit] ist damit die Möglichkeit, 
+      etwas zu ver"-ändern.
+\ex Wir haben schon seit langem gewu"st, da"s du kommst.
+\ex {}[Gewu"st, da"s du kommst,] haben wir schon seit langem.
+\zl
+\pause
+\item im Mittelfeld beobachtbare Permutationen auch im Vorfeld
+
+\eal
+\ex {}[\gruen{Seiner Tochter} \blau{ein Märchen} erzählen] wird er wohl müssen.
+\ex {}[\blau{Ein Märchen} \gruen{seiner Tochter} erzählen] wird er wohl müssen.
+\zl
+\end{itemize}
+
+}
+
+
+\frame{
+\frametitle{Übung}
+
+Bestimmen Sie die topologischen Felder in den Sätzen in (\mex{1}):
+\eal
+\ex Der Mann hat gewonnen, den alle kennen.
+\ex Er gibt ihm das Buch, das Klaus empfohlen hat.
+\ex Maria hat behauptet, dass das nicht stimmt.
+\ex Peter hat das Buch gelesen,\\das Maria dem Schüler empfohlen hat,\\der neu in die Klasse gekommen ist.
+\ex Komm!
+\zl
+
+}
+
+
+\iftoggle{ue-loesung}{
+	\input{loesungen/06b-stefan-ue-loesung01-include}
+}
+
+
+\subsubsubsection{Deutsch als SOV-Sprache}
+
+\frame{
+\frametitle{Deutsch als SOV-Sprache}
+
+\begin{itemize}
+
+\item Verbale Köpfe stehen in bestimmten eingebetteten Sätzen im Deutschen rechts und bilden
+zusammen die rechte Satzklammer. 
+
+\pause
+\item Subjekt und alle anderen Satzglieder (Komplemente und Adjunkte) stehen links davon und bilden das
+Mittelfeld. 
+
+\pause
+\item Deutsch ist damit eine sogenannte
+SOV-Sprache (=~Sprache mit Grundabfolge Subjekt--Objekt-- Verb)
+
+\begin{itemize}
+\item SOV Deutsch, \ldots
+\item SVO Englisch, Französisch, \ldots
+\item VSO Walisisch, Arabisch, \ldots 
+\end{itemize}
+Etwa 40\,\% aller Sprachen sind SOV-Sprachen, etwa 25\,\% sind SVO. 
+
+
+%% \pause
+%% \item Nebeneffekt der SOV-Struktur: Je enger sich ein Satzglied auf das
+%% Verb bezieht, desto näher steht es an der rechten Satzklammer und auch dann,
+%% wenn das Verb wegbewegt wurde.
+\end{itemize}
+
+}
+
+\frame{
+\frametitlefit{Motivation der Verbletztstellung als Grundstellung: Partikeln}
+
+\citew%[S.\,34--36]
+{Bierwisch63}: Sogenannte Verbzusätze oder Verbpartikel\\
+bilden mit dem Verb eine enge Einheit.
+\eal
+\ex weil er morgen \blau{anfängt}
+\ex Er \blau{fängt} morgen \blau{an}.
+\zl
+Diese Einheit ist nur in der Verbletzstellung zu sehen, was dafür spricht, diese
+Stellung als Grundstellung anzusehen.
+}
+
+\frame{
+\frametitle{Stellung in Nebensätzen}
+
+Verben in infiniten Nebensätzen und in durch eine Konjunktion eingeleiteten
+finiten Nebensätzen stehen immer am Ende\\
+(von Ausklammerungen ins Nachfeld abgesehen):
+\eal
+\ex Der Clown versucht, Kurt-Martin die Ware \blaubf{zu geben}.
+\ex dass der Clown Kurt-Martin die Ware \blaubf{gibt}
+\zl
+}
+
+% \frame{
+% \frametitle{Stellung der infiniten Verben}
+
+
+% SVO:
+% \ea
+% that the man has$_1$ been$_2$ beaten$_3$
+% \z
+
+% SOV:
+% \ea
+% dass der Mann geschlagen$_3$ worden$_2$ ist$_1$
+% \z
+
+% (Vorsicht: Variation der Stellung in Dialekten, aber immer nach 
+
+% }
+
+
+
+\frame{
+\frametitle{Stellung der Verben in SVO und SOV-Sprachen}
+
+\citet{Oersnes2009b}:
+\settowidth\jamwidth{(Deutsch, SOV)} 
+\eal
+\ex 
+\gll at han må$_1$ have$_2$ set$_3$ ham\\
+     dass er muss haben gesehen ihn\\\jambox{(Dänisch, SVO)}
+\ex dass er ihn gesehen$_3$ haben$_2$ muss$_1$\jambox{(Deutsch, SOV)}
+\zl
+
+
+}
+
+%% Ist in romanischen Sprachen auch so.
+%%
+%% \frame{
+%% \frametitle{Skopus}
+
+%% \citew[Abschnitt~2.3]{Netter92}:
+%% Skopusbeziehungen der Adverbien hängt von ihrerer Reihenfolge ab (Präferenzregel?):\\
+%% Links stehendes Adverb hat Skopus über folgendes Adverb und Verb.
+
+%% \eal
+%% \ex weil er [absichtlich [nicht lacht]]
+%% \ex weil er [nicht [absichtlich lacht]]
+%% \zl
+%% \pause
+%% Bei Verberststellung ändern sich die Skopusverhältnisse nicht.
+%% \eal
+%% \ex Lacht er absichtlich nicht?
+%% \ex Lacht er nicht absichtlich?
+%% \zl
+%% }
+
+
+% \frame{
+% \frametitle{Unmöglichkeit von Verberststellung}
+
+
+% Haider: Manche Verben lassen in Verbindung mit \emph{mehr als} nur Verbletztstellung zu:
+% \eal
+% \ex[]{
+% Die Verluste haben sich mehr als verdreifacht.
+% }
+% \ex[*]{
+% Verdreifachten sich die Verluste mehr als?
+% }
+% \zl
+
+% }
+
+\subsubsubsection{C - die linke Satzklammer}
+
+\frame{
+\frametitle{\cnull{} -- die linke Satzklammer in Nebensätzen}
+
+\cnull entspricht der linken Satzklammer und wird wie folgt besetzt:
+\begin{itemize}
+\item In Konjunktionalnebensätzen steht die unterordnende Konjunktion\\ (der Complementizer) wie im Englischen in \cnull. 
+
+Das Verb bleibt in der rechten Satzklammer.
+\ea
+Er glaubt, dass sie kommt.
+\z
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Die linke Satzklammer in Verberst- und -zweitsätzen}
+
+\begin{itemize}
+\item In Verberst- und Verbzweitsätzen steht das finite Verb an der Stelle der Konjunktion: 
+\eal
+\ex dass der Mann den Jungen trifft
+\ex Trifft$_i$ der Mann den Jungen [ t ]$_i$?
+\zl
+
+\pause
+\item Bei Verwendung von Phrasenstrukturregeln wie in (\mex{1}a) müsste man jeweils noch eine Verberstvariante annehmen:
+\eal
+\ex S  $\to$ NP, NP, NP, V
+\ex S  $\to$ V, NP, NP, NP
+\zl
+\pause
+\item Das müsste man für alle Valenzmuster machen.
+
+Die Einsicht, dass es sich um ein Phänomen handelt,\\
+das alle Verben betrifft, wird nicht erfasst.
+
+\end{itemize}
+
+}
+
+
+\frame{
+\frametitle{Umstellung des Verbs in die \cnull-Position}
+
+\vspace{-.5cm}
+~\vfill
+\hfill
+\scalebox{.8}{%
+\begin{forest}
+sm edges
+[CP
+  [C$'$
+    [C [dass]]
+    [VP
+      [NP [der Mann,roof]]
+      [V$'$ 
+        [NP [den Jungen,roof]]
+        [V [trifft]]]]]]
+\end{forest}}
+\hfill
+\scalebox{.8}{%
+\begin{forest}
+sm edges
+[CP
+  [C$'$
+    [C [trifft$_k$]]
+    [VP
+      [NP [der Mann,roof]]
+      [V$'$ 
+        [NP [den Jungen,roof]]
+        [V [\trace$_k$]]]]]]
+\end{forest}}
+\hfill\mbox{}
+
+\vfill
+
+Statt Verwendung vieler einzelner (Phrasenstruktur-)Regeln wird eine Umstellungsregel angenommen
+(bei Chomsky eine Transformation, es geht aber auch anders):
+
+Das Verb besetzt die C-Position, wenn es dort keine Konjunktion gibt.
+
+\vfill
+
+}
+
+
+\subsubsubsection{SpecCP - das Vorfeld}
+
+\frame{
+\frametitle{Das Vorfeld in Deklarativsätzen (I)}
+
+\begin{itemize}
+\item Deklarativsätze (Aussage-Hauptsätze): XP wird ins Vorfeld bewegt.
+\ea
+Gibt der Mann dem Kind jetzt den Mantel?
+\z
+\pause
+\eal
+\ex Der Mann gibt dem Kind jetzt den Mantel.
+\pause
+\ex Dem Kind gibt der Mann jetzt den Mantel.
+\pause
+\ex Den Mantel gibt der Mann dem Kind jetzt.
+\pause
+\ex Jetzt gibt der Mann dem Kind den Mantel.
+\zl
+\pause
+\item Mit den Phrasenstrukturregeln, die wir bisher kennengelernt haben,\\
+      kann man das nicht gut beschreiben.
+
+Wir brauchten für jede Regel noch zusätzliche Varianten mit anderen Argumenten oder Adjunkten vor dem Verb.
+
+
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Das Vorfeld in Deklarativsätzen (II)}
+
+\begin{itemize}
+\item Die Umordnung innerhalb einer Regel würde bei Sätzen wie (\mex{1}) nicht helfen:
+      \ea
+      Wen$_i$ glaubst du, dass ich \_$_i$ getroffen habe?
+      \z
+
+Hier wurde eine Nominalgruppe über die Satzgrenze hinweg vorangestellt:\\
+\emph{wen} hängt nicht von \emph{glauben} ab.
+
+\pause
+\item Solche sogenannten Fernabhängigkeiten kann man\\
+      mit Phrasenstrukturgrammatiken nicht ohne Zusatzmittel beschreiben.
+
+\end{itemize}
+
+}
+
+\frame[shrink=15]{
+\frametitle{Umstellung einer Konstituente vor das finite Verb}
+
+~
+\vfill
+\hfill
+\begin{forest}
+sm edges
+[CP
+  [C$'$
+    [C [trifft$_k$]]
+    [VP
+      [NP [der Mann$_i$,roof]]
+      [V$'$ 
+        [NP [den Jungen,roof]]
+        [V [\trace$_k$]]]]]]
+\end{forest}
+\hfill
+\begin{forest}
+sm edges
+[CP
+  [NP [der Mann$_i$,roof]]
+  [C$'$
+    [C [trifft$_k$]]
+    [VP
+      [NP [\trace$_i$]]
+      [V$'$ 
+        [NP [den Jungen,roof]]
+        [V [\trace$_k$]]]]]]
+\end{forest}
+\hfill\mbox{}
+
+\medskip
+
+\vfill
+Statt Verwendung vieler einzelner (Phrasenstruktur-)Regeln wird eine Umstellungsregel angenommen (bei Chomsky eine Transformation).
+
+\vfill
+
+}
+
+\frame{
+\frametitle{SpecCP -- das Vorfeld in Deklarativsätzen (II)}
+
+\begin{itemize}[<+->]
+\item Ausschlaggebender Faktor für die Auswahl der zu bewegenden Phrase ist die Informationsstruktur des Satzes:\\
+Was an vorangehende oder sonstwie bekannte Information anknüpft, steht innerhalb des Satzes eher links ($\to$ vorzugsweise im Vorfeld), und was für den Gesprächspartner neu ist, steht eher rechts. 
+\item Bewegung ins Vorfeld von Deklarativsätzen wird auch Topikalisierung genannt.\\
+      Der Fokus kann aber auch im Vorfeld stehen. Auch Expletiva.
+\item Achtung:\\
+      Vorfeldbesetzung hat nicht denselben Status wie die Topikalisierung im Englischen!
+\end{itemize}
+
+}
+
+
+\subsubsection{CP und VP im Deutschen}
+
+\if 0
+
+\frame{
+\frametitle{Das topologische Modell mit CP und VP (I)}
+
+\vfill
+\hfill\resizebox{1.2\textheight}{!}{%
+        \begin{forest}
+            sm edges original,empty nodes
+            [CP
+              [{}
+                [XP,terminus
+                  [SpecCP\\prefield, name=p1
+                  ]
+                ]
+              ]
+              [C$'$
+                    [{}
+                      [C$^0$, terminus
+                        [C$^0$\\left SB, name=c0
+                        ]
+                      ]
+                    ]
+                    [IP
+                      [{}
+                        [XP, terminus
+                          [{IP (without I$^0$, V$^0$)\\middle field}
+                            [SpecIP\\subject position, set me left, name=specip
+                            ]
+                            [phrases inside\\the VP, name=p3
+                            ]
+                          ]
+                        ]
+                      ]
+                      [I$'$
+                              [VP, name=vp
+                                [V$^0$, name=v0, terminus, no path, anchor=east
+                                  [{V$^0$, I$^0$\\right SB}, name=p2, set me left
+                                  ]
+                                ]
+                              ]
+                              [{}
+                                    [I$^0$, terminus, name=io
+                                    ]
+                              ]
+                      ]
+                    ]
+              ]
+            ]
+            \draw [thick]
+              (p1.north west) rectangle (io.east |- p3.south);
+            \draw
+              ($(c0.north east)!1/2!(specip.west |- c0.north east)$) coordinate (p6) -- (p6 |- p3.south)
+              ($(p1.north east)!1/2!(c0.north west)$) coordinate (p4) -- (p3.south -| p4)
+              ($(specip.north east)!1/2!(p3.north west)$) coordinate (p5) -- (p3.south -| p5)
+              ($(p2.north west)!1/2!(p2.north west -| p3.east)$) coordinate (p7) -- (p3.south -| p7)
+              (p6 |- p2.south) -- (p2.south -| p7)
+              (vp.south) -- (v0.center -| p3.west) -- (v0.west)
+              (v0.east) -- +(4.5pt,0) -- (vp.south)
+              ;
+        \end{forest}
+}\hfill\hfill\mbox{}
+
+}
+
+\fi
+
+\frame{
+\frametitle{Das topologische Modell mit CP und VP (II)}
+
+\footnotesize
+\resizebox{0.99\textwidth}{!}{
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+%
+SpecCP    & \cnull      &                          & \vnull\\
+Vorfeld   & Linke       & Mittelfeld               & Rechte\\\cline{3-3}
+          & Satzklammer & Phrasen innerhalb der VP & Satzklammer\\
+          &             &                          &\\\hline\hline
+          & dass         & Anna  [das Buch] [auf den Tisch] & legt \\
+\pause
+%          & ob  & Anna  [das Buch] [auf den Tisch] & legt  \\\hline\hline
+%\pause
+          & Legt$_k$ & Anna [das Buch] [auf den Tisch]? & [ t ]$_k$ \\
+\pause
+          & Legt$_k$ & Anna [das Buch] [auf den Tisch], & [ t ]$_k$ \\\hline\hline
+\pause
+Anna$_i$     & legt$_k$ & [ t ]$_i$ [das Buch] [auf den Tisch] & [ t ]$_k$ \\
+\pause
+Wer$_i$      & legt$_k$ & [ t ]$_i$ [das Buch] [auf den Tisch]? & [ t ]$_k$\\
+\pause
+{}[Das Buch]$_i$ & legt$_k$ & Anna [ t ]$_i$ [auf den Tisch] & [ t ]$_k$ \\
+\pause
+Was$_i$      & legt$_k$ & Anna [ t ]$_i$ [auf den Tisch]? & [ t ]$_k$ \\
+\pause
+{}[Auf den Tisch]$_i$ & legt$_k$ & Anna  [das Buch] [ t ]$_i$ & [ t ]$_k$ \\\hline
+\end{tabular}
+}
+
+}
+
+
+\frame{
+\frametitle{Zusammenfassung}
+
+
+\begin{itemize}
+\item Es gibt im Deutschen Verbletztsätze.
+\item Verberstsätze (Fragesätze, Imperative, \ldots) werden durch die Voranstellung des finiten
+  Verbs gebildet.
+\item Verbzweitsätze (Aussagesätze bzw.\ \emph{w}-Fragesätze) werden durch die Voranstellung einer
+  Konstituente vor das finite Verb gebildet,\\
+ \dash vor einen Verberstsatz.
+\end{itemize}
+
+
+}
+
+
+\frame{
+\frametitle{Lehrmeinung: Deutsch SPO}
+
+\begin{itemize}
+\item Behauptung: Deutsch ist Subjekt Prädikat Objekt
+\pause
+\item Das ist das häufigste Muster,\\
+      wenn man nur Aussagesätze mit Subjekt, Prädikat und Objekt ansieht.
+\pause
+
+\item Es gilt aber schon nicht mehr für psychologische Prädikate:
+\ea
+Dem Mann gefallen die Bilder.
+\z
+
+\pause
+\item Es gilt nicht für freien Text, in dem insbesondere Adverbialien vorkommen,\\ die die erste Stelle
+  im Satz einnehmen können.
+
+\pause
+\item Deutsch ist eine SOV-Sprache und außerdem noch eine Verbzweitsprache (V2).
+\pause
+\item V2-Sprachen:\\
+Beliebige Konstituenten können vor das finite Verb gestellt werden.
+
+Alle germanischen Sprachen außer Englisch.
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Lehrmeinung: Deutsch SPO, nachgezählt}
+
+\small
+
+taz, 01.02.2013:
+
+\rotit{Die Linke} fordert in dem Entwurf auch eine Vermögensteuer von fünf Prozent auf Privatvermögen
+ab einer Million Euro, eine stärkere Besteuerung von Erbschaften und eine einmalige Vermögensabgabe
+für Reiche. \gruenbf{Ab Jahreseinkommen von 65.000 Euro} soll ein Spitzensteuersatz von 53 Prozent gelten, das
+Ehegattensplitting abgeschafft werden.
+
+\rotit{SPD-Fraktionsvize Joachim Poß} kritisierte die Pläne als "`jenseits aller Vernunft und
+Realitätstauglichkeit"'. \gruenbf{Mit solchen Vorschlägen} werde das wichtige Thema der Steuergerechtigkeit
+diskreditiert. \gruenbf{Zwar} sei es notwendig, Spitzenverdiener stärker an der Finanzierung wichtiger
+Zukunftsaufgaben zu beteiligen, "`aber mit Augenmaß und Vernunft"'. \gruenbf{Für eine Begrenzung von
+Managergehältern} setzt sich auch die SPD ein.
+
+\alt<beamer>{rot}{kursiv} = Subjekt = 2, \alt<beamer>{grün}{fett} = Nicht-Subjekt = 4
+
+natürlich nicht repräsentativ \ldots
+
+}
+
+\frame[shrink=40]{
+\frametitle{A9 soll Teststrecke werden}
+
+taz: 27.01.2015
+
+\gruenbf{Für selbstfahrende Autos} soll es in Deutschland nach Angaben von Bundesverkehrsminister
+Alexander Dobrindt (CSU) bald eine Teststrecke geben. \gruenbf{Auf der Autobahn A9 in Bayern} sei ein Pilotprojekt „Digitales
+TestfeldAutobahn“ geplant, wie aus einem Papier des Bundesverkehrsministeriums
+hervorgeht. \gruenbf{Mit den ersten Maßnahmen für diese Teststrecke} solle schon in diesem Jahr begonnen
+werden. \gruenbf{Mit dem Projekt} soll die Effizienz von Autobahnen generell
+gesteigert werden. \gruenbf{„\rotit{Die Teststrecke} soll so digitalisiert und technisch ausgerüstet
+werden, dass es dort zusätzliche Angebote der Kommunikation zwischen Straße und Fahrzeug
+wie auch von Fahrzeug zu Fahrzeug geben wird“}, sagte Dobrindt zur Frankfurter Allgemeinen Zeitung.
+\gruenbf{Auf der A9} sollten sowohl Autos mit Assistenzsystemen als
+auch später vollautomatisierte
+Fahrzeuge fahren können. \gruenbf{Dort}
+soll die Kommunikation nicht
+nur zwischen Testfahrzeugen,
+sondern auch zwischen Sensoren
+an der Straße und den Autos
+möglich sein, etwa zur Übermittlung
+von Daten zur Verkehrslage
+oder zum Wetter. \gruenbf{\rotit{Das Vorhaben}
+solle im Verkehrsministerium
+von einem runden Tisch mit Forschern
+und Industrievertretern
+begleitet werden,} sagte Dobrindt. \rotit{Dieser} solle sich unter anderem
+auch mit den komplizierten
+Haftungsfragen beschäftigen.
+Also: \rotit{Wer} zahlt eigentlich,
+wenn ein automatisiertes Auto
+einen Unfall baut?
+\gruenbf{[\gruenbf{Mithilfe der Teststrecke}] solle
+die deutsche Automobilindustrie
+auch beim digitalen Auto
+„Weltspitze sein können“,} sagte
+der CSU-Minister. \rotit{Die deutschen
+Hersteller} sollten die Entwicklung
+nicht Konzernen wie etwa
+Google überlassen.
+\gruenbf{Derzeit} ist Deutschland noch
+an das „Wiener Übereinkommen
+für den Straßenverkehr“ gebunden,
+das Autofahren ohne Fahrer
+nicht zu lässt. \gruenbf{Nur unter besonderen
+Auflagen} sind Tests möglich.
+\rotit{Die Grünen} halten die Pläne für
+unnütz. \rotit{Grünen-Verkehrsexpertin
+Valerie Wilms} sagte der Saarbrücker
+Zeitung: „\rotit{Der Minister}
+hat wichtigere Dinge zu erledigen,
+als sich mit selbstfahrenden
+Autos zu beschäftigen.“ \rotit{Die Technologie}
+sei im Verkehrsbereich
+nicht vordringlich, auch stehe sie
+noch ganz am Anfang.
+\gruenbf{Aus dem grün-rot regierten
+Baden-Württemberg – mit dem
+Konzernsitz von Daimler –} kamen
+hingegen andere Töne. \gruenbf{\rotit{Was
+in Bayern funktioniere,} müsse
+auch in Baden-Württemberg
+möglich sein,} sagte Wirtschaftsminister
+Nils Schmid (SPD). \gruenbf{Von
+den topografischen Gegebenheiten}
+biete sich die Autobahn A81
+an.
+
+\alt<beamer>{rot}{kursiv} = Subjekt = 10, \alt<beamer>{grün}{fett} = Nicht-Subjekt = 15
+
+
+natürlich nicht repräsentativ \ldots
+}
+
+
+% \frame{
+
+% \frametitle{Verbbewegung und Bewegung nach SpecCP}
+
+% \vfill
+% \hfill\resizebox{!}{0.8\textheight}{
+% %\small
+% \psset{xunit=1cm,yunit=5.4mm}
+% \psset{nodesep=4pt,linewidth=0.8pt,arrowscale=2}
+
+% % node labels for moving elements will be typeset by the \tmove command
+% % here we have to provide invisible boxes to get the line drawing right.
+% \begin{pspicture}(0.6,-0.5)(11.4,15.6)
+% \rput[B](1,1){\rnode{speccp}{\visible<beamer| beamer:-41>{[ \_ ]}}}
+% \rput[B](3,1){\rnode{cleer}{\visible<beamer| beamer:-27>{[ \_ ]}}}
+% \rput[B](5,1){\rnode{jeder}{jeder}}
+% \rput[B](7,1){\rnode{ihnmf}{\visible<beamer| beamer:0>{ihn$_i$}}}
+% \rput[B](9,1){\rnode{kennt}{\visible<beamer| beamer:1>{kennt}}}
+% \rput[B](11,1){\rnode{t2}{\visible<beamer| beamer:1-11>{[ \_ ]}}}
+
+% \rput[B](7,3){\rnode{np1}{NP}}
+% \rput[B](9,3){\rnode{v}{\vnull}}
+
+% \rput[B](8,5){\rnode{vs1}{V$'$}}
+
+% \rput[B](8,7){\rnode{vp}{VP}}
+% \rput[B](11,7){\rnode{i}{\inull}}
+
+% \rput[B](5,9){\rnode{np2}{NP}}
+% \rput[B](9.5,9){\rnode{is}{I'}}
+
+
+% \rput[B](3,11){\rnode{c}{\cnull}}
+% \rput[B](7.25,11){\rnode{ip}{IP}}
+
+% \rput[B](1,13){\rnode{np3}{\alt<42->{NP}{XP}}}
+% \rput[B](5.125,13){\rnode{cs}{C$'$}}
+
+
+% \rput[B](3.0625,15){\rnode{cp}{CP}}
+
+
+
+
+% \psset{angleA=-90,angleB=90,arm=0pt}
+
+% \ncdiag{v}{kennt}
+% \ncdiag{vs1}{np1}\ncdiag{vs1}{v}
+% \ncdiag{vs2}{np2}\ncdiag{vs2}{vs1}
+% \ncdiag{vp}{vs2}
+
+% \ncdiag{np3}{t1}
+
+% \ncdiag{i}{t2}
+% \ncdiag{is}{i}\ncdiag{is}{vp}
+% \ncdiag{ip}{np2}\ncdiag{ip}{is}
+
+% \ncdiag{np3}{speccp}
+% \ncdiag{np2}{jeder}
+% \ncdiag{np1}{ihnmf}
+% \ncdiag{vp}{vs1}
+% \ncdiag{c}{cleer}
+% \ncdiag{cs}{c}
+% \ncdiag{cs}{ip}
+% \ncdiag{cp}{np3}
+% \ncdiag{cp}{cs}
+
+
+% \tmovefurther<2-13>(9cm,5.4mm)(11cm,5.4mm){kennt$_k$}{[ \_ ]$_k$}
+
+
+
+% \tmove<14-29>(11cm,5.4mm)(3cm,5.4mm){kennt$_k$}{[ \_ ]$_k$}
+
+
+% \tmoveo<30-44>(7cm,5.4mm)(1cm,5.4mm){ihn\hspaceThis{$_i$}}{ihn$_i$}{[ \_ ]$_i$}
+
+% %\psgrid
+
+% \end{pspicture}}\hfill\hfill\mbox{}
+% \vfill
+
+% \hyperlinkframeend<beamer>{\beamerskipbutton{Ende der Bewegung}}
+
+% \only<45>{}
+
+% }
+
+
+
+\iftoggle{gb-intro}{
+\frame{
+\frametitle{SpecCP -- das Vorfeld in Nebensätzen}
+
+In Relativ- und \emph{w}-Interrogativsätzen wird eine Phrase mit einem entsprechenden Wort (je nachdem: Determinierer, Pronomen, Adverb) ins Vorfeld gestellt.
+\begin{itemize}
+\item Relativsätze müssen ein Relativpronomen in der vorangestellten Phrase enthalten:
+\eal
+\ex der Mann, [\blauit{der}] das gesagt hat
+\pause
+\ex der Mann, [\blauit{den}] wir kennen
+\pause
+\ex der Mann, [\blauit{dessen} Vorschlag] wir diskutieren
+\pause
+\ex der Mann, [von \blauit{dem}] wir reden
+\pause
+\ex der Mann, [über \blauit{dessen} Vorschlag] wir reden
+\pause
+\ex die Art und Weise, [\blauit{wie}] wir über ihn reden
+\zl
+\end{itemize}
+
+}
+\frame{
+\frametitle{SpecCP -- das Vorfeld in Nebensätzen}
+
+\begin{itemize}
+\item Interrogativsätze müssen ein Interrogativpronomen in der vorangestellten Phrase enthalten:
+\eal
+\ex Ich frage mich, [\blauit{wer}] das gesagt hat.
+\pause
+\ex Ich frage mich, [\blauit{wen}] du überhaupt kennst.
+\pause
+\ex Ich frage mich, [\blauit{wessen} Vorschlag] wir gerade diskutieren.
+\pause
+\ex Ich frage mich, [von \blauit{wem}] wir gerade reden.
+\pause
+\ex Ich frage mich, [über \blauit{wessen} Vorschlag] wir gerade reden.
+\pause
+\ex Ich frage mich, [\blauit{wie}] wir über ihn reden (sollten).
+\pause
+\ex Ich frage mich, [\blauit{ob}] er kommt.
+\zl
+\pause
+\item
+Man spricht hier von \blaubf{\emph{w}-Bewegung} (für Engl.\ \emph{wh}-Bewegung)\\
+(auch im Fall von Relativsätzen mit \emph{der}, \emph{die}, \emph{das}).
+\pause
+%\bigskip
+\item In allen übrigen Sätzen bleibt SpecCP leer.\\
+(Zu "`unsichtbarer"' Besetzung von SpecCP siehe \hyperlink{np-bewegung}{\emph{w}-Bewegung})
+\end{itemize}
+
+}
+
+
+%\fi 
+
+\subsubsubsection{V und I - die rechte Satzklammer}
+
+\frame{
+\frametitle{\vnull und \inull{} -- die rechte Satzklammer (I)}
+
+\savespace
+\begin{itemize}
+\item Deutsch hat keine lexikalischen Einheiten der Kategorie I,\\
+\dash, auch Hilfsverben sind wirkliche Verben (Kategorie V). 
+\pause
+\item VPen können verschachtelt auf"|treten (Rekursion bzw.\ Rekursivität): 
+
+Eine Regel, hier Einfügung einer VP, kann wiederholt angewendet werden.
+
+Eine untergeordnete VP ist jeweils Komplement der
+nächsthöheren.
+\ea
+Bis Anna\\
+{}{\blau<5>[\sub{VP}} {\blau<4>[\sub{VP}} {\blau<3>[\sub{VP}} das Buch auf den Tisch gelegt{\blau<3>]} haben{\blau<4>]} wird{\blau<5>]}, 
+\z
+\end{itemize}
+
+}
+
+\frame[shrink]{
+\frametitle{\vnull und \inull{} -- die rechte Satzklammer (II)}
+
+\setlength\leftmargini{1em}
+\begin{itemize}
+\item Die I-Position ist verantwortlich für:
+\begin{itemize}
+\item Finitheit
+\item die morphosyntaktischen Merkmale Tempus und Modus
+\item die Kongruenz in Person und Numerus zwischen Subjekt und Verb (\emph{Spec-Head-Agreement})
+\end{itemize}
+\pause
+\item Wo steht Verb in Sätzen mit Endstellung des finiten Verbs?% (=~Verbletztsätze):
+\begin{itemize}
+\item Möglichkeit 1:\\ Das Verb bleibt (wie im Englischen) an der \vnull-Stelle stehen. 
+\vnull ist dann mit der leeren \inull-Position verkettet. 
+Bezeichnung: verdeckte Verkettung (oder: \hypertarget{abstrakte Bewegung}{abstrakte Bewegung}, verdeckte Bewegung).
+\pause
+\item Möglichkeit 2:\\ Das Verb wird (wie im Französischen) an die \inull-Stelle angehoben. 
+\end{itemize}
+\pause
+scheint im Dt.\ kein klares Indiz für das eine oder das andere zu geben.
+
+Allg.\ gibt es für Ansatz einer \inull-Position im
+Dt.\ keinen direkten Nachweis. 
+
+%% Dass \inull normalerweise am Satzende
+%% angesetzt wird, ist eher forschungsgeschichtlich motiviert. 
+
+Im Folgenden: Annahme einer verdeckten Verkettung
+\end{itemize}
+
+}
+
+\subsubsubsection{Verbzusätze}
+
+\frame{
+\frametitle{Verbzusätze: Kopfadjunkte}
+
+\begin{itemize}
+\item Verbzusätze sind "`Nebenköpfe"' zu \vnull, \dash Kopfadjunkte:
+
+\begin{center}%
+\begin{tabular}[t]{ccc}
+&\node{v1}{\vnull}\\[4ex]
+\node{p}{\pnull}   &                  & \node{v2}{\vnull}\\[4ex]
+\node{doktor}{an} & & \node{mutter}{lachen}
+\end{tabular}%
+\nodeconnect{v1}{p}\nodeconnect{v1}{v2}
+\nodeconnect{p}{doktor}\nodeconnect{v2}{mutter}
+\end{center}
+
+
+\item Kopfadjunkte stellen eine Erweiterung des \xbar-Schemas dar.\\
+(später mehr: \hyperlink{inkorporation}{\siehe Inkorporation})
+\end{itemize}
+
+
+
+}
+
+\frame{
+\frametitle{Verbzusätze}
+
+\begin{itemize}
+\item In V1- und V2-Sätzen "`strandet"' der Verbzusatz am Satzende, es wird also nur die eigentliche Verbform bewegt.
+\eal
+\ex Als Anna die Tür aufschloss, 
+\ex Anna schloss die Tür auf. 
+\ex Schließ die Tür auf, Anna! 
+\zl
+
+\pause
+\item In Verbletztsätzen bilden Verbzusatz und Verbform in der gesprochenen Sprache eine Einheit, \dash ein prosodisches Wort.
+
+Indiz dafür, dass das Verb in Verbletztsätzen tatsächlich an der Position \vnull steht. 
+
+\pause
+\item Anders verhalten sich Präfixbildungen (\zb \emph{verschließen}) und\\
+"`feste Zusammensetzungen"' (\zb \emph{untersuchen}, \emph{umarmen}).
+\end{itemize}
+
+
+}
+
+%\if 0
+\subsubsubsection{SpecIP}
+
+\frame{
+\frametitlefit{Subjektposition SpecIP im Deutschen: Gibt es immer ein Subjekt?}
+
+\begin{itemize}
+\item \blaubf{Projektionsprinzip}:\\
+Lexikalische Information muß syntaktisch realisiert werden. 
+\item \blaubf{erweitertes Projektionsprinzip (EPP)}:\\
+Lexikalische Information muß syntaktisch realisiert werden. 
+
+Jeder Satz enthält ein Subjekt. 
+
+\pause
+\item Ein Problem für die These der universellen Geltung des EPP sind deutsche Sätze wie: 
+
+\eal
+\ex Heute wird nicht gearbeitet. 
+\ex Mir ist kalt. 
+\ex Ihn schwindelt.
+\ex Ihm graut vor der Prüfung.
+\zl
+\end{itemize}
+
+}
+
+\frame{
+\frametitlefit{Subjektposition SpecIP im Deutschen: Konstituentenstellung (I)}
+
+
+Es gibt Linksversetzungen im Mittelfeld (innerhalb von IP und VP). 
+
+Bezeichnung: \emph{Scrambling} (nach spöttischem Ausspruch des Deutschkenners Mark
+Twain, vgl.\ \emph{scrambled eggs} = Rührei, \siehe auch \citew{Ross67,Ross86a-u}).
+\nocite{Twain1880a}
+
+\pause
+Auslösende Faktoren von Scrambling: 
+\begin{itemize}\itemsep0pt
+%\item Belebtheit (präferierte Abfolge: Belebtes vor Unbelebtem)
+\item Definitheit (präferierte Abfolge: Bestimmtes vor Unbestimmtem)
+\item Informationsgehalt (präferierte Abfolge: Bekanntes vor Neuem)
+\item Konstituentenlänge (kurz vor lang)\nocite{Behaghel09,Behaghel30}
+\end{itemize}
+
+\pause
+Umgestellte Konstituenten können vor dem Subjekt stehen, bzw.\ Subjekt zwischen
+anderen Konstituenten:
+\eal
+\ex dass [im Saal] [drei Paare] tanzen. 
+\ex weil [dieses Buch] [niemand] [auf den Tisch] gelegt hat. 
+\zl
+$\to$ Ansatz einer Subjektposition ist nicht so offensichtlich wie im Englischen.
+
+}
+
+\frame{
+\frametitlefit{Subjektposition SpecIP im Deutschen: Konstituentenstellung (II)}
+
+\eal
+\ex dass [im Saal] [drei Paare] tanzen. 
+\ex weil [dieses Buch] [niemand] [auf den Tisch] gelegt hat. 
+\zl
+
+Vermutung:\\
+Scrambling in (\mex{0}) = Bewegung einer XP an Adjunktposition vor der Subjektposition
+
+Aber das ist nicht sicher nachweisbar: Wenn es stimmt, dass unbetonte Objektpronomen wie \emph{es} am linken
+Rand der VP (an der sogenannten Wackernagelposition) stehen, weisen die
+folgenden Varianten darauf hin, dass die Subjektphrase zwar an der
+Subjektposition vor der Wackernagelposition stehen kann, aber nicht muß: 
+\eal
+\ex[]{
+dass [\sub{Nom} Anna] es sofort entdeckte
+}
+\ex[]{
+dass [ \_ ]$_i$ es [\sub{Nom} Anna]$_i$ sofort entdeckte 
+}
+%% \ex[*]{
+%% dass [Dativ Anna] es sofort auf"|fiel
+%% }
+%% \ex[]{
+%% dass es [Dativ Anna] sofort auf"|fiel 
+%% }
+\zl
+
+
+}
+
+\frame{
+\frametitlefit{Subjektposition SpecIP im Deutschen: Konstituentenstellung (III)}
+
+
+Deutung: Im Deutschen kann das Subjekt an zwei Positionen stehen.  
+\begin{itemize}
+\item Option 1: Das Subjekt steht «weiter unten» im Satz (am ehesten an der
+Position SpecVP) und ist mit der leeren Subjektposition SpecIP verkettet
+(=~verdeckte Verkettung; andere Fachausdrücke: verdeckte Bewegung, abstrakte
+Bewegung). 
+
+\pause
+{\small (leere Subjektposition kann auch für subjektlose Sätze
+postuliert, wenn auch nicht nachgewiesen werden $\to$ rein theorieinterne
+Rettung für das EPP.
+
+Dann muß man aber sicherstellen, dass solche leeren Subjekte nicht an Stellen
+auf"|treten, an denen nicht-leere Subjekte stehen müssen.)}
+
+\pause
+\item Option 2: Das Subjekt steht an der Subjektposition SpecIP. 
+\end{itemize}
+\pause
+Fazit: Im Deutschen ist zwischen Subjekt (=~Argument im Nominativ) und Subjektposition (=~SpecIP)
+zu unterscheiden.
+
+
+}
+
+\subsubsubsection{Expletiva}
+
+\frame[label=expletivum]{
+\frametitle{Expletiva: Pseudo-Argumente}
+
+\begin{itemize}
+\item Expletivum = "`Füllform"', Obergriff für Pseudo-Argument, Platzhalter und Korrelat 
+\pause
+\item Pronomina: (E: \emph{it}, D: \emph{es}, F: \emph{il}, \emph{le}) als gewöhnliches Subjekt oder Objekt (Stellvertreter) mit Bezug auf eine Nominalphrase:
+\eal
+\ex (I am reading a book.) [It] is interesting. I like [it]. 
+\ex (Ich lese ein Buch.) [Es] ist interessant. Ich mag [es].
+\ex (Je lis un livre.) [Il] est intéressant. Je [l']estime.
+\zl
+\pause
+\item Expletiv I: Pronomen als Pseudo-Argument (unpersönliches Subjekt oder Objekt): 
+\eal
+\ex {}[It] is raining. %Take [it] easy! 
+\ex {}[Es] regnet. Sie bringt [es] bis zur Professorin.
+\ex {}[Il] pleut.
+\zl
+\end{itemize}
+}
+
+\frame{
+\frametitle{Expletiva: Korrelate zu Nebensätzen}
+
+%% \begin{itemize}
+%% \item 
+Expletiv II: Pronomen als Korrelat eines Nebensatzes\\
+(Engl.\ nur von Subjektnebensätzen, Dt.\ auch von Objektnebensätzen)
+%(Index i: jeweiligen Phrasen "`gehören zusammen"'):
+\eal
+\ex {}[It]$_i$ strikes me [that Bill did not come]$_i$
+\ex Mich störte [es]$_i$, [dass Otto ständig gähnte]$_i$ 
+\zl
+\ea
+Anna schätzte [es]$_i$ nicht, [dass Otto ständig gähnte]$_i$
+\z
+
+\pause
+Pronominaladverb als Korrelat (Nebensatz entspricht Präpositionalobjekt): 
+\ea
+Anna fand sich nicht [damit]$_i$ ab, [dass Otto ständig gähnte]$_i$
+\z
+%\end{itemize}
+}
+
+\exewidth{\exnrfont(235)}
+\frame{
+\frametitle{Expletiva: Vorfeldplatzhalter}
+
+
+\begin{itemize}
+\item Expletiv III: Pronomen \emph{es} als Vorfeldplatzhalter ($\neq$ Subjektplatzhalter) (Deutsch!): 
+\eal
+\ex {}[Es] kamen drei Männer.\\(Aber nicht: *Es scheint, dass es drei Männer kamen.) 
+\ex {}[Es] wurde gearbeitet.\\(Aber nicht: *Es scheint, dass es gearbeitet wurde.) 
+\zl
+\pause
+\item Expletiv IV: Adverb \emph{there} als Subjektplatzhalter (Englisch!)   nur in Verbindung mit einer nachgestellten Nominalphrase, mit der das Verb gegebenenfalls kongruiert: 
+\ea
+{}[There]$_i$ were [three men]$_i$ in the room.\\
+(Auch: It seems, that [there]$_i$ were [three men]$_i$ in the room.)
+\z
+\end{itemize}
+}
+
+\frame{
+\frametitle{Expletiva: Subjektplatzhalter}
+
+
+\begin{itemize}
+\item Expletiv V: Pronomen als Subjektplatzhalter (Französisch)   das Verb kongruiert nur mit dem Expletiv:
+\ea
+{}[Il]$_i$ est [arrêté trois hommes]$_i$.\\(Auch: Il semble qu [il]$_i$ est arrêté [trois hommes]$_i$.) 
+\z
+\end{itemize}
+
+
+Anmerkung: Als eine Art
+Expletiv kann man auch das Reflexivpronomen bei echt reflexiven Verben ansehen
+(z.\,B.: \emph{sich beeilen}, \emph{sich etwas vornehmen}).
+
+
+}
+
+\frame{
+\frametitle{Das englische \emph{there}}
+
+\resizebox{\textwidth}{!}{\begin{tabular}{|l|l|l|l|l|l|l|}\hline
+SpecCP & \cnull & SpecIP & \inull & Satzadverbialien & \vnull   & Rest der VP\\\hline\hline
+       &        & There  & [ \_ ]$_k$ &                  & arrived$_k$ & three Magi.\\
+       &        & There  & will   &                  & arrive   & three Magi.\\
+       & Will$_k$  & there  & [ t ]$_k$ &                  & arrive   & three Magi?\\
+       & that   & there  & will   &                  & arrive   & three Magi.\\\hline
+\end{tabular}}
+
+\bigskip
+
+Frage: Wo genau steht die Phrase \emph{three Magi}?\\
+(\alt<beamer>{\compare{Kasus}{Kasuslehre}}{\siehe Kasuslehre}, 
+Stichwort \hyperlink{unakk}{"`nichtakkusativische Verben"'})
+
+}
+
+\frame{
+\frametitle{Das Vorfeld-\emph{es}}
+
+
+\resizebox{\textwidth}{!}{
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+%
+SpecCP    & \cnull      & \mc{2}{l|}{IP (ohne \inull, \vnull)} & \vnull, \inull\\
+Vorfeld   & Linke       & \mc{2}{l|}{Mittelfeld}                      & Rechte\\\cline{3-4}
+          & Satzklammer & SpecIP           & Phrasen innerhalb der VP & Satzklammer\\
+          &             & Subjektsposition &                          &\\\hline\hline
+Es        & tanzen$_k$     & drei Paare & im Saal.                       & [ t ]$_k$ [ t ]$_k$ \\
+          & dass         & drei Paare & im Saal                        & tanzen$_k$ [ \_ ]$_k$\\
+          & dass         & *es        & drei Paare im Saal             & tanzen$_k$ [ \_ ]$_k$\\
+{}[Drei Paare]$_i$ & tanzen$_k$   & [ t ]$_i$     & im Saal                        & [ t ]$_k$ [ t ]$_k$\\
+{}[Drei Paare]$_i$ & tanzen$_k$   & *es [ t ]$_i$ & im Saal                        & [ t ]$_k$ [ t ]$_k$\\\hline
+\end{tabular}
+}
+
+\bigskip
+Man beachte, dass der Stern bei \emph{es} im
+dritten und fünften Beispiel den Satz als ungrammatisch kennzeichnet.
+
+
+
+}
+
+
+
+
+\subsubsubsection{Spuren und Bewegung}
+
+\frame{
+\frametitle{Gründe für den Ansatz von Spuren bei Bewegung (I)} %: Anforderung von mehreren Positionen}
+%
+
+Auslöser von Bewegung scheint ganz allgemein zu sein, dass eine Konstituente
+ein Merkmal aufweist, das "`eigentlich"' nicht zu der Position paßt, an der sie
+steht, sondern zu einer anderen weiter oben im Baum. 
+
+Besonders typisch sind Phrasen mit Fragewörtern\\
+(interrogative Determinierer, Pronomen und Adverbien):
+\ea
+Ich weiß nicht, [was] Anna erwartet hat.  
+\z
+
+\begin{itemize}\itemsep0pt\topsep0pt\partopsep0pt
+\item {}[was] ist internes Argument (Objekt) von \emph{erwartet}
+ und sollte Bestandteil der VP, genauer Schwester der Verbform \emph{erwartet}, sein.
+%
+\item {}[was] enthält Fragewort, das die Satzart (Satzmodus)
+ "`Fragesatz"' deutlich macht; damit gebildete Phrase sollte in
+Spezifikatorposition SpecCP des Satzkerns \cnull stehen.
+\end{itemize}
+}
+
+\frame{
+\frametitle{Gründe für den Ansatz von Spuren bei Bewegung (II)}
+
+Lösung: Verkettung der beiden Positionen.\\
+Phrase an der oberen Position sichtbar $\to$ Bezeichnung = \emph{Bewegung}
+\ea
+Ich weiß nicht, [was]$_i$ Anna [t]$_i$ erwartet hat.\\
+(Gemeint: Ich nehme an, dass Anna [etwas] erwartet hat. Worum handelt es sich?) 
+\z
+
+}
+
+
+\frame{
+\frametitle{Beschränkungen}
+
+%\savespace\small
+
+Konstituenten können nicht beliebig verkettet bzw.\ bewegt werden. 
+
+Metaphorisch ausgedrückt: Der Weg durch den Strukturbaum muß von der Endposition aus
+bis zur Ausgangsposition überblickt werden.\\
+Diese Beobachtung wird mit dem Konzept der Spur formalisiert: 
+
+\ea[*]{
+Ich weiß nicht, [was]$_i$ dann der Tag kam, an dem Anna [t]$_i$ erwartete.\\
+(Intendiert: Ich nehme an, dass dann der Tag kam, an dem Anna [etwas] erwartet hat. Worum handelt es
+ sich?)
+}
+\z
+I.\,A.\ sind eingebettete CPs (= Nebensätze) Hindernisse für den Blick zurück zur Ausgangsposition,
+\dash aus Nebensätzen kann nichts  herausbewegt (extrahiert) werden.
+ 
+}
+
+%% \frame{
+%% \frametitle{Beschränkungen (II)}
+
+
+%% Abweichungen (hier markiert mit `!') besonders interessant:
+
+%% \eal
+%% \ex ! [Was]$_i$ glaubst du, dass Anna [t]$_i$ liest?
+%% \ex ? [Wer]$_i$ glaubst du, dass [t]$_i$ dieses Buch liest?\\(Beurteilung schwankt!) 
+%% \ex * [Was]$_i$ glaubst du nicht, dass jemand [t]$_i$ liest? 
+%% \zl
+
+%% }
+
+\frame{
+\frametitle{Verschiedene Bewegungsarten: A- und A'-Bewegung}
+
+\savespace
+
+Bewegungen folgen nicht alle denselben Regeln. 
+
+Fachliteratur unterscheidet zwischen A-Bewegung und A'-Bewegung\\
+(lies: Non-A-Bewegung; andere Schreibweise: \abar-Bewegung).
+
+\emph{A} steht für \emph{Argument}, genauer für \emph{Argumentposition}.
+\begin{itemize}\itemsep0pt
+\item A-Bewegung: Bewegung zur Subjektposition (SpecIP), auch als NP-Bewegung bezeichnet.
+Die Subjektposition ist eine Argumentposition.   
+\item A'-Bewegung:
+\begin{itemize}
+\item Bewegung ins Vorfeld (SpecCP), also Topikalisierung und \emph{w}-Bewegung; 
+\item Linksversetzung im Mittelfeld (Scrambling); 
+\item Bewegung schwach betonter Pronomen an die Wackernagel-Position; 
+\item Ausklammerung ins Nachfeld (Rechtsextraposition)\\
+\ldots
+\end{itemize}
+\end{itemize}
+
+\hyperlink{np-bewegung}{NP-Bewegung} und \hyperlink{w-Bewegung}{\emph{w}-Bewegung} werden noch behandelt.
+
+
+}
+
+
+\subsubsubsection{Small Clauses: verblose Satzäquivalente}
+
+\frame[label=sc]{
+\frametitle{Small Clauses: verblose Satzäquivalente (I)}
+
+\smallexamples\small\parskip1pt
+Bestimmte verblose Prädikativkonstruktionen werden auf eine Konfiguration zurückgeführt, 
+in der Prädikativ + Bezugs-NP satzähnliche Einheit bilden.
+
+\pause
+Häufig wird dafür eine besondere funktionale Kategorie Agr (=~\emph{Agreement}; deutsch: Kongruenz,
+Übereinstimmung) angesetzt. 
+
+\pause
+Prädikativ ist Komplement von Agr, die Bezugs-NP dessen Spezifikator.
+
+\pause
+Bezugsphrase = externes Argument des Prädikativs\\
+(oder etwas unpräzise dessen Subjekt)
+
+\pause
+\agrnull ist teils leer (\mex{2}a), teils von einem Element besetzt, das traditionell als Konjunktion ((\mex{2}b) \emph{als}) oder als Präposition
+((\mex{2}c) \emph{für}) bestimmt wird.
+
+\ea
+Der Torwart sagte, [\sub{CP} der Schiedsrichter sei ein Trottel] 
+\z
+\eal
+\ex Der Torwart nannte [\sub{AgrP} den Schiedsrichter einen Trottel].
+\ex Der Torwart betrachtete [\sub{AgrP} den Schiedsrichter als einen Trottel].
+\ex Der Torwart hält [\sub{AgrP} den Schiedsrichter für einen Trottel].
+\zl
+Zum Kasus des Small-Clause-Spezifikators später.
+
+}
+
+\frame{
+\frametitle{Small Clauses: verblose Satzäquivalente (II)}
+
+%\enlargethispage{-\baselineskip}
+%
+\vfill
+\centerline{\scalebox{0.5}{%
+\begin{tabular}{ccccccc}
+\mc{3}{c}{\node{cp}{CP}}\\[5ex]
+\mc{3}{c}{\node{cs}{C$'$}}\\[6ex]
+\node{c}{C}&             \mc{4}{c}{\node{ip}{IP}}\\[6ex]     
+       & \node{np1}{NP}          &                    & & \mc{3}{c}{\node{is}{I'}}\\[5ex]
+       &             & & \mc{3}{c}{\node{vp}{VP}}                                          & \node{i}{I}\\[5ex]
+       &             & & \mc{3}{c}{\node{vs}{V$'$}}\\[5ex]
+       &             & \mc{3}{c}{\node{agrp}{AgrP}}                               & \node{v}{V}\\[5ex]
+       &             & \node{np2}{NP}                 & \mc{2}{c}{\node{agrs}{Agr'}}\\[5ex]
+       &             &                    & \node{agr}{Agr} & \node{np3}{NP}\\[6ex]
+\node{weil}{weil}& de\node{dt}{r Torwa}rt & den\node{ds}{ Schiedsrich}ter & \node{fuer}{für}      & ei\node{et}{nen Trott}el & \node{haelt}{hält}   & \node{tr}{\_}\\
+\end{tabular}
+\nodeconnect{cp}{cs}%
+\nodeconnect{cs}{c}\nodeconnect{cs}{ip}%
+\nodeconnect{ip}{np1}\nodeconnect{ip}{is}%
+\nodeconnect{is}{vp}\nodeconnect{is}{i}%
+\nodeconnect{vp}{vs}%
+\nodeconnect{vs}{agrp}\nodeconnect{vs}{v}%
+\nodeconnect{agrp}{np2}\nodeconnect{agrp}{agrs}%
+\nodeconnect{agrs}{agr}\nodeconnect{agrs}{np3}%
+\nodeconnect{c}{weil}\nodeconnect{agr}{fuer}%
+\nodeconnect{v}{haelt}\nodeconnect{i}{tr}%
+\nodetriangle{np1}{dt}\nodetriangle{np2}{ds}\nodetriangle{np3}{et}%
+}}
+%\mbox{}
+\nocite{Abraham93a}
+
+}
+
+\frame[label=sc-probleme]{
+\frametitle{Probleme: Voranstellbarkeit des Small Clause}
+
+Im Deutschen bilden der Small-Clause-Spezifikator und der Rest der Small Clause
+auf der Ebene der S-Struktur keine Konstituente, was noch gesondert zu erklären
+wäre: 
+
+\eal
+\ex[]{
+{}[\sub{CP}\hspace{4mm} Der Schiedsrichter sei ein Trottel], sagte der Torwart. 
+}
+\ex[*]{
+{}[\sub{AgrP} Den Schiedsrichter für einen Trottel] hält der Torwart. 
+}
+\zl
+
+}
+
+\frame{
+\frametitle{Probleme: Kategorie des Small Clause}
+
+\small\smallexamples\parskip0pt
+Außerdem: Manche Verben kommen nur mit Prädikativen
+bestimmter Kategorien vor (\citealt[S.\,70]{Fanselow91a}; \citealt[S.\,63]{Demske94a}; \citealt[S.\,232]{Hoekstra87a}).
+%
+\eal
+\ex[]{
+Herr K.\ ist kein Verbrecher.
+}
+\ex[]{
+Herr K.\ ist unschuldig.
+}
+\ex[]{
+Herr K.\ ist in Berlin.
+}
+\zl
+\eal
+\ex[*]{
+Der Richter macht Herrn K.\ einen Verbrecher.
+}
+\ex[]{
+Das Gericht macht Herrn K.\ müde.
+}
+\ex[]{
+Der Richter macht Herrn K.\ zum Verbrecher.
+}
+\zl
+\eal
+\ex[]{
+Herr K.\ nennt den Richter einen Idioten.
+}
+\ex[]{
+Herr K.\ nennt den Richter voreingenommen.
+}
+\ex[*]{
+Herr K.\ nennt den Richter als/zum Idioten.
+}
+\zl
+Small Clauses wären aber alle Agr-Projektionen $\to$\\
+direkte Selektion der Kategorie unmöglich
+
+}
+
+\frame{
+\frametitle{Konsequenz}
+
+Nicht in allen GB-Varianten werden Small Clauses angenommen,\\
+in HPSG werden die Phänomene anders behandelt.
+\nocite{Bresnan82c,Williams83a,Booij90a,Hoekstra87a,Hoeksema91c,Fanselow91a,NW93a,Neeleman94a,Neeleman95a,ps2,Stiebels96a,Winkler97a}
+
+Siehe \citew{Mueller2002b} und Vorlesung im nächsten Semester.
+
+}
+
+}%\end{gb-intro}
+%\fi
+
+\iftoggle{einfsprachwiss-exclude}{
+
+\iftoggle{gb-intro}{}{
+
+\subsection{Lokale Umstellung}
+
+\frame{
+\frametitle{Lokale Umstellung}
+
+
+\begin{itemize}
+\item Im \mf können Argumente in nahezu beliebiger Abfolge angeordnet werden.
+\eal
+\ex {}[weil] \rot{der Mann} \gruen{der Frau} \blau{das Buch} gibt
+\ex {}[weil] \rot{der Mann} \blau{das Buch} \gruen{der Frau} gibt
+\ex {}[weil] \blau{das Buch} \rot{der Mann} \gruen{der Frau} gibt
+\ex {}[weil] \blau{das Buch} \gruen{der Frau} \rot{der Mann} gibt
+\ex {}[weil] \gruen{der Frau} \rot{der Mann} \blau{das Buch} gibt
+\ex {}[weil] \gruen{der Frau} \blau{das Buch} \rot{der Mann} gibt
+\zl
+\pause
+\item In (\mex{0}b--f) muß man die Konstituenten anders betonen
+und die Menge der Kontexte, in denen der Satz mit der jeweiligen Abfolge
+geäußert werden kann, ist gegenüber (\mex{0}a) eingeschränkt \citep{Hoehle82}. 
+
+Abfolge in (\mex{0}a) = \blau{Normalabfolge} bzw.\ die \blau{unmarkierte Abfolge}.
+\end{itemize}
+}
+
+\frame{
+\frametitle{Zwei Möglichkeiten zur Analyse der lokalen Umstellung}
+
+
+Es gibt theoretisch zwei Möglichkeiten (siehe \citew{Fanselow93a}):
+\begin{itemize}[<+->]
+\item Man nimmt eine Grundabfolge an und leitet alle anderen Abfolgen über Move-$\alpha$ daraus ab.
+\Zb \citew{Frey93a}.
+\pause
+\item Man läßt verschiedene Grundstrukturen zu, die für die Analysen der verschiedenen Abfolgen direkt verwendet werden.\\
+Es gibt keine Spuren. \Zb \citew{Fanselow2001a}.
+%% \pause
+%% \item Der Ansatz mit verschiedenen Grundstrukturen ist nicht so schlimm, wie ein reiner
+%% Phrasenstrukturansatz, da
+\item Obwohl mittels Skopusambiguitäten immer für den bewegungsbasierten Ansatz argumentiert wurde,
+sind es gerade Skopusdaten,\\
+die gegen diesen Ansatz sprechen \citep{Kiss2001a,Fanselow2001a}.
+\end{itemize}
+
+
+}
+
+}% not gb-intro
+
+
+} %\end{einfsprachwiss-exclude}
+

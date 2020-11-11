@@ -1,0 +1,318 @@
+%%%%%%%%%%%%%%%
+%06g Syntax ha-loesung
+%%%%%%%%%%%%%%%%
+
+
+\begin{frame}
+\frametitle{Hausaufgabe -- Lösung}
+
+\begin{itemize}
+	\item Geben Sie an, um welchen \textbf{Phrasentyp} es sich bei den folgenden Phrasen handelt, und \textbf{welches Wort} sich in der \textbf{Kopfposition} der Phrasen befindet:
+\end{itemize}	
+
+\eal
+	\ex viele besorgte Mütter  \pause \hfill \alertgreen{Mütter} \& \alertgreen{NP} oder \alertgreen{viele} \& \alertgreen{DP} \pause 
+
+	\ex den Menschen in Not helfen \pause \hfill \alertgreen{helfen} \& \alertgreen{VP} \pause 
+	
+	\ex Wasser ohne Kohlensäure \pause \hfill \alertgreen{Wasser} \& \alertgreen{NP} oder \alertgreen{$\emptyset$} \& \alertgreen{DP} \pause 
+	
+	\ex auf Maria warten \pause \hfill \alertgreen{warten} \& \alertgreen{VP} \pause 
+	
+	\ex ob sie heute kommen werden \pause \hfill \alertgreen{ob} \& \alertgreen{CP} \pause 
+	
+	\ex Peter seine Traumfrau gefunden hat \pause \hfill \alertgreen{hat} \& \alertgreen{IP}
+\zl
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Hausaufgabe -- Lösung}
+
+\begin{minipage}[b]{0.45\textwidth}
+	
+	{\small Peter schläft.}
+	
+	\pause
+	
+	\centering
+	\scalebox{0.6}{
+		\begin{forest}
+		MyP edges,
+		[\alertgreen{CP} 
+			[\alertgreen{DP$_{k}$} 
+				[\alertgreen{Peter},roof]
+			]
+			[\alertgreen{\MyPxbar{C}}
+				[\alertgreen{\zerobar{C}} 
+					[\alertgreen{schläft$_{i}$}]
+				]
+				[\alertgreen{IP} 
+					[\alertgreen{t$_{k}$}]
+					[\alertgreen{\MyPxbar{I}}
+						[\alertgreen{VP} 
+							[\alertgreen{\MyPxbar{V}} 
+								[\alertgreen{\zerobar{V}} 
+									[\alertgreen{t$_{i}$}]
+								]
+							]
+						]
+						[\alertgreen{\zerobar{I}} 
+							[\alertgreen{t$_{i}$}]
+						]
+					]
+				]
+			]
+		]
+		\end{forest}
+	}
+\end{minipage}  
+%            
+%         
+\begin{minipage}[b]{0.45\textwidth}
+	
+	\pause 
+	
+	{\small Wer schläft?}	
+	
+	\pause 
+	
+	\centering
+	\scalebox{0.6}{
+		\begin{forest}
+			MyP edges,
+			[\alertgreen{CP} 
+			[\alertgreen{DP$_{k}$} [\alertgreen{Wer},roof]
+			]
+			[\alertgreen{\MyPxbar{C}}
+			[\alertgreen{\zerobar{C}} [\alertgreen{schläft$_{i}$}]
+			]
+			[\alertgreen{IP} [\alertgreen{t$_{k}$}]
+			[\alertgreen{\MyPxbar{I}}
+			[\alertgreen{VP} [\alertgreen{\MyPxbar{V}} [\alertgreen{\zerobar{V}} [\alertgreen{t$_{i}$}	]]]]
+			[\alertgreen{\zerobar{I}} [\alertgreen{t$_{i}$}]]
+			]
+			]
+			]
+			]
+		\end{forest}
+	}
+\end{minipage}  
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe -- Lösung}
+
+{\small Hat sie dir die schwierige Frage nach den Spuren gestellt?}
+
+\pause
+
+\begin{minipage}[b]{0.45\textwidth}
+
+\centering
+\scalebox{0.6}{
+	\begin{forest}
+		MyP edges,
+		[\alertgreen{CP} 
+		[\alertgreen{\MyPxbar{C}}
+		[\alertgreen{\zerobar{C}} [\alertgreen{Hat$_{i}$}]
+		]
+		[\alertgreen{IP} [\alertgreen{DP} [\alertgreen{\MyPxbar{D}} [\alertgreen{\zerobar{D}} [\alertgreen{sie}]]]
+		]
+		[\alertgreen{\MyPxbar{I}}
+		[\alertgreen{VP} 
+		[\alertgreen{DP} [\alertgreen{\MyPxbar{D}} [\alertgreen{\zerobar{D}} [\alertgreen{dir}]]]]
+		[\alertgreen{\MyPxbar{V}} 								
+		[\alertgreen{DP}, draw, HUgreen 
+		[\alertgreen{die} \dots\ \alertgreen{Spuren},roof]
+		]		
+		[\alertgreen{\zerobar{V}} [\alertgreen{gestellt}]]
+		]
+		]
+		[\alertgreen{\zerobar{I}} [\alertgreen{t$_{i}$}]]
+		]
+		]
+		]
+		]
+	\end{forest}
+}
+\end{minipage}  
+%      
+\pause  	      
+%         
+\begin{minipage}[b]{0.45\textwidth}
+
+\centering
+\scalebox{0.4}{
+	\begin{forest}
+		MyP edges,
+		[\alertgreen{DP}
+		[\alertgreen{\MyPxbar{D}}
+		[\alertgreen{\zerobar{D}}[\alertgreen{die}]]
+		[\alertgreen{NP}
+		[\alertgreen{AP} [\alertgreen{\MyPxbar{A}} [\alertgreen{\zerobar{A}} [\alertgreen{schwierige}]]]]
+		[\alertgreen{NP} 
+		[\alertgreen{\MyPxbar{N}} 
+		[\alertgreen{\zerobar{N}} [\alertgreen{Frage}]]
+		[\alertgreen{PP}
+		[\alertgreen{\MyPxbar{P}} 
+		[\alertgreen{\zerobar{P}} [\alertgreen{nach}]]
+		[\alertgreen{DP}
+		[\alertgreen{\MyPxbar{D}}
+		[\alertgreen{\zerobar{D}} [\alertgreen{den}]]
+		[\alertgreen{NP} [\alertgreen{\MyPxbar{N}} [\alertgreen{\zerobar{N}} [\alertgreen{Spuren}]]]]
+		]
+		]
+		]
+		]
+		]
+		]
+		]
+		]
+		]
+	\end{forest}
+}
+\end{minipage}  
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe -- Lösung}
+
+{\small die fast vor dem Mittagessen erstellte Speisekarte}
+
+\pause 
+
+\begin{minipage}[b]{0.45\textwidth}
+
+\centering
+\scalebox{0.6}{
+\begin{forest}
+	MyP edges,
+	[\alertgreen{DP}
+	[\alertgreen{\MyPxbar{D}}
+	[\alertgreen{\zerobar{D}}[\alertgreen{die}]]
+	[\alertgreen{NP}
+	[\alertgreen{AP}
+	[\alertgreen{PP}, draw, HUgreen 
+	[\alertgreen{fast vor dem Mittagessen},roof]
+	%							[AdvP [\MyPxbar{Adv} [\zerobar{Adv} [kurz]]]]
+	%							[PP [\MyPxbar{P}
+	%									[\zerobar{Adv} [vor]]
+	%									[DP [\MyPxbar{D} [\zerobar{D} [dem]]
+	%										[NP [\MyPxbar{N} [\zerobar{N} [Mittagessen]]]]
+	%										]
+	%									]				
+	%								]							
+	%							]
+	]	
+	[\alertgreen{AP} [\alertgreen{\MyPxbar{A}} [\alertgreen{\zerobar{A}} [\alertgreen{erstellte}]]]]
+	]
+	[\alertgreen{NP} [\alertgreen{\MyPxbar{N}} [\alertgreen{\zerobar{N}} [\alertgreen{Speisekarte}]]]
+	]
+	]
+	]
+	]
+\end{forest}
+}
+\end{minipage}  
+%  
+\pause          
+%         
+\begin{minipage}[b]{0.45\textwidth}
+
+\centering
+\scalebox{0.6}{
+\begin{forest}
+	MyP edges,
+	[\alertgreen{PP}
+	[\alertgreen{AdvP} [\alertgreen{\MyPxbar{Adv}} [\alertgreen{\zerobar{Adv}} [\alertgreen{fast}]]]]
+	[\alertgreen{PP} 
+	[\alertgreen{\MyPxbar{P}}
+	[\alertgreen{\zerobar{P}} [\alertgreen{vor}]]
+	[\alertgreen{DP} [\alertgreen{\MyPxbar{D}} [\alertgreen{\zerobar{D}} [\alertgreen{dem}]]
+	[\alertgreen{NP} [\alertgreen{\MyPxbar{N}} [\alertgreen{\zerobar{N}} [\alertgreen{Mittagessen}]]]]
+	]
+	]				
+	]							
+	]
+	]	
+\end{forest}
+}
+\end{minipage}  
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Hausaufgabe -- Lösung}
+	
+	{\small weil der Präsident kommt, hat die Polizei die Sicherung des Geländes übernommen}
+
+\pause
+	
+	\centering
+	\scalebox{0.35}{
+	\begin{forest}
+%			sm edges
+			[\alertgreen{CP}
+			  [\alertgreen{CP$_i$}
+			    [\alertgreen{C$'$}
+				  [\alertgreen{C} [\alertgreen{weil}]]
+				  [\alertgreen{IP}
+					[\alertgreen{DP}
+					  [\alertgreen{D$'$} 
+						[\alertgreen{D} [\alertgreen{der}]]
+						[\alertgreen{NP} 
+						[\alertgreen{N$'$}
+						  [\alertgreen{N} [\alertgreen{Präsident}]]]]]]
+					[\alertgreen{I$'$}
+					  [\alertgreen{VP} [\alertgreen{V$'$} [\alertgreen{V} [\alertgreen{$t_j$}]]]]
+					  [\alertgreen{I} [\alertgreen{kommt$_j$}]]]]]]
+			  [\alertgreen{C$'$}
+			    [\alertgreen{C} [\alertgreen{hat$_k$}]]
+				  [\alertgreen{IP}
+					[\alertgreen{DP}
+					  [\alertgreen{D$'$} 
+						[\alertgreen{D} [\alertgreen{die}]]
+						[\alertgreen{NP} 
+						[\alertgreen{N$'$}
+						  [\alertgreen{N} [\alertgreen{Polizei}]]]]]]
+					[\alertgreen{I$'$}
+					  [\alertgreen{VP}
+%						[\alertgreen{CP} 
+						[\alertgreen{$t_i$}]
+%						]
+%						[\alertgreen{VP}
+%						  [\alertgreen{V$'$}
+						    [\alertgreen{VP} 
+							  [\alertgreen{V$'$} 
+								[\alertgreen{DP}
+								  [\alertgreen{D$'$} 
+									[\alertgreen{D} [\alertgreen{die}]]
+									[\alertgreen{NP} 
+									  [\alertgreen{N$'$}
+										[\alertgreen{N} [\alertgreen{Sicherung}]]
+										[\alertgreen{DP}
+										  [\alertgreen{D$'$} 
+											[\alertgreen{D} [\alertgreen{des}]]
+											[\alertgreen{NP} 
+											  [\alertgreen{N$'$}
+												[\alertgreen{N} [\alertgreen{Geländes}]]]]]]
+								]]]]
+								[\alertgreen{V} [\alertgreen{übernommen}]]]]
+%							[\alertgreen{V} [\alertgreen{$t_k$}]]
+%							]
+%						]
+					]
+					  [\alertgreen{I} [\alertgreen{$t_k$}]]]]]]
+	\end{forest}}
+
+\end{frame}

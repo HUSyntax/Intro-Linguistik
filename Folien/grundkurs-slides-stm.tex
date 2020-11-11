@@ -1,0 +1,55 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile: XeLaTeX BibTeX XeLaTeX XeLaTeX
+%% Slides: Stefan Müller
+%% Course: GK Linguistik
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,10pt, bibtotoc]{beamer}
+%\documentclass[10pt,a4paper]{beamer}
+%\documentclass[10pt,handout]{beamer}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Die funktionieren:
+%\includeonly{00-Organisatorisches-include,01a-sprache-sprachwissenschaft-include,01b-sprache-sprachwissenschaft-include,02-phonetik-include,03a-phonologie-include,03b-phonologie-include,04-graphematik-include,05a-wortbildung-include,05b-flexion-include,06-syntax-stefan-include}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%     PACKAGES       %%
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{localpackages}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Preamble's End                   %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\begin{document}
+
+\input{localcommands}
+
+
+%% Neue Toggles:
+\toggletrue{ue-loesung}
+\toggletrue{ha-loesung}
+%%
+
+
+%\togglefalse{uebung}
+\toggletrue{uebung}
+
+%\togglefalse{loesung}
+\toggletrue{loesung}
+
+%\togglefalse{toc}
+\toggletrue{toc}
+
+\toggletrue{hausaufgabe}
+%\togglefalse{hausaufgabe}
+
+%\toggletrue{ha-loesung}
+
+
+\input{grundkurs-include-stm}

@@ -1,0 +1,85 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Syntax improv HA 2 -- Aufgabenstellung auf moodle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt, a4paper]{scrartcl}
+%\input{localpackages}
+%\input{localcommands}
+
+\usepackage{graphicx}
+\usepackage[ngerman]{babel}
+\usepackage[linguistics]{forest}
+
+\pagestyle{empty}
+
+\forestset{
+	sn edges/.style={for tree={parent anchor=south, child
+			anchor=north,align=center,base=bottom,where n children=0{tier=word}{}}},
+	background tree/.style={for tree={text opacity=0.2,draw
+			opacity=0.2,edge={draw opacity=0.2}}},
+	empty nodes/.style={
+		delay={where content={}{shape=coordinate,for parent={for
+					children={anchor=north}}}{}}}
+}
+
+\begin{document}
+
+\scalebox{.7}{
+\begin{forest}
+	sn edges
+	[CP
+		[CP$_2$ [Dass jemand ihre Taschen\\durchsucht hatte, roof] ]
+		[C$'$
+			[C$^0$ [schüchtert] ]
+			[TP
+				[ ,empty nodes
+					[$t_2$]
+				]
+				[T$'$
+					[VP
+						[V$'$
+							[DP
+								[D$'$
+									[D$^0$ [die] ]
+									[NP
+										[N$'$
+											[AP
+												[A$'$
+													[PP
+														[P$'$
+															[P$^0$ [von] ]
+															[DP
+																[D$'$
+																	[D$^0$ [der] ]
+																	[NP
+																		[N$'$
+																			[N$^0$ [Straßenmusik] ]
+																		]
+																	]
+																]
+															]
+														]
+														]
+														[A$^0$ [abgelenkten] ]
+													]
+												]
+												[N$'$
+													[N$^0$ [Touristen] ]
+												]
+											]
+										]
+									]
+								]
+								[V$^0$ [ein $t_1$] ]
+							]
+						]
+						[T$^0$ [$t_1$] ]
+					]
+				]
+			]
+		]
+\end{forest}
+}
+
+
+\end{document}

@@ -1,0 +1,115 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile: XeLaTeX BibTeX XeLaTeX XeLaTeX
+%% Loesung-Handout: Stefan Müller
+%% Course: GK Linguistik
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\documentclass[a4paper,10pt, bibtotoc]{beamer}
+\documentclass[10pt,handout]{beamer}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%     PACKAGES      
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{../localpackages}
+
+\input{../localcommands}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Preamble's End                   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\begin{document}
+	
+	
+%%%% ue-loesung
+%%%% true: Übung & Lösungen (slides) / false: nur Übung (handout)
+%	\toggletrue{ue-loesung}
+
+%%%% ha-loesung
+%%%% true: Hausaufgabe & Lösungen (slides) / false: nur Hausaufgabe (handout)
+%	\toggletrue{ha-loesung}
+
+%%%% toc
+%%%% true: TOC am Anfang von Slides / false: keine TOC am Anfang von Slides
+\toggletrue{toc}
+
+%%%% sectoc
+%%%% true: TOC für Sections / false: keine TOC für Sections (StM handout)
+%	\toggletrue{sectoc}
+
+%%%% gliederung
+%%%% true: Gliederung für Sections / false: keine Gliederung für Sections
+%	\toggletrue{gliederung}
+	
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Metadata                         
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
+
+\title{Grundkurs Linguistik}
+
+\subtitle{Lösungen -- Morphologie}
+
+\author[Stefan Müller]{
+	{\small Stefan Müller}
+	\\
+	{\footnotesize \url{https://hpsg.hu-berlin.de/~stefan/}}
+	%	\\
+	%	\href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
+}
+
+\institute{Institut für deutsche Sprache und Linguistik}
+
+
+% bitte lassen, sonst kann man nicht sehen, von wann die PDF-Datei ist.
+%\date{ }
+
+%\publishers{\textbf{6. linguistischer Methodenworkshop \\ Humboldt-Universität zu Berlin}}
+
+%\hyphenation{nobreak}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Preamble's End                  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%      
+\huberlintitlepage[22pt]
+\iftoggle{toc}{
+	\frame{
+		\begin{multicols}{2}
+			\frametitle{Inhaltsverzeichnis}
+			\tableofcontents
+			%[pausesections]
+			\columnbreak
+% muss noch hinzugefügt werden, wenn in include auch \refs und \exrs angewendet sind
+%				\textcolor{white}{
+%					\ea \label{ex:05aHA1}
+%					\ex \label{ex:05aHA5}
+%					\z
+%				}
+		\end{multicols}
+	}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Übungen}
+
+\input{05b-stefan-ue-loesung01-include}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Hausaufgaben}
+	
+\input{05c-stefan-ha-loesung-include}
+
+	
+\input{../gk-literatur}
+	
+	
+\end{document}

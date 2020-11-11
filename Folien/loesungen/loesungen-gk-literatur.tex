@@ -1,0 +1,47 @@
+%% -*- coding:utf-8 -*-
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\def\insertsectionhead{\refname}
+\def\insertsubsectionhead{}
+
+\huberlinjustbarfootline
+
+
+\ifpdf
+\else
+\ifxetex
+\else
+\let\url=\burl
+\fi
+\fi
+\begin{multicols}{2}
+{\tiny
+%\beamertemplatearticlebibitems
+
+\bibliography{../gkbib,../bib-abbr,../biblio}
+\bibliographystyle{../unified}
+}
+\end{multicols}
+
+
+
+
+
+%% \section{Literatur}
+%% \begin{frame}[allowframebreaks]
+%% \frametitle{Literatur}
+%% 	\footnotesize
+
+%% \bibliographystyle{unified}
+
+%% 	%German
+%% %	\bibliographystyle{deChicagoMyP}
+
+%% %	%English
+%% %	\bibliographystyle{chicago} 
+
+%% 	\bibliography{gkbib,bib-abbr,biblio}
+	
+%% \end{frame}

@@ -1,0 +1,86 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Syntax improv HA 1 -- Aufgabenstellung auf moodle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt, a4paper]{scrartcl}
+%\input{localpackages}
+%\input{localcommands}
+
+\usepackage{graphicx}
+\usepackage[ngerman]{babel}
+\usepackage[linguistics]{forest}
+
+\pagestyle{empty}
+
+\forestset{
+	sn edges/.style={for tree={parent anchor=south, child
+			anchor=north,align=center,base=bottom,where n children=0{tier=word}{}}},
+	background tree/.style={for tree={text opacity=0.2,draw
+			opacity=0.2,edge={draw opacity=0.2}}},
+	empty nodes/.style={
+		delay={where content={}{shape=coordinate,for parent={for
+					children={anchor=north}}}{}}}
+}
+
+\begin{document}
+
+\scalebox{.8}{
+\begin{forest}
+	sn edges
+	[CP
+		[CP$_2$ [Dass die Mikrofon-\\anlage kaputt war,roof] ]
+		[C$'$
+			[C$^0$ [kritisierten$_1$] ]
+			[TP
+				[DP
+				[D$'$
+					[D$^0$ [alle] ]
+					[NP
+						[N$'$
+							[N$'$
+								[N$^0$ [Zuhörenden] ]
+							]
+							[PP
+								[P$'$
+									[P$^0$ [auf] ]
+									[DP
+									[D$'$
+										[D$^0$ [den] ]
+											[NP
+												[N$'$
+													[AP
+														[A$'$
+															[A$^0$ [hinteren] ]
+														]
+													]
+													[N$'$
+														[N$^0$ [Plätzen] ]
+													]
+												]
+											]
+										]
+									]
+									]
+								]						
+						]
+					]
+				]
+				]
+				[T$'$
+					[VP
+						[V$'$
+							[, empty nodes [$t_2$ ]]
+							[V$^0$ [$t_1$] ]
+						]
+					]
+					[T$^0$ [$t_1$] ]					
+				]
+			]
+		]
+	]
+\end{forest}
+}
+
+
+
+\end{document}

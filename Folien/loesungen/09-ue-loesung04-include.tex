@@ -1,0 +1,441 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% UE 4 - 09 Übungen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Übung: Syntax -- Lösung}
+
+\begin{itemize}
+	\item[12.] Ordnen Sie die folgenden Matrixsätze und ihre Nebensätze in das topologische Feldermodell ein.
+	
+	\begin{exe}
+		\exr{ex:12}
+		
+		\begin{xlist}
+			\ex Petra wirkt müde, obwohl sie nicht viel getanzt hat.
+			\ex Wenn ich im Konzert bin, höre ich der Musik zu.
+			\ex Die Frau, die hier arbeitet, obwohl die Heizung ausgeschaltet ist, ist leider krank geworden.
+			\ex Anke hat gemerkt, dass Maria trotz der Erkältung arbeiten gegangen ist.
+		\end{xlist}
+
+	\end{exe}
+	
+\end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	
+	\begin{table}
+		\centering
+		\scalebox{.75}{
+		\alertgreen{
+		\begin{tabular}{p{3.5cm}|l|p{4cm}|p{2cm}|p{3cm}}
+			\textbf{VF} & \textbf{LSK} & \textbf{MF} & \textbf{RSK} & \textbf{NF} \\
+			\hline
+			Petra & wirkt & müde, & & obwohl sie nicht viel getanzt hat.\\
+			\hline
+			& obwohl & sie nicht viel & getanzt hat. & \\
+			\hline
+			\hline
+			Wenn ich im Konzert bin, & höre & ich der Musik & zu. & \\
+			\hline
+			& Wenn & ich im Konzert & bin, & \\
+			\hline
+			\hline
+			Die Frau, die hier arbeitet, obwohl die Heizung ausgeschaltet ist, & ist & leider krank & geworden. & \\
+			\hline
+			die & & hier & arbeitet, & obwohl die Heizung ausgeschaltet ist, \\
+			\hline
+			& obwohl & die Heizung & ausgeschaltet ist, & \\
+			\hline
+			\hline
+			Anke & hat & & gemerkt, & dass Maria trotz der Erkältung arbeiten gegangen ist. \\
+			\hline
+			& dass & Maria trotz der Erkältung & arbeiten gegangen ist. & \\
+		\end{tabular}
+		} }
+	\end{table}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+\begin{itemize}
+	
+	\item[13.] Testen Sie anhand von jeweils zwei Konstituententests, ob die kursiv gesetzte Wortfolge eine Konstituente des Satzes bildet.
+	
+	\begin{exe}
+		\exr{ex:13}
+		
+		\begin{xlist}
+			\ex Am Ende bekam Jakob das \emph{für Luise vorbereitete} Kostüm.
+
+			\only<2->{
+				\begin{itemize}
+					\item \alertgreen{Vorfeldtest: *Für Luise vorbereitete bekam am Ende Jakob das Kostüm.}
+					\item \alertgreen{Fragetest: Was bekam Jakob am Ende? \textit{*Für Luise vorbereitete.}}
+				\end{itemize}
+				}
+	
+			\alertgreen{\only<2->{$\rightarrow$ [für Luise vorbereitete] ist keine Konstituente}}
+	
+\medskip
+	
+			\ex Er hatte sich das überlegt, \emph{weil Jakob wieder krank war}.
+
+			\only<3->{
+				\begin{itemize}
+					\item \alertgreen{Vorfeldtest: Weil Jakob wieder krank war, hatte er sich das überlegt.}
+					\item \alertgreen{Fragetest: Warum hatte er sich das überlegt? \textit{Weil Jakob wieder krank war.}}
+				\end{itemize}
+				}
+	
+			\alertgreen{\only<3->{$\rightarrow$ [weil Jakob wieder krank war] ist eine Konstituente}}
+		\end{xlist}
+	
+	\end{exe}
+		
+\end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+	
+\begin{itemize}
+	\item[14.] Analysieren Sie die folgenden Sätze nach dem X-Bar-Schema.
+		
+	\begin{exe}
+		\exr{ex:14}
+			
+		\begin{xlist}		
+			\ex Maria sieht Peter.
+			\ex Weil der nette Nachbar konzentriert gearbeitet hat, hat er erst an dem Abend Peter getroffen.
+			\ex Über die Behandlung der zwei Patienten haben bis gestern die Ärzte diskutiert.
+			\ex Luise hat gefragt, ob Jakob kommt.
+		\end{xlist}
+	
+	\end{exe}
+		
+	\end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+	
+(14a): Maria sieht Peter.
+		
+	\centering
+	\scalebox{.56}{
+			\alertgreen{
+					
+				\begin{forest}
+					sm edges, empty nodes
+					[CP
+						[DP$_{i}$
+							[\MyPxbar{D}
+								[\zerobar{D} [$\emptyset$]]
+								[NP
+									[\MyPxbar{N}
+										[\zerobar{N} [Maria]]
+									]
+								]
+							]
+						]
+						[\MyPxbar{C}
+							[\zerobar{C} [sieht$_{ii}$]]
+							[IP
+								[[t$_{i}$]]
+								[\MyPxbar{I}
+									[VP
+										[\MyPxbar{V}
+											[DP
+												[\MyPxbar{D}
+													[\zerobar{D} [$\emptyset$]]
+													[NP
+														[\MyPxbar{N}
+															[\zerobar{N} [Peter]]
+														]
+													]
+												]
+											]
+											[\zerobar{V} [t$_{ii}$]]
+										]
+									]
+									[\zerobar{I} [t$_{ii}$]]
+								]
+							]
+						]
+					]
+				\end{forest}
+				}}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+(14b): Weil der nette Nachbar konzentriert gearbeitet hat, hat er erst an dem Abend Peter getroffen.
+			
+	\centering
+	\scalebox{.45}{
+			\alertgreen{
+				\begin{forest}
+					sm edges, empty nodes
+					[CP
+						[CP$_{i}$
+							[\MyPxbar{C}
+								[\zerobar{C} [weil]]
+								[IP
+									[DP
+										[\MyPxbar{D}
+											[\zerobar{D} [der]]
+											[NP
+												[AP
+													[\MyPxbar{A}
+														[\zerobar{A} [nette]]
+													]
+												]
+												[NP
+													[\MyPxbar{N}
+														[\zerobar{N} [Nachbar]]
+													]
+												]
+											]
+										]
+									]
+									[\MyPxbar{I}
+										[VP
+											[AdvP
+												[\MyPxbar{Adv}
+													[\zerobar{Adv} [konzentriert]]
+												]
+											]
+											[VP
+												[\MyPxbar{V}
+													[\zerobar{V} [gearbeitet]]
+												]
+											]
+										]
+										[\zerobar{I} [hat]]
+									]
+								]
+							]
+						]
+						[\MyPxbar{C}
+							[\zerobar{C} [hat$_{ii}$]]
+							[IP
+								[DP
+									[\MyPxbar{D}
+										[\zerobar{D} [er]]
+									]
+								]
+								[\MyPxbar{I}
+									[VP
+										[PP
+											[AdvP
+												[\MyPxbar{Adv}
+													[\zerobar{Adv} [erst]]
+												]
+											]
+											[PP
+												[\MyPxbar{P}
+													[\zerobar{P} [an]]
+													[DP
+														[\MyPxbar{D}
+															[\zerobar{D} [dem]]
+															[NP
+																[\MyPxbar{N}
+																	[\zerobar{N} [Abend]]
+																]
+															]
+														]
+													]
+												]
+											]
+										]
+										[VP
+											[[t$_{i}$]]
+											[VP
+												[\MyPxbar{V}
+													[DP
+														[\MyPxbar{D}
+															[\zerobar{D} [$\emptyset$]]
+															[NP
+																[\MyPxbar{N}
+																	[\zerobar{N} [Peter]]
+																]
+															]		
+														]
+													]
+												[\zerobar{V} [getroffen]]
+												]
+											]
+										]
+									]
+									[\zerobar{I} [t$_{ii}$]]
+								]
+							]
+						]
+					]			
+				\end{forest}
+				}}
+			
+\end{frame}	
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+(14c): Über die Behandlung der zwei Patienten haben bis gestern die Ärzte diskutiert.
+
+	\centering
+	\scalebox{.47}{
+			\alertgreen{
+				\begin{forest}
+					sm edges, empty nodes
+					[CP
+						[PP$_{ii}$
+							[\MyPxbar{P}
+								[\zerobar{P} [über]]
+								[DP
+									[\MyPxbar{D}
+										[\zerobar{D} [die]]
+										[NP
+											[\MyPxbar{N}
+												[\zerobar{N} [Behandlung]]
+												[DP
+													[\MyPxbar{D}
+														[\zerobar{D} [der]]
+														[NP
+															[AP
+																[\MyPxbar{A}
+																	[\zerobar{A} [zwei]]
+																]
+															]
+															[NP
+																[\MyPxbar{N}
+																	[\zerobar{N} [Patienten]]
+																]
+															]
+														]
+													]
+												]
+											]
+										]
+									]
+								]
+							]
+						]
+						[\MyPxbar{C}
+							[\zerobar{C} [haben$_{i}$]]
+							[IP
+								[PP
+									[\MyPxbar{P}
+										[\zerobar{P} [bis]]
+									[AdvP
+										[\MyPxbar{Adv}
+											[\zerobar{Adv} [gestern]]
+										]
+									]
+									]
+								]
+								[IP
+									[DP
+										[\MyPxbar{D}
+											[\zerobar{D} [die]]
+											[NP
+												[\MyPxbar{N}
+													[\zerobar{N} [Ärzte]]
+												]
+											]
+										]
+									]
+									[\MyPxbar{I}
+										[VP
+											[\MyPxbar{V}
+												[[t$_{ii}$]]
+												[\zerobar{V} [diskutiert]]
+											]
+										]
+										[\zerobar{I} [t$_{i}$]]
+									]
+								]
+							]
+						]
+					]
+				\end{forest}
+				}}
+			
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+(14d): Luise hat gefragt, ob Jakob kommt.
+			
+	\centering
+	\scalebox{.63}{
+			\alertgreen{
+				\begin{forest}
+					sm edges, empty nodes
+					[CP
+						[DP$_{i}$
+							[\MyPxbar{D}
+								[\zerobar{D} [$\emptyset$]]
+								[NP
+									[\MyPxbar{N}
+										[\zerobar{N} [Luise]]
+									]
+								]
+							]
+						]
+						[\MyPxbar{C}
+							[\zerobar{C} [hat$_{ii}$]]
+							[IP
+								[IP
+									[[t$_{i}$]]
+									[\MyPxbar{I}
+										[VP
+											[\MyPxbar{V}
+												[[t$_{iii}$]]
+												[\zerobar{V} [gefragt]]
+											]
+										]
+										[\zerobar{I} [t$_{ii}$]]
+									]
+								]
+								[CP$_{iii}$
+									[\MyPxbar{C}
+										[\zerobar{C} [ob]]
+										[IP
+											[DP
+												[\MyPxbar{D}
+													[\zerobar{D} [er]]
+												]
+											]
+											[\MyPxbar{I}
+												[VP
+													[\MyPxbar{V}
+														[\zerobar{V} [t$_{iv}$]]
+													]
+												]
+												[\zerobar{I} [kommt$_{iv}$]]
+											]
+										]
+									]
+								]
+							]
+						]
+					]
+				\end{forest}
+				}}			
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

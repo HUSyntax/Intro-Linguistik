@@ -1,0 +1,66 @@
+%% -*- coding:utf-8 -*-
+\documentclass[landscape]{scrartcl}
+
+
+\usepackage{fontspec}
+\usepackage{makros.2e,oneline}
+\usepackage{langsci-forest-setup}
+
+\usepackage[a4paper,margin=5mm]{geometry}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\scalebox{.86}{\begin{forest}
+  sm edges
+[CP
+  [CP$_i$
+    [C$'$
+      [C [weil]]
+      [TP
+        [DP
+          [D$'$ 
+            [D [der]]
+            [NP 
+            [N$'$
+              [N [Präsident]]]]]]
+        [T$'$
+          [VP [V$'$ [V [\trace$_j$]]]]
+          [T [komm-$_j$ -t]]]]]]
+  [C$'$
+    [C [ha-$_k$ -t$_l$]]
+      [TP
+        [DP
+          [D$'$ 
+            [D [die]]
+            [NP 
+            [N$'$
+              [N [Polizei]]]]]]
+        [T$'$
+          [VP
+            [CP [\trace$_i$]]
+            [VP
+              [V$'$
+                [VP 
+                  [V$'$ 
+                    [DP
+                      [D$'$ 
+                        [D [die]]
+                        [NP 
+                          [N$'$
+                            [N [Sicherung]]
+                            [DP
+                              [D$'$ 
+                                [D [des]]
+                                [NP 
+                                  [N$'$
+                                    [N [Geländes]]]]]]
+                    ]]]]
+                    [V [übernommen]]]]
+                [V [\trace$_k$]]]]]
+          [T [\trace$_l$]]]]]]
+\end{forest}}
+
+
+\end{document}

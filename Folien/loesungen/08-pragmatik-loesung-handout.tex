@@ -1,0 +1,128 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile: XeLaTeX BibTeX XeLaTeX XeLaTeX
+%% Loesung-Handout: Antonio Machicao y Priemer
+%% Course: GK Linguistik
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\documentclass[a4paper,10pt, bibtotoc]{beamer}
+\documentclass[10pt,handout]{beamer}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%     PACKAGES      
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{../localpackages}
+
+\input{../localcommands}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Preamble's End                   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\begin{document}
+	
+	
+%%%% ue-loesung
+%%%% true: Übung & Lösungen (slides) / false: nur Übung (handout)
+%	\toggletrue{ue-loesung}
+
+%%%% ha-loesung
+%%%% true: Hausaufgabe & Lösungen (slides) / false: nur Hausaufgabe (handout)
+%	\toggletrue{ha-loesung}
+
+%%%% toc
+%%%% true: TOC am Anfang von Slides / false: keine TOC am Anfang von Slides
+\toggletrue{toc}
+
+%%%% sectoc
+%%%% true: TOC für Sections / false: keine TOC für Sections (StM handout)
+%	\toggletrue{sectoc}
+
+%%%% gliederung
+%%%% true: Gliederung für Sections / false: keine Gliederung für Sections
+%	\toggletrue{gliederung}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Metadata                         
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
+
+\title{Grundkurs Linguistik}
+
+\subtitle{Lösungen -- Pragmatik}
+
+\author[A. Machicao y Priemer]{
+	{\small Antonio Machicao y Priemer}
+	\\
+	{\footnotesize \url{http://www.linguistik.hu-berlin.de/staff/amyp}}
+	%	\\
+	%	\href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
+}
+
+\institute{Institut für deutsche Sprache und Linguistik}
+
+
+% bitte lassen, sonst kann man nicht sehen, von wann die PDF-Datei ist.
+%\date{ }
+
+%\publishers{\textbf{6. linguistischer Methodenworkshop \\ Humboldt-Universität zu Berlin}}
+
+%\hyphenation{nobreak}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Preamble's End                  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%      
+\huberlintitlepage[22pt]
+\iftoggle{toc}{
+	\frame{
+\frametitle{Inhaltsverzeichnis}
+
+		\begin{multicols}{2}
+			\tableofcontents
+			%[pausesections]
+			\columnbreak
+			\textcolor{white}{
+				\ea\label{ex:08ue1}
+				\ex\label{ex:08ue2}
+				\ex\label{ex:08ue3}
+				\ex\label{ex:08ue4}
+				\ex\label{ex:08ue5}
+				\ex\label{ex:08ue6}
+				\ex\label{ex:08ue7}
+				\ex \label{ex:08ue8}
+				\ex \label{ex:08ue9}
+				\ex \label{ex:08ue10}
+				\ex \label{ex:08ue11}
+				\ex \label{ex:08ue12}
+				\ex \label{ex:08ue13}
+				\ex \label{ex:08ue14}
+				\z
+			}
+		\end{multicols}
+	}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Übungen}
+
+\input{08-ue-loesung01-include}
+
+\input{08-ue-loesung02-include}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Hausaufgaben}
+
+
+\input{loesungen-gk-literatur}
+
+
+\end{document}

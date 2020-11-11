@@ -1,0 +1,169 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile: XeLaTeX BibTeX XeLaTeX XeLaTeX
+%% Loesung-Handout: Antonio Machicao y Priemer
+%% Course: GK Linguistik
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\documentclass[a4paper,10pt, bibtotoc]{beamer}
+\documentclass[10pt,handout]{beamer}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%     PACKAGES      
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{../localpackages}
+
+\input{../localcommands}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Preamble's End                   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\begin{document}
+	
+	
+%%%% ue-loesung
+%%%% true: Übung & Lösungen (slides) / false: nur Übung (handout)
+%	\toggletrue{ue-loesung}
+
+%%%% ha-loesung
+%%%% true: Hausaufgabe & Lösungen (slides) / false: nur Hausaufgabe (handout)
+%	\toggletrue{ha-loesung}
+
+%%%% toc
+%%%% true: TOC am Anfang von Slides / false: keine TOC am Anfang von Slides
+\toggletrue{toc}
+
+%%%% sectoc
+%%%% true: TOC für Sections / false: keine TOC für Sections (StM handout)
+%	\toggletrue{sectoc}
+
+%%%% gliederung
+%%%% true: Gliederung für Sections / false: keine Gliederung für Sections
+%	\toggletrue{gliederung}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Metadata                         
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
+
+\title{Grundkurs Linguistik}
+
+\subtitle{Lösungen -- Semantik}
+
+\author[A. Machicao y Priemer]{
+	{\small Antonio Machicao y Priemer}
+	\\
+	{\footnotesize \url{http://www.linguistik.hu-berlin.de/staff/amyp}}
+	%	\\
+	%	\href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
+}
+
+\institute{Institut für deutsche Sprache und Linguistik}
+
+
+% bitte lassen, sonst kann man nicht sehen, von wann die PDF-Datei ist.
+%\date{ }
+
+%\publishers{\textbf{6. linguistischer Methodenworkshop \\ Humboldt-Universität zu Berlin}}
+
+%\hyphenation{nobreak}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Preamble's End                  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%      
+\huberlintitlepage[22pt]
+\iftoggle{toc}{
+	\frame{
+	\frametitle{Inhaltsverzeichnis}
+	
+		\begin{multicols}{6}
+			\tableofcontents
+			%[pausesections]
+			\columnbreak
+			\textcolor{white}{
+				\ea\label{ex:Rel1}
+				\ex\label{ex:Rel2}
+				\ex\label{ex:Rel3}
+				\ex\label{ex:Rel4}
+				\ex\label{ex:Rel5}
+				\ex\label{ex:Rel6}
+				\ex\label{ex:Rel7}
+				\ex\label{ex:Rel8}
+				\ex \label{ex:Rel9}
+				\ex \label{ex:Rel10}
+				\ex \label{ex:Rel11}
+				\ex\label{ex:Form1}
+				\ex\label{ex:Form2}
+				\ex\label{ex:Form3}
+				\ex\label{ex:Form4}
+				\ex\label{ex:Form5}
+				\ex\label{ex:Form6}
+				\ex\label{ex:AL1}
+				\ex\label{ex:AL2}
+				\ex\label{ex:AL3}
+				\ex\label{ex:AL4}
+				\ex\label{ex:AL5}
+				\ex\label{ex:AL6}
+				\ex\label{ex:Tau1}
+				\ex\label{ex:Tau2}
+				\ex \label{ex:Kon1}
+				\ex \label{ex:Con1}
+				\ex \label{ex:07HA1}
+				\ex \label{ex:07HA2}
+				\ex \label{ex:07HA3}
+				\ex \label{ex:07HA4}
+				\ex \label{ex:07HA5}
+				\ex \label{ex:07HA6}
+				\ex \label{ex:07HA7}
+				\ex \label{ex:07HA8}
+				\ex \label{ex:07HA9}
+				\ex \label{ex:07HA10}
+				\ex \label{ex:07HA11}
+				\ex \label{ex:07HA12}
+				\ex \label{ex:07HA13}
+				\ex \label{ex:07HA14}
+				\ex \label{ex:07HA15}
+				\ex \label{ex:07HA16}
+				\ex \label{ex:07HA17}
+				\ex\label{ex:Tau3}
+				\ex\label{ex:Kon2}
+				\ex\label{ex:Con2}
+				\ex\label{ex:Wert1}
+				\ex\label{ex:Wert2}
+				\ex\label{ex:Wert3}
+				\z
+			}
+		\end{multicols}
+	}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Übungen}
+
+\input{07-ue-loesung01-include}
+
+\input{07-ue-loesung02-include}
+
+\input{07-ue-loesung03-include}
+
+\input{07-ue-loesung04-include}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Hausaufgaben}
+
+\input{07-ha-loesung-include}
+
+\input{loesungen-gk-literatur}
+
+
+\end{document}

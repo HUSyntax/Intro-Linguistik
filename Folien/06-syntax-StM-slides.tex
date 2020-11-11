@@ -1,0 +1,48 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile: XeLaTeX BibTeX XeLaTeX XeLaTeX
+%% Slides: Stefan Müller
+%% Course: GK Linguistik
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,11pt, bibtotoc]{beamer}
+%\documentclass[10pt,a4paper]{beamer}
+%\documentclass[10pt,handout]{beamer}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%     PACKAGES       %%
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{localpackages}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Preamble's End                   %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\begin{document}
+
+\input{localcommands}
+
+%\togglefalse{uebung}
+%\toggletrue{uebung}
+%\togglefalse{loesung}
+%\toggletrue{loesung}
+\togglefalse{toc}
+%\toggletrue{toc}
+\toggletrue{hausaufgabe}
+\toggletrue{ha-loesung}
+\newtoggle{ba-linguistik}\toggletrue{ba-linguistik}
+
+
+\include{06a-syntax-stefan-include}
+%\include{06-syntax-ha1}
+\include{06b-xbar-simple-include}
+\include{06-syntax-ha2}
+\include{06c-syntax-ip-include}
+
+\input{gk-literatur}
+
+
+\end{document}

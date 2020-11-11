@@ -1,0 +1,18 @@
+<?wpl version="1.0"?>
+<smil>
+    <head>
+        <meta name="Generator" content="Microsoft Windows Media Player -- 12.0.7601.17514"/>
+        <meta name="ItemCount" content="6"/>
+        <title>04PPEinstStritten</title>
+    </head>
+    <body>
+        <seq>
+            <media src="01-narrative.wav"/>
+            <media src="02-narrative.wav"/>
+            <media src="03-narrative.wav"/>
+            <media src="04-narrative.wav"/>
+            <media src="05-narrative.wav"/>
+            <media src="06-narrative.wav"/>
+        </seq>
+    </body>
+</smil>

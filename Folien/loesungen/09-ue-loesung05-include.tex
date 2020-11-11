@@ -1,0 +1,335 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% UE 5 - 09 Übungen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Übung: Semantik/Pragmatik -- Lösung}
+
+\begin{itemize}
+	\item[15.] Geben Sie die Bedeutungsrelationen (so genau wie möglich) zwischen den folgenden Wörtern an.
+	
+	\begin{exe}
+		\exr{ex:15}
+	\settowidth \jamwidth{\alertgreen{kontradiktorische Antonymie}}
+	
+		\begin{xlist}
+			\ex satt -- hungrig \only<2->{\jambox{\alertgreen{konträre Antonymie}}}
+			\ex erwerben -- kaufen \only<3->{\jambox{\alertgreen{(partielle) Synonymie}}}
+			\ex Haare -- Kopf \only<4->{\jambox{\alertgreen{Meronymie}}}
+			\ex schuldig -- nicht schuldig \only<5->{\jambox{\alertgreen{kontradiktorische Antonymie}}}
+			\ex heute -- Häute \only<6->{\jambox{\alertgreen{Homophonie}}}
+			\ex Tiger -- Katze \only<7->{\jambox{\alertgreen{Hyponymie}}}
+			\ex fruchtbar -- unfruchtbar \only<8->{\jambox{\alertgreen{kontradiktorische Antonymie}}}
+		\end{xlist}
+	
+	\end{exe}
+	
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+	
+\begin{itemize}
+	\item[16.] Illustrieren Sie die Begriffe Satzbedeutung, Äußerungsbedeutung und Sprecherbedeutung mithilfe des folgenden Satzes.
+	
+	\begin{exe}
+		\exr{ex:16} Ich glaube, du gehst jetzt! \\
+		\ras Peter zu Klaus am 25. August 2020 um 20:30 Uhr.
+	\end{exe}
+	
+	\item Satzbedeutung: \\ \only<2->{\alertgreen{Der Sprecher des Satzes glaubt (zum Zeitpunkt der Äußerung), dass der Adressat der Äußerung geht.}}
+	\item Äußerungsbedeutung: \\ \only<3->{\alertgreen{Klaus glaubt, dass Peter am 25. August 2020 um 20:30 Uhr geht.}}
+	\item Sprecherbedeutung: \\ \only<4->{\alertgreen{Peter fordert Klaus bestimmt auf (\zB nach einer Auseinandersetzung) sofort zu gehen.}}
+	
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+\begin{itemize}
+	\item[17.] Geben Sie die Bedeutungsrelationen zwischen den folgenden Sätzen an.
+	
+	\begin{exe}
+		\exr{ex:17}
+	\settowidth \jamwidth{\only<2->{\alertgreen{\ras a impliziert b}}}
+	
+		\begin{xlist}
+			\ex Hinter dem Baum steht ein Bär. \jambox{\only<2->{\alertgreen{Implikation}}}
+			\ex Hinter dem Baum steht ein Tier. \jambox{\only<2->{\alertgreen{\ras a impliziert b}}}
+		\end{xlist}
+	
+		\exr{ex:18}
+		
+		\begin{xlist}
+			\ex Peter fängt an zu arbeiten. \jambox{\only<3->{\alertgreen{Paraphrase}}}
+			\ex Peter nimmt die Arbeit auf.
+		\end{xlist}
+		
+		\exr{ex:19}
+		
+		\begin{xlist}
+			\ex Sandra ist groß. \jambox{\only<4->{\alertgreen{Kontradiktion}}}
+			\ex Sandra ist nicht-groß.
+		\end{xlist}
+		
+		\exr{ex:20}
+		
+		\begin{xlist}
+			\ex Ich habe alle Studenten gesehen. \jambox{\only<5->{\alertgreen{Paraphrase}}}
+			\ex Ich habe nicht einen Studenten nicht gesehen.
+		\end{xlist}
+	
+		\exr{ex:21}
+		
+		\begin{xlist}
+			\ex Maria geht wandern. \jambox{\only<6->{\alertgreen{Inkompatibilität}}}
+			\ex Maria macht eine Kreuzfahrt.
+		\end{xlist}
+		
+		\exr{ex:22}
+		
+		\begin{xlist}
+			\ex Gert ist verletzt. \jambox{\only<7->{\alertgreen{Implikation}}}
+			\ex Gert hat ein gebrochenes Bein. \jambox{\only<6->{\alertgreen{\ras b impliziert a}}}
+		\end{xlist}
+		
+	\end{exe}
+
+\end{itemize}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+	
+\begin{itemize}
+		
+	\item[18.] Geben Sie eine Wahrheitswerttabelle für den folgenden aussagenlogischen Ausdruck an und bestimmen Sie, ob es sich dabei um eine tautologische, eine kontradiktorische oder eine kontingente Aussage handelt.
+	
+	\begin{exe}
+		\exr{ex:23} $((p \rightarrow q) \lor q)$
+	\end{exe}
+		
+		\begin{table}
+			\centering
+			\scalebox{.95}{
+				\only<2->{\alertgreen{
+					\begin{tabular}{c|c|c|c}
+					p & q & $(p \rightarrow q)$ & $((p \rightarrow q) \lor q)$ \\
+					\hline
+					1 & 1 & 1 & 1 \\
+					\hline
+					1 & 0 & 0 & 0 \\
+					\hline
+					0 & 1 & 1 & 1 \\
+					\hline
+					0 & 0 & 1 & 1 \\
+					\end{tabular}
+					}}}
+		\end{table}
+
+\medskip
+	
+	\only<2->{\item \alertgreen{Bei dem vorangehenden aussagenlogischen Ausdruck handelt es sich um eine kontingente Aussage.}}
+				
+\end{itemize}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+\begin{itemize}
+	\item[19.] Markieren Sie alle deiktischen und anaphorischen Elemente in den folgenden Sätzen und spezifizieren Sie diese.
+		
+	\begin{exe}
+		\exr{ex:24}
+		
+		\begin{xlist}
+			\ex Sie haben diese Tür nicht geschlossen.
+			\ex Gestern war mir das Wetter echt zu kalt!
+			\ex Peter wusste, dass er es sich dort gemütlich machen würde.
+		\end{xlist}
+	
+	\end{exe}
+
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+\begin{itemize}
+	\item[19.] Markieren Sie alle deiktischen und anaphorischen Elemente in den folgenden Sätzen und spezifizieren Sie diese.
+	
+	\begin{exe}
+		\exr{ex:24}
+		
+		\begin{xlist}
+			\ex \alertgreen{Sie} haben \alertgreen{diese} Tür nicht geschlossen.
+			\ex \alertgreen{Gestern} war \alertgreen{mir} das Wetter echt zu kalt!
+			\ex Peter wusste, dass \alertblue{er} es \alertblue{sich} \alertgreen{dort} gemütlich machen würde. 
+			%	\ex \gqq{Ich bin sehr glücklich, mich wieder für das WTA-Finale qualifiziert zu haben. Ich freue mich darauf, dort anzutreten und gegen die Besten der Welt zu spielen}, sagte die 27-Jährige, die im vergangenen Jahr nur als Ersatzspielerin mitfahren durfte.
+		\end{xlist}
+	
+	\end{exe}
+
+\end{itemize}	
+	
+	\begin{minipage}[t]{0.35\textwidth}
+
+	\begin{itemize}
+		\item \alertgreen{Deiktische Elemente:}
+		\only<2->{
+		
+			\begin{itemize}
+				 \item \only<2->{\alertgreen{Sie: Sozialdeixis}}
+				 \item \only<2->{\alertgreen{diese: Objektdeixis}}
+				 \item \only<2->{\alertgreen{gestern: Temporaldeixis}}
+				 \item \only<2->{\alertgreen{mir: Personaldeixis}}
+				 \item \only<2->{\alertgreen{dort: Lokaldeixis}} 
+			\end{itemize}		
+			}
+
+	\end{itemize}
+	
+	\end{minipage}
+	\begin{minipage}[t]{0.60\textwidth}
+	
+	\begin{itemize}
+		\item \alertblue{Anaphorische Elemente:}
+		\only<2->{
+		
+			\begin{itemize}
+				\item \only<2->{\alertblue{er: anaphorischer Ausdruck; Antezedens: \textit{Peter}}}
+				\item \only<2->{\alertblue{sich: anaphorischer Ausdruck; Antezedens: \textit{er}}}
+			\end{itemize}
+			}
+		
+	\end{itemize}
+
+	\end{minipage}
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+	
+\begin{itemize}
+	\item[20.] Bestimmen Sie die Art von Folgerung (Implikation, Präsupposition, Implikatur), die zwischen dem ersten und den folgenden Sätzen besteht:
+	
+	\begin{exe}
+		\exr{ex:25} Sogar Peter hat zwei Kinder.
+	\settowidth \jamwidth{\only<2->{\alertgreen{konversationalle Implikatur}}}
+		
+		\begin{xlist}
+			\ex Peter hat nicht mehr als zwei Kinder. \jambox{\only<2->{\alertgreen{konversationalle Implikatur}}}
+			\ex Es gibt ein Individuum namens Peter. \jambox{\only<3->{\alertgreen{Präsupposition}}}
+			\ex Peter ist Vater. \jambox{\only<4->{\alertgreen{semantische Implikation}}}
+			\ex Peter hat vier Kinder. \jambox{\only<5->{\alertgreen{keine Folgerung}}}
+			\ex Überraschenderweise hat Peter Kinder. \jambox{\only<6->{\alertgreen{konventionelle Implikatur}}}
+		\end{xlist} 
+		
+	\end{exe}
+
+\end{itemize}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+\begin{itemize}
+	\item[21.] Bestimmen Sie jeweils eine semantische Implikation aus den folgenden Sätzen:
+	
+	\begin{exe}
+		\exr{ex:26}
+		
+		\begin{xlist}
+			\ex In einem Schuhkarton gibt es Platz für zwei Schuhe.
+			\ex Saskia hat eine Schwedin geheiratet.
+		\end{xlist}
+
+	\end{exe}
+	
+\end{itemize}
+	
+	\only<2->{\alertgreen{(26a): $\vDash$ In einem Schuhkarton gibt es Platz für einen Schuh.}} ~\\
+\medskip
+	\only<3->{\alertgreen{(26b): $\vDash$ Saskia hat eine Nordeuropäerin geheiratet.}}
+	
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+	
+\begin{itemize}
+		
+	\item[22.] Bestimmen Sie jeweils eine Präsupposition aus den folgenden Sätzen:
+	
+	\begin{exe}
+		\exr{ex:27}
+		
+		\begin{xlist}
+			\ex Ich freue mich darüber, dass wir die Klausur bestanden haben.
+			\ex Auch Maria ist schwanger.
+			\ex Alle Geiseln wurden gerettet.
+			\ex Sie mögen immer noch Syntax.
+		\end{xlist}
+
+	\end{exe}
+		
+\end{itemize}
+
+	\only<2->{\alertgreen{(27a): \prspp Wir haben die Klausur bestanden.}} ~\\
+\medskip
+	\only<3->{\alertgreen{(27b): \prspp Mindestens eine weitere Entität neben Maria ist schwanger.}} ~\\
+\medskip
+	\only<4->{\alertgreen{(27c): \prspp Die Geiseln waren in Gefahr.}} ~\\
+\medskip
+	\only<5->{\alertgreen{(27d): \prspp Sie mochten bisher Syntax.}}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+	
+\begin{itemize}
+	\item[23.] Geben Sie an, ob eine Maxime (scheinbar) verletzt oder befolgt wurde und um welche es sich handelt, um die angegebene Implikatur zu erhalten.
+	
+	\begin{exe}
+		\exr{ex:28} Wir haben einige Personen entlassen.\\
+		$+>$ Es wurden nicht alle entlassen.
+	\end{exe}
+	
+	\begin{exe}
+		\exr{ex:29} A: Wie war das Bewerbungsgespräch?\\
+		B: Das Wetter ist ja super heute!\\
+		$+>$ Es war furchtbar!
+	\end{exe}
+	
+\end{itemize}
+
+	\only<2->{\alertgreen{(\ref{ex:28}): Befolgung der Quantitätsmaxime}} ~\\
+\medskip
+	\only<3->{\alertgreen{(\ref{ex:29}): (scheinbare) Verletzung der Relevanzmaxime}}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

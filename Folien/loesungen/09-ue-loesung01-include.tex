@@ -1,0 +1,331 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% UE 1 - 09 Übungen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Übung: Phonetik/Phonologie -- Lösung}
+
+\begin{itemize}
+	\item[1.] Erläutern Sie den Unterschied zwischen Phon, Phonem und Allophon.
+	
+	\item Phon:
+		
+		\only<2->{
+		\begin{itemize}
+			\item \alertgreen{Minimaleinheit der Phonetik}
+			\item \alertgreen{physikalisch messbare lautliche Einheit einer Sprache} \pause
+		\end{itemize}
+	}
+		
+	\item Phonem:
+		
+		\only<3->{
+		\begin{itemize}
+			\item \alertgreen{Minimaleinheit der Phonologie}
+			\item \alertgreen{abstraktes Konstrukt, steht für eine Menge von möglichen Phonen}
+			\item \alertgreen{ermittelbar durch Minimalpaarbildung (strukturalistisches Kriterium)} \pause
+		\end{itemize}
+	}
+		
+	\item Allophon:
+		
+		\only<4->{
+		\begin{itemize}
+			\item \alertgreen{phonetische Realisierungsvariante eines Phonems}
+			\item \alertgreen{Untertypen: komplementäre und freie Allophonie, regionale und soziale Variation}
+		\end{itemize}
+		}
+
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+	
+\begin{itemize}
+	\item[2.] Geben sie die artikulatorischen Eigenschaften der folgenden Laute an.
+	
+	\begin{exe}
+		\exr{ex:01}
+	\settowidth \jamwidth{\alertgreen{halbhoher fast vorderer ungerundeter ungespannter Vokal}}
+	
+		\begin{xlist}
+			\ex \textipa{[r]}	\only<2->{\jambox{\alertgreen{alveolarer stimmhafter Vibrant}}}
+			\ex \textipa{[P]}	\only<3->{\jambox{\alertgreen{glottaler stimmloser Plosiv}}}
+			\ex \textipa{[b]}	\only<4->{\jambox{\alertgreen{bilabialer stimmhafter Plosiv}}}
+			\ex \textipa{[f]}	 \only<5->{\jambox{\alertgreen{labiodentaler stimmloser Frikativ}}}
+			\ex \textipa{[I]}	 \only<6->{\jambox{\alertgreen{halbhoher fast vorderer ungerundeter ungespannter Vokal}}}
+			\ex \textipa{[u:]}	\only<7->{\jambox{\alertgreen{hoher hinterer gerundeter gespannter (langer) Vokal}}}
+		\end{xlist}
+	
+	\end{exe}
+
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+	
+\begin{itemize}
+	\item[3.] Geben Sie die phonologische Repräsentation und die phonetische standarddeutsche Transkription der folgenden Wörter mit Silbenstruktur und X-Skelettschicht an.
+		
+	\begin{exe}
+		\exr{ex:02}
+		
+		\begin{xlist}
+			\ex Näherinnen
+			\ex Zwischendinger
+			\ex königlich
+		\end{xlist}
+	
+	\end{exe}
+
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+	
+\begin{frame}
+
+(2a): Näherinnen \\
+
+\medskip
+
+	\alertgreen{\textipa{/ne:.@.KI\d{n}@n/} \ras \textipa{[\textprimstress ne:.@.KI\d{n}@n]} }
+	
+	\centering
+	\alertgreen{
+	\scalebox{1}{
+	\begin{forest} MyP edges, [,phantom
+		[$\sigma$
+		[O
+			[x, tier=word[\textipa{n}]]
+		]
+		[R
+			[N
+				[x, tier=word[\textipa{E:}]]
+			]
+			[K]
+		]
+		]
+		[$\sigma$
+		[O]
+		[R
+			[N
+				[x, tier=word[\textipa{@}]]
+			]
+			[K]
+		]
+		]
+		[$\sigma$
+		[O
+			[x, tier=word[\textipa{K}]]+
+		]
+		[R
+			[N
+				[x, tier=word[\textipa{I}]]
+			]
+			[K
+				[x, tier=word, name=x[\textipa{n}]]
+			]
+		]
+		]
+		[$\sigma$
+		[O, name=O]
+		[R
+			[N
+				[x, tier=word[\textipa{@}]]
+			]
+			[K
+				[x, tier=word[\textipa{n}]]
+			]
+		]
+		]
+	]
+	\draw[HUgreen] (O.south)--(x.north);
+	\end{forest}
+	}}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+(2b): Zwischendinger	\\
+
+\medskip
+
+	\alertgreen{\textipa{/\t{ts}vI\d{S}@n.dIn.g@\textscr/} \ras \textipa{[\textprimstress \t{ts}vI\d{S}@n.dI\d{N}5]}}
+	
+	\centering
+	\alertgreen{
+	\scalebox{1}{
+	\begin{forest} MyP edges, [,phantom
+		[$\sigma$
+		[O
+			[x, tier=word[\textipa{\t{ts}}] ]
+			[x, tier=word[\textipa{v}] ]
+		]
+		[R
+			[N
+				[x, tier=word[\textipa{I}]]
+			]
+			[K
+				[x, tier=word, name=x[\textipa{S}]]
+			]
+		]
+		]
+		[$\sigma$
+		[O, name=O]
+		[R
+			[N
+				[x, tier=word[\textipa{@}] ]
+			]
+			[K
+				[x, tier=word[\textipa{n}]]
+			]
+		]
+		]
+		[$\sigma$
+		[O
+			[x, tier=word[\textipa{d}]]
+		]
+		[R
+			[N
+				[x, tier=word[\textipa{I}]]
+			]
+			[K
+				[x, tier=word, name=x2[\textipa{N}]]
+			]
+		]
+		]
+		[$\sigma$
+		[O, name=O2]
+		[R
+			[N
+				[x, tier=word[\textipa{5}]]
+			]
+			[K]	
+		]
+		]
+	]
+	\draw[HUgreen] (O.south)--(x.north);
+	\draw[HUgreen] (O2.south)--(x2.north);
+	\end{forest}
+	} }
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+(2c): königlich \\
+
+\medskip
+
+	\alertgreen{\textipa{/k\o:.nIg.lI\c{c}/} \ras \textipa{[\textprimstress k\o:.nIk.lI\c{c}]}} ~\\
+	
+	\centering
+	\alertgreen{
+	\scalebox{1}{
+	\begin{forest} MyP edges, [,phantom
+		[$\sigma$
+		[O
+			[x, tier=word[\textipa{k}]]
+		]
+		[R
+			[N
+				[x, tier=word[\textipa{\o:}, name=o]]
+				[x, tier=word, name=x]		
+			]
+			[K]
+		]
+		]
+		[$\sigma$
+		[O
+			[x, tier=word[\textipa{n}]]
+		]
+		[R
+			[N
+				[x, tier=word[\textipa{I}]]
+			]
+			[K
+				[x, tier=word[\textipa{k}]]
+			]
+		]
+		]
+		[$\sigma$
+		[O
+			[x, tier=word[\textipa{l}]]
+		]
+		[R
+			[N
+				[x, tier=word[\textipa{I}]]
+			]
+			[K
+				[x, tier=word[\textipa{\c{c}}]]
+			]
+		]
+		]
+	]
+	\draw[HUgreen] (x.south)--(o.north);		
+	\end{forest}
+	} }
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+
+\begin{itemize}
+	\item[4.] Benennen Sie die phonetisch/phonologischen Prozesse, die stattfinden, bei der Aussprache der folgenden Wörter:
+	
+	\begin{exe}
+		\exr{ex:03}
+	\settowidth \jamwidth{\alertgreen{regressive velare Nasalassimilation: \textipa{/n/} \ras \textipa{[N]}},}
+	
+		\begin{xlist}
+			\ex mild	\only<2->{\jambox{\alertgreen{Auslautverhärtung: \textipa{/d/} \ras \textipa{[t]}}}}
+\medskip
+			\ex ungelenkig	\only<3->{\jambox{\alertgreen{Knacklauteinsetzung: $\emptyset$ \ras \textipa{[P]}},}}
+			\only<3->{\jambox{\alertgreen{regressive velare Nasalassimilation: \textipa{/n/} \ras \textipa{[N]}},}} 
+			\only<3->{\jambox{\alertgreen{g-Spirantisierung: \textipa{/g/} \ras \textipa{[\c{c}]}}}}
+\medskip
+			\ex süchtig	\only<4->{\jambox{\alertgreen{g-Spirantisierung: \textipa{/g/} \ras \textipa{[\c{c}]}}}}
+\medskip
+			\ex Kraken	\only<5->{\jambox{\alertgreen{Schwa-Tilgung: \textipa{/@/} \ras $\emptyset$},}}
+			\only<5->{\jambox{\alertgreen{progressive Ortsassimilation: \textipa{/kn/} \ras \textipa{[kN]}}}}
+		\end{xlist}
+	
+	\end{exe}
+
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+
+\begin{itemize}
+	\item[5.] Sind die folgenden Segmentfolgen mögliche phonetische Wörter des Standarddeutschen?
+	
+	\begin{exe}
+		\exr{ex:04} \textipa{[p@:kl.\textprimstress Ipl]}
+		\exr{ex:05} \textipa{[\textprimstress Na:h.i:ltd]}
+	
+	\end{exe}
+	
+	\only<2->{\item \alertgreen{Beispiel (\ref{ex:04}) kann kein phonetisches Wort des Standarddeutschen sein, denn: gespanntes \textipa{[@]}, Verletzung der Sonoritätshierarchie in der Koda oder Onset-Maximierung in der folgenden Silbe \textipa{[kl]}, keine Knacklauteinsetzung in betonter Silbe, Verletzung der Sonoritätshierarchie \textipa{[pl]}}}
+	
+	\only<3->{\item \alertgreen{Beispiel (\ref{ex:05}) kann kein phonetisches Wort des Standarddeutschen sein, denn: \textipa{[N]} am Wortanfang, \textipa{[h]} wird wortintern nicht realisiert, \textipa{[i:]} muss mit daraffolgendem Konsonanten kurz sein, fehlende Auslautverhärtung \textipa{[d]}, anschließende fehlende Geminatenreduktion \textipa{[tt]} }}
+\end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

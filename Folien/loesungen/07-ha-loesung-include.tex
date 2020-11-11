@@ -1,0 +1,229 @@
+%%%%%%%%%%%%%%%%%%
+%07 Syntax ha-loesung
+%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Hausaufgabe -- Lösung}
+
+\begin{itemize}
+\item Welche Bedeutungsrelationen bzw.\ Ambiguitätsarten bestehen zwischen den folgenden Ausdrücken? Nennen Sie diese.
+\end{itemize}
+
+\settowidth\jamwidth{Meronymie (\textit{Feder} ist ein Meronym zu \textit{Vogel})}
+\ea 
+	\ea betrunken -- nüchtern \pause 
+	\jambox{\alertgreen{konträre Antonymie}}
+	
+	\ex Orange -- Apfelsine \pause 
+	\jambox{\alertgreen{Synonymie}}
+	
+	\ex Vogel -- Feder \pause 
+	\jambox{\alertgreen{Meronymie (\textit{Feder} ist ein Meronym zu \textit{Vogel})}}
+	
+	
+	\ex volljährig -- minderjährig \pause 
+	\jambox{\alertgreen{kontradiktorische Antonymie}}
+	
+	\ex mehr -- Meer \pause 
+	\jambox{\alertgreen{Homonymie (genauer: Homophonie)}}
+	
+	\ex Er studiert an der Universität -- Unsere Univesität steht unter Denkmalschutz \pause
+	\jambox{\alertgreen{Polysemie}}
+	
+	\ex umfahren -- umfahren \pause
+	\jambox{\alertgreen{Homonymie (genauer: Homographie)}}
+	\z
+\z 
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Hausaufgabe -- Lösung}
+
+\begin{itemize}
+	\item Welche semantischen Relationen bestehen zwischen den folgenden Sätzen? Nennen Sie diese.
+\end{itemize}
+
+\settowidth\jamwidth{Paraphrase (synonyme Sätze)}
+\ea 
+\ea Auf dem Tisch liegt eine Rose.
+\ex Auf dem Tisch liegt eine Blume.
+\pause 
+\jambox{\alertgreen{a impliziert b}}
+\z 
+
+\pause 
+\medskip
+
+\ex 	
+\ea Alle Vögel können fliegen.
+\ex Kein Vogel kann nicht fliegen.
+\pause 
+\jambox{\alertgreen{Paraphrase (synonyme Sätze)}}
+\z 
+
+\pause 
+\medskip
+
+\ex 	
+\ea Einige Tiere haben Federn.
+\ex Alle Tiere haben Federn.
+\pause 
+\jambox{\alertgreen{b impliziert a}}
+\z
+
+\pause
+\medskip
+
+\ex
+\ea Die Wand ist blau.
+\ex Die Wand ist rot.
+\pause
+\jambox{\alertgreen{Inkompatibilität}}
+\z
+
+\pause
+\medskip
+
+\ex
+\ea Der Mann ist ledig.
+\ex Der Mann ist verheiratet.
+\pause
+\jambox{\alertgreen{Kontradiktion}}
+\z
+
+\z 
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Hausaufgabe -- Lösung}
+
+\begin{itemize}
+	\item Überprüfen Sie die Richtigkeit der folgenden Aussagen.
+	
+	\vspace{1em}
+	
+	\begin{itemize}
+		\item Die komplexe Aussage (\ref{ex:Tau3}) ist \textbf{tautologisch}.
+		
+		\begin{exe}
+			\exr{ex:Tau3} $\lnot (p \land \lnot p)$
+		\end{exe}
+	\end{itemize}	
+	
+\end{itemize}
+
+\begin{table}
+	\centering	
+	\begin{tabular}{c|c|c|c}
+		$p$& $\lnot p$ & $p \land \lnot p$ & $\lnot (p \land \lnot p)$ \\ 
+		\hline 
+		0 & 1 & 0& \alertgreen{1}\\ 
+		\hline 
+		1 & 0 & 0& \alertgreen{1}\\
+	\end{tabular} 
+\end{table} 
+
+\alertgreen{Die komplexe Aussage ist tautologisch (Wahrheitswert immer 1).}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe -- Lösung}
+
+\begin{itemize}
+\item Überprüfen Sie die Richtigkeit der folgenden Aussagen.
+
+\vspace{1em}
+
+\begin{itemize}	
+	\item Die komplexe Aussage (\ref{ex:Kon2}) ist \textbf{kontradiktorisch}.
+	
+	\begin{exe}
+		\exr{ex:Kon2} $\lnot ((p \lor q) \leftrightarrow (q \lor p))$
+	\end{exe}		
+\end{itemize}	
+
+\end{itemize}
+
+\begin{table}
+\centering	
+\scalebox{.9}{\begin{tabular}{c|c|c|c|c|c}
+		$p$ & $q$ & $p \lor q$ & $q \lor p$ & $(p \lor q) \leftrightarrow (q \lor p)$ & $\lnot ((p \lor q) \leftrightarrow (q \lor p))$ \\ 
+		\hline 
+		1 & 1 & 1 & 1 & 1 & \alertgreen{0}\\ 
+		\hline 
+		1 & 0 & 1 & 1 & 1 & \alertgreen{0} \\
+		\hline
+		0 & 1 & 1 & 1 & 1 & \alertgreen{0} \\
+		\hline
+		0 & 0 & 0 & 0 & 1 & \alertgreen{0} \\
+\end{tabular} }
+\end{table} 
+
+\alertgreen{Die komplexe Aussage ist kontradiktorisch (Wahrheitswert immer 0).}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe -- Lösung}
+
+\begin{itemize}
+\item Überprüfen Sie die Richtigkeit der folgenden Aussagen.
+
+\vspace{1em}
+
+\begin{itemize}
+\item Die komplexe Aussage (\ref{ex:Con2}) ist \textbf{kontingent}.
+
+\begin{exe}
+	\exr{ex:Con2} $((p \rightarrow q) \leftrightarrow (q \rightarrow p))$
+\end{exe}
+
+\end{itemize}	
+
+\end{itemize}
+
+\begin{table}
+\centering	
+\begin{tabular}{c|c|c|c|c}
+$p$ & $q$ & $p \ras q$ & $q \ras p$ & $(p \ras q) \leftrightarrow (q \ras p)$ \\ 
+\hline 
+1 & 1 & 1 & 1 & \alertgreen{1} \\ 
+\hline 
+1 & 0 & 0 & 1 & \alertgreen{0} \\
+\hline
+0 & 1 & 1 & 0 & \alertgreen{0} \\
+\hline
+0 & 0 & 1 & 1 & \alertgreen{1} \\
+\end{tabular} 
+\end{table} 
+
+\alertgreen{Die komplexe Aussage ist kontigent (Wahrheitswert von der Welt abhängig).}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Hausaufgabe -- Lösung}
+
+\begin{itemize}
+	\item Geben Sie den Wahrheitswert der folgenden Formeln in einer Welt/Situation an, in der $p=0$ und $q=1$ sind.
+\end{itemize}
+
+\begin{exe}
+	\exr{ex:Wert1} $(p \land q)$ \pause  \alertgreen{= 0}
+	\pause
+	\exr{ex:Wert2} $(p \rightarrow (q \lor p))$ \pause \alertgreen{= 1}
+	\pause
+	\exr{ex:Wert3} $((q \land q) \lor (p \land q))$ \pause \alertgreen{= 1}
+\end{exe}
+\end{frame}

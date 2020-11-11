@@ -1,0 +1,40 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%06g Syntax ue-loesung02
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Übung -- Lösung}
+
+\begin{minipage}[b]{0.45\textwidth}
+	\centering
+	\scalebox{0.6}{
+		\begin{forest}
+			MyP edges,
+			[CP
+			[DP$_{k}$ [Ich,roof]]
+			[\MyPxbar{C} [\zerobar{C} [habe$_{i}$]]
+			[IP [t$_{k}$]
+			[\MyPxbar{I}
+			[VP	[AdVP [heute,roof]]
+			[VP [PP	[im Auto,roof]]{\draw[->,HUgreen] (.south west)--++(-7em,0em)--++(0em,14em)
+				node[anchor=east,align=center]{PP kann nicht \\ bewegt werden};}
+			[\MyPxbar{V} [\zerobar{V} [geschlafen t$_{i}$]]]
+			]
+			]
+			[\zerobar{I} [t$_{i}$]]
+			]
+			]
+			]	
+			]
+		\end{forest}
+	}
+\end{minipage}  
+%            
+%         
+\begin{minipage}[b]{0.45\textwidth}
+\alertgreen{{\small 
+	Nur eine Phrase, d.\,h.\ entweder die DP \MyPobj{ich} oder die PP \MyPobj{im Auto}, kann die SpecCP-Position belegen. Da die DP und die PP zusammen nicht eine Phrase bilden, können nicht \textbf{beide} Phrasen in diese Position bewegt werden.
+}}
+\end{minipage}  
+
+\end{frame}

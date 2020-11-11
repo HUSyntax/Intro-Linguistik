@@ -1,0 +1,1209 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile the master file!
+%% 		Slides: Antonio Machicao y Priemer
+%% 		Course: GK Linguistik
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Metadata                         
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
+
+
+\title{Grundkurs Linguistik}
+
+\subtitle{Syntax III: Topologisches Feldermodell, Satztypen \& Satzmodi}
+
+\author[A. Machicao y Priemer]{
+	{\small Antonio Machicao y Priemer}
+	\\
+	{\footnotesize \url{http://www.linguistik.hu-berlin.de/staff/amyp}}\\
+%	\href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
+}
+
+\institute{Institut für deutsche Sprache und Linguistik}
+
+%\date{ }
+
+%\publishers{\textbf{6. linguistischer Methodenworkshop \\ Humboldt-Universität zu Berlin}}
+
+%\hyphenation{nobreak}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Preamble's End                  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%      
+\huberlintitlepage[22pt]
+\iftoggle{toc}{
+\frame{
+\begin{multicols}{2}
+	\frametitle{Inhaltsverzeichnis}\tableofcontents
+	%[pausesections]
+\end{multicols}
+	}
+	}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%LITERATURE:
+
+%% Allgemein
+\nocite{Glueck&Roedel16a}
+\nocite{Luedeling2009a} 
+\nocite{Meibauer&Co07a} 
+\nocite{Repp&Co15a} 
+
+%% Morphologie
+%\nocite{Eisenberg04}
+
+%% Syntax
+%\nocite{Adger04a}
+\nocite{Altmann&Hofmann08a} % Satztypen & Satzmodi
+\nocite{Altmann93a} % Satztypen & Satzmodi
+\nocite{Brandt&Co06a} 
+%\nocite{Fries&MyP16b} % Akzeptabilität
+%\nocite{Fries16a} % Grammatikalität
+%\nocite{Fries&MyP16d} % Kompetenz vs Performanz
+%\nocite{Fries&MyP16c} % GG
+%\nocite{Fries&MyP16a} % X-Bar-Theorie
+\nocite{Fries16e} % Satztyp
+\nocite{Fries16d} % Satzmodus 
+\nocite{Grewendorf&Co91a} 
+%\nocite{MyP17b} % Kerngrammatik
+%\nocite{MyP18a} % Konstituententest
+%\nocite{MyP18b} % Kopf
+\nocite{MyP18c} % Phrase
+%\nocite{MuellerS13f} 
+%\nocite{MuellerS15b}
+%\nocite{Stechow&Sternefeld88a}
+%\nocite{Sternefeld06a}
+%\nocite{Sternefeld06b}
+\nocite{Woellstein10a} % Topologisches Feldermodell
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+	\frametitle{Begleitlektüre}
+		\begin{itemize}
+			\item \textbf{obligatorisch:}
+				\begin{itemize}
+					\item[] AM S.~69--79
+					\item[] \citet{MyP18c}
+				\end{itemize}
+		\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Syntax III}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Das topologische Modell}
+
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Das topologische Modell}
+
+\begin{block}{Topologie (Satztopologie, Feldgliederung)}
+Zusammenfassende Bezeichnung für das Studium der Wortstellung und der Satzgliedstellung, d.\,h.\ der Anordnung der entsprechenden Elemente im Raum (Geschriebenes) oder der Zeit (Gesprochenes). \\ \hfill \citep[vgl.][]{Glueck16a, Staffeldt16a}
+\end{block}
+
+\pause 
+
+\begin{itemize}
+
+	\item Zweck: Wortstellung im deutschen Matrixsatz abzubilden (\textbf{Topologie})
+%	\item[]
+	\item Hilfreich für die \textbf{Beschreibung} und den \textbf{Vergleich} von Satzstrukturen
+%	\item[]
+	\item Es erfasst alle möglichen deutschen Satztypen und macht sie \textbf{vergleichbar}.
+%	\item[]
+	\item Syntaktische Strukturen können \textbf{topologisch} erfasst werden, d.\,h.\ ihre Elemente werden in ihren Positionen und Abfolgen \textbf{beschrieben}.
+
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Das topologische Modell}
+
+\begin{itemize}
+	\item Die toplogische Satzstrukturbetrachtung hat eine lange Tradition.
+	
+	\ras \citealt{Herling1821a-u}; \citealt{Erdmann1886a-Short}; \textbf{\citealt{Drach39a}}
+	
+	\item[]
+	\item Die \textbf{Verfeinerung} des Modells wurde in den 1980ern vorgenommen. 
+	
+	\ras \citealt{Reis80a-link}; \citealt{Hoehle83a}; \citealt{Hoehle85a} \\
+	\hfill \citep[vgl.][]{MRR2018a-ed}
+	
+	\item[]
+	
+	\item Topologisches Modell wird (für einige Fragesetllungen) immer noch verwendet.
+	
+	\ras \citealt{Ramers06a}; \citealt{Pafel09}; \citealt{Woellstein10a} 
+
+
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Dreifeldermodell}
+
+%\iftoggle{sectoc}{
+%	\frame{
+%		\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+%		\end{multicols}
+%	}
+%}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Dreifeldermodell (Drach 1937)}
+
+\begin{itemize}
+	\item Drachs Dreifeldermodell war ursprünglich für die Erfassung von \textbf{Aussagesätzen mit Verbzweitstellung} (V2-Sätze) gedacht.
+	\item[]
+	\item \textbf{Vorfeld (VF):} Abschnitt vor dem finiten Verb
+	\item \textbf{Mitte:} Position für das finite Verb
+	\item \textbf{Nachfeld (NF):} Abschnitt nach dem finiten Verb
+\end{itemize}
+
+\pause
+
+\begin{table}
+\centering
+
+\begin{tabular}{l|l|l}
+\textbf{Vorfeld} & \textbf{Mitte} & \textbf{Nachfeld} \\ 
+\hline 
+Sophia & \alertred{schreibt} & ihre Dissertation. \\ 
+\hline
+\pause
+Sophia & \alertred{hat}  & ihre Dissertation geschrieben. \\ 
+\hline 
+\pause
+Ihre Dissertation geschrieben & \alertred{hat} & Sophia längst!\\ 
+\end{tabular} 
+
+\end{table}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Dreifeldermodell (Drach 1937)}
+
+\begin{itemize}
+	\item \textbf{Probleme:}
+	
+	\begin{itemize}
+		\item Modell erfasst nicht den komplexen Bereich nach dem finiten Verb.
+		\item[]
+		\item Modell nur für V2-Strukturen \ras zu beschränkt		
+	\end{itemize}
+\end{itemize}
+
+\pause
+
+\eal
+\ex \alertred{Hat} [Sophia] [ihre Dissertation] \alertred{geschrieben}?
+\ex \alertred{Schreib} endlich deine Diss!
+\ex	\alertred{Ob} sie ihre Diss \alertred{schreibt}?
+\zl
+
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Uniformes Grundmodell}
+
+%\iftoggle{sectoc}{
+%	\frame{
+%		\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+%		\end{multicols}
+%	}
+%}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Uniformes Grundmodell (in unserem Kurs)}
+
+\begin{itemize}
+	\item Auch: Stellungsfeldermodell,  lineares Modell, Felderstrukturenmodell 
+	\item 5-gliedriges Grundmodell
+	\item Erfasst \textbf{mehr Daten} als das Dreifeldermodell (d.\,h. es ist beschreibungsadäquater) 
+	
+	\ras Alle Verbstellungs- bzw. Satztypen werden in einem \textbf{einheitlichen} Muster abgebildet.
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+
+\begin{itemize}
+	\item Satz in topologische Abschnitte eingeteilt:
+	\begin{itemize}
+		\item []
+		\item \textbf{Vorfeld (VF):} Feld vor dem finiten Verb
+		\item[]
+		\item \textbf{Linke Satzklammer (LSK):} Finites Verb oder Subjunktion
+		\item[]
+		\item \textbf{Mittelfeld (MF):} 0--$x$ Konstituente(n)
+		\item[]		
+		\item \textbf{Rechte Satzklammer (RSK):} Verb(komplex)
+		\item[]		
+		\item \textbf{Nachfeld (NF):} Satzartige oder \gqq{schwere} Konstituenten
+	\end{itemize}
+\pause
+\end{itemize}
+
+\begin{table}
+\centering
+\scalebox{0.85}{
+\begin{tabular}{l|l|l|l|l}
+\textbf{VF} & \textbf{LSK} & \textbf{MF} & \textbf{RSK} & \textbf{NF} \\ 
+\hline 
+Gestern & ist & Nathalie früh nach Hause & gegangen, & weil sie müde war. \\ 
+\end{tabular} 
+}
+\end{table}
+	
+ \end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+
+\begin{itemize}
+	\item Abschnitte bzw.\ Satzeinheiten resultieren aus der Stellung der finiten und/""oder infiniten Verbform ($\approx$ aus dem Verbkomplex).
+\end{itemize}
+
+\begin{table}
+\centering
+\scalebox{0.8}{
+\begin{tabular}{l|l|l|l|l}
+\textbf{VF} & \textbf{LSK} & \textbf{MF} & \textbf{RSK} & \textbf{NF} \\ 
+\hline 
+Nathalie & \alertred{ist} & zu Hause & \alertred{geblieben}, & weil sie krank ist. \\ 
+\end{tabular} 
+}
+\end{table}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+
+\begin{itemize}
+	\item Analyse von \textbf{Haupt- und Nebensätzen} und \textbf{komplexen Satzstrukturen} möglich!
+	\item[]
+	\item Dieses Modell erfasst die \textbf{Verbklammer} (typisch für das Deutsche) und
+	die \textbf{Komplementarität} zwischen \textbf{Verb und Complementizer} in der LSK.
+\end{itemize}
+
+\begin{table}
+\centering
+\scalebox{0.8}{
+\begin{tabular}{l|l|l|l|l}
+\textbf{VF} & \textbf{LSK} & \textbf{MF} & \textbf{RSK} & \textbf{NF} \\ 
+\hline 
+Nathalie & \alertred{ist} & zu Hause & \alertgreen{geblieben}, & weil sie krank ist. \\ 
+\hline
+$\emptyset$ & \alertred{weil} & sie krank & \alertgreen{ist} & $\emptyset$. \\ 
+\end{tabular} 
+}
+\end{table}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Eigenschaften der Felder}
+
+%\iftoggle{sectoc}{
+%	\frame{
+%		\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+%		\end{multicols}
+%	}
+%}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Eigenschaften der Felder}
+
+\begin{itemize}
+	\item \textbf{VF:}
+
+\begin{table}
+\centering
+\scalebox{0.8}{
+\begin{tabular}{l|l|l|l|l}
+\textbf{VF} & \textbf{LSK} & \textbf{MF} & \textbf{RSK} & \textbf{NF} \\ 
+\hline 
+\alertred{Marlijn} & ist & zu Hause. &  &  \\
+\hline 
+\alertred{Die Frau, die hier arbeitet,} & ist & sehr fleißig. & & \\  
+\alertred{obwohl die Heizung ausgeschaltet ist,} & & & & \\
+\hline
+\alertred{$\emptyset$} & ist & Marlijn zu Hause ? &  &  \\
+\hline
+\alertred{$\emptyset$} & weil & sie krank & ist. &  \\ 
+\end{tabular} 
+}
+
+\end{table}
+
+\pause
+
+\begin{itemize}
+	\item \textbf{Fakultativ} besetzt
+	\item Platz für \textbf{eine} (beliebig komplexe) Konstituente 
+	\item \textbf{Leer} bei 
+	
+	\begin{itemize}
+		\item sog. V1-Sätzen (Entscheidungsfragen, Imperativsätzen, \dots ),
+		
+		\item Sätzen mit nebensatzeinleitender Konjunktion ($\approx$ Complementizer): \MyPobj{dass}, \MyPobj{ob}, \MyPobj{weil}, \dots 
+	
+	\end{itemize}	
+\end{itemize}
+
+
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Eigenschaften der Felder}
+
+\begin{itemize}
+	\item \textbf{LSK:}
+
+\begin{table}
+\centering
+\scalebox{0.8}{
+\begin{tabular}{l|l|l|l|l|l}
+& \textbf{VF} & \textbf{LSK} & \textbf{MF} & \textbf{RSK} & \textbf{NF} \\ 
+\hline 
+& Petra & \alertred{macht} & einen guten Kaffee. &  &  \\
+\hline 
+& & \alertred{dass} & Petra einen guten Kaffee & macht & \\  
+\hline
+Ich weiß, & wer & \alertred{$\emptyset$} & sie & ist. &  \\
+\hline
+Die Dame, & die & \alertred{$\emptyset$} & hier & arbeitet &  \\ 
+\end{tabular} 
+}
+\end{table}
+
+\pause 
+
+\begin{itemize}
+	\item Entweder finites Verb oder Complementizer
+	\item \textbf{Leer} bei 
+	
+	\begin{itemize}
+		\item eingebetteten Konstituentenfragen, 
+		\item Relativsätzen, 
+		\item Infinitivsätzen, \dots
+	\end{itemize}
+\end{itemize}
+
+\end{itemize}
+
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Eigenschaften der Felder}
+
+\begin{itemize}
+	\item \textbf{MF:}
+
+\begin{table}
+\centering
+\scalebox{0.75}{
+\begin{tabular}{l|l|l|l|l}
+\textbf{VF} & \textbf{LSK} & \textbf{MF} & \textbf{RSK} & \textbf{NF} \\ 
+\hline 
+Sophie & hat & \alertred{gut} & geschlafen. & \\  
+\hline 
+Sophie & soll & \alertred{[trotz des Bahnchaos']} & bekommen haben. &  \\
+& & \alertred{[nach ihrem Gespräch]} &  &  \\
+& & \alertred{[in einer anderen Stadt]} &  &  \\
+& & \alertred{[einen guten Job]} &  &  \\
+\hline 
+Sophie & hat & \alertred{$\emptyset$} & geschlafen. & \\  
+\hline
+Sie & hat & \alertred{die Frau} & eingestellt, & \alertred{die am qualifiziertesten} \\
+ &  &  & & \alertred{war}. \\
+\end{tabular} 
+}
+\end{table}
+
+\pause 
+
+\begin{itemize}
+	\item Platz für \textbf{beliebig viele} Konstituenten
+	\item Fakultativ auch leer
+	\item Durch RSK können Konstituenten des MFs aufgebrochen werden.
+\end{itemize}
+
+
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Eigenschaften der Felder}
+
+\begin{itemize}
+	\item \textbf{RSK:}
+
+\begin{table}
+\centering
+\scalebox{0.8}{
+\begin{tabular}{l|l|l|l|l}
+\textbf{VF} & \textbf{LSK} & \textbf{MF} & \textbf{RSK} & \textbf{NF} \\ 
+\hline 
+Monika & mag &  & \alertred{unterrichten}. & \\  
+\hline 
+ & Ob & Monika & \alertred{unterrichtet}? &  \\
+\hline
+mit dem & & Monika zur Arbeit & \alertred{fährt} &  \\
+\hline
+& weil & Monika & \alertred{angerufen haben will} &  \\
+\hline
+Monika & hat &  & \alertred{angerufen}. &  \\
+\hline 
+Monika & ruft &  & \alertred{an}.&  \\
+\end{tabular} 
+}
+\end{table}
+
+\pause 
+
+\begin{itemize}
+	\item Infinite Verben 
+	\item Finites Verb (falls nicht in LSK) \ras \zB in Neben- oder Relativsätzen
+	\item Fakultativ auch leer
+\end{itemize}
+
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Eigenschaften der Felder}
+
+\begin{itemize}
+	\item \textbf{NF:}
+
+\begin{table}
+\centering
+\scalebox{0.8}{
+\begin{tabular}{l|l|l|l|l}
+\textbf{VF} & \textbf{LSK} & \textbf{MF} & \textbf{RSK} & \textbf{NF} \\ 
+\hline 
+Maria & hat &  & gesehen, & \alertred{dass Peter schläft}.\\  
+\hline 
+Maria & hat &  & gesehen, & \alertred{als sie in die Küche kam}\\  
+ &  &  & & \alertgreen{dass Peter schlief}.\\  
+\hline
+Sie & hat & \alertred{die Frau} & eingestellt, & \alertred{die am qualifiziertesten} \\
+ &  &  & & \alertred{war}. \\
+\hline
+Du & hast & uns alle & begeistert & \alertred{mit deiner großartigen Präsentation}. \\
+\end{tabular} 
+}
+\end{table}
+
+\pause 
+
+\begin{itemize}
+	\item Kann eine oder mehrere Konstituenten enthalten
+	\item Fakultativ leer
+	\item Hauptsächlich besetzt bei Subjekt-, Objekt-, Adverbial- oder Relativsätzen (Extraposition)
+	\item Fakultativ auch bei \gqq{schweren} Konstituenten (PPs)
+\end{itemize}
+
+
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+
+\begin{itemize}
+	\item Im VF, MF, NF kann ein Satz enthalten sein (oder mehrere), der selbst wieder nach dem Feldermodell analysiert werden kann. 
+
+
+\begin{table}
+\centering
+\scalebox{0.8}{
+\begin{tabular}{l|l|l|l|l}
+\textbf{VF} & \textbf{LSK} & \textbf{MF} & \textbf{RSK} & \textbf{NF} \\ 
+\hline 
+Maria & hat &  & gesehen, & \alertred{dass Peter schläft}.\\
+\hline
+ & dass & Peter & schläft & \\  
+\hline
+\hline 
+Maria & hat &  & gemerkt, & \alertred{dass Peter denkt},\\  
+ &  &  & & \alertred{dass sie schläft}.\\ 
+\hline
+   & dass & Peter & denkt, & \alertgreen{dass sie schläft}\\ 
+\hline
+   & dass & sie & schläft &  \\ 
+\hline   
+\hline
+\alertred{Dass Peter denkt,} & hat & Maria sehr schnell & gemerkt. & \\
+\alertgreen{dass sie schläft,} &  &  & & \\
+\hline
+\hline
+Maria & hat, & \alertred{obwohl sie geschlafen hat}, & erwischt. &  \\
+& & die Einbrecher & & \\
+\end{tabular} 
+}
+\end{table}
+
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Fazit}
+
+%\iftoggle{sectoc}{
+%	\frame{
+%		\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+%		\end{multicols}
+%	}
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Fazit}
+
+\begin{itemize}
+	\item Das topologische Feldermodell eröffnet Möglichkeiten zur \textbf{Beschreibung} von \textbf{strukturellen (linearen) Gesetzmäßigkeiten} im Satzbau (\zB Satzklammer) und von grammatischen Konzepten (\zB Satztyp).
+	\item[]
+	\item Für eine intensive Beschäftigung mit der deutschen Syntax ist das Uniforme Modell allein allerdings \textbf{nicht ausreichend}. Die Unterteilung ist zu grob. Es sind Erweiterungen nötig. 
+	
+	vgl. Dreifeldermodell \ras Uniformes Modell \ras Differenzmodell
+	\\ \hfill \citep[vgl.][]{Woellstein10a}
+
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Übung}
+
+%\iftoggle{sectoc}{
+%	\frame{
+%		\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+%		\end{multicols}
+%	}
+%}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\iftoggle{uebung}{
+
+\begin{frame}
+\frametitle{Übung}
+
+\begin{itemize}
+	\item[1.] Ordnen Sie die folgenden \textbf{Matrixsätze} in das topologische Modell ein:
+
+
+\eal
+\ex Christiane schläft.
+\ex Schläft Christiane?
+\ex Ob Christiane schläft?
+\ex Schlaf!
+\ex Dass Christiane schläft, ist mir klar.
+\ex Ich wusste, dass Christiane schläft.
+\ex Er hat sich gedacht, dass Christiane wieder schläft.
+%\ex Weil wir es uns nicht vorstellen konnten, haben wir uns gewundert, dass Christiane schläft.
+\ex Weil wir es uns nicht vorstellen konnten, haben wir uns gewundert, als wir gemerkt haben, dass Christiane schläft.
+\zl
+
+\end{itemize}
+
+\end{frame}
+
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\iftoggle{ue-loesung}{
+
+\input{loesungen/06c-ue-loesung01-include}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\iftoggle{uebung}{
+
+\begin{frame}
+\frametitle{Übung}
+
+\begin{itemize}
+
+	\item[2.] Ordnen Sie die folgenden \textbf{Sätze und ihre eingebetteten Nebensätze} in das topologische Modell ein:
+\eal
+\ex Dass Christiane schläft, ist mir klar.
+\ex Ich wusste, dass Christiane schläft.
+\ex Er hat sich gedacht, dass Christiane wieder schläft.
+\ex Weil wir es uns nicht vorstellen konnten, haben wir uns gewundert, dass Christiane schläft.
+\ex Weil wir es uns nicht vorstellen konnten, haben wir uns gewundert, als wir gemerkt haben, dass Christiane schläft.
+\ex Die Frau, die die roten Schuhe trägt, schläft wieder.
+%\ex Als Sophia in der Flüchtlingsunterkunft geholfen hat, hat sie dort den jungen Mann getroffen, mit dem sie sich ein Büro teilt.  	
+\zl
+	
+\end{itemize}
+
+\end{frame}
+
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iftoggle{ue-loesung}{
+
+\input{loesungen/06c-ue-loesung02-include}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Satztypen \& Satzmodi}
+
+\iftoggle{sectoc}{
+	\frame{
+%		\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+%		\end{multicols}
+	}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Satztypen \& Satzmodi}
+
+\begin{itemize}
+	\item Sätze im Deutschen können verschiedene \textbf{Formen} annehmen:
+	\begin{itemize}
+		\item \textbf{Verberststellung (V1)}
+		\eal 
+		\ex \label{ex:Frage} \alertred{Schläft} Norbert?
+		\ex \label{ex:Imperat} \alertred{Schlaf} endlich!
+		\zl
+		
+		\item \textbf{Verbzweitstellung (V2)}
+		\ea \label{ex:Dekl} Norbert \alertred{schläft} gerne nach dem Mittagessen.
+		\z
+		
+		\item \textbf{Verbletztstellung (VL)}
+		\ea \label{ObFrage} Ob Norbert \alertred{schnarcht}?
+		\z
+		
+	\end{itemize}	
+
+\pause
+
+	\item Verschiedene Formen entsprechen unterschiedlichen \textbf{Funktionen:}
+	\begin{itemize}
+		\item etwas in der Welt als \textbf{wahr} zu postulieren (\ref{ex:Dekl}),
+		\item Zweifel oder \textbf{Unwissen} auszudrücken (\ref{ex:Frage}), (\ref{ObFrage}),
+		\item etwas auszudrücken, von dem man \textbf{will, dass es wahr ist} (/wird) (\ref{ex:Imperat}).		
+	\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Satztypen \& Satzmodi}
+
+\begin{block}{Satzmodus}
+Klassifikation von komplexen Zeichen (Sätzen) \textbf{mit einer Form- und einer Funktionsseite}. Der Sprecher wählt also eine bestimmte Form aus, um eine bestimmte Funktion zu erfüllen \citep[vgl.][]{Altmann93a}.
+\end{block}
+
+
+\pause 
+
+
+\begin{block}{Satztyp}
+Bezeichnung für unterschiedliche \textbf{Formtypen} von Sätzen, insbesondere solcher Hauptsätze, die in Äußerungen divergierende Handlungszwecke erfüllen bzw.\ erfüllen können \citep[vgl.][]{Fries16d, Fries16e}.
+\end{block}
+
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Satztypen \& Satzmodi}
+
+\begin{itemize}
+	\item \textbf{Formtyp} (Satztyp) \ras Formseite
+	\begin{itemize}
+		\item morphologische, syntaktische, phonologische Merkmale
+		\item satzförmige Struktur mit formellen Eigenschaften
+		\item Wort-/Verbstellung
+		\item Verbmorphologie
+		\item Subkategorisierung
+		\item Kategoriale Füllung
+		\item Intonation, \dots
+	\end{itemize}
+
+	\item \textbf{Funktionstyp} \ras Funktionsseite
+	\begin{itemize}
+		\item Bedeutung zum Ausdruck einer Proposition oder zur Ausführung einer sprachlichen Handlung vom spezifischen Satztyp: etwas assertieren/""erfragen/""befehlen/""wünschen \dots\ 
+	\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Satztypen \& Satzmodi}
+
+Die wichtigsten Satzmodi des Deutschen ausgehend von (\ref{ex:TypModus}):
+
+\ea\label{ex:TypModus} Proposition: \gqq{Uta ihr Auto verschenkt}
+\z
+
+\pause 
+
+\begin{itemize}
+	\item \textbf{Modus}: Deklarativ(-satz); Aussage(satz) 
+	
+	prototyp. \textbf{Satztyp}: Deklarativsatz
+	\ea Uta verschenkt ihr Auto.
+	\z
+
+\pause 
+	
+	\item \textbf{Modus}: Interrogativ(-satz); Frage(satz)
+	
+	prototyp. \textbf{Satztyp}: Interrogativsatz
+	
+	\ea Verschenkt Uta ihr Auto?
+	\ex Ob Uta ihr Auto verschenkt?
+	\z
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Satztypen \& Satzmodi}
+
+
+\begin{itemize}
+	\item \textbf{Modus}: Imperativ(-satz); Aufforderungs(satz) 
+	
+	prototyp. \textbf{Satztyp}: Imperativsatz
+	\ea Verschenk dein Auto, Uta!
+	\z
+
+\pause 
+	
+	\item \textbf{Modus}: Exklamativ(-satz); Ausrufe(satz)
+	
+	prototyp. \textbf{Satztyp}: ?
+	
+	\ea Uta hat ihr Auto verschenkt!
+	\z
+
+\pause 
+	
+	\item \textbf{Modus}: Optativ(-satz); Wunsch(satz)
+	
+	prototyp. \textbf{Satztyp}: ?
+	
+	\ea Wenn Uta nur ihr Auto verschenken würde!
+	\z
+	
+\end{itemize}
+
+Exklamativ und Optativ gelten wegen \textbf{des fehlenden eigenen Satztypen im Deutschen} als marginal.
+
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Deklarativ}
+
+%\iftoggle{sectoc}{
+%	\frame{
+%		\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+%		\end{multicols}
+%	}
+%}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Deklarativ}
+
+\begin{itemize}
+	\item \textbf{Satztyp:} V2-Aussagesatz
+	\begin{itemize}
+		\item Subkategorisierung: Kein W-Fragewort
+		\item Verbstellung: V2 (V in LSK)
+		\item Verbmodus: Indikativ (oder Konjunktiv)
+		\item Intonation: fallend
+	\end{itemize}
+	\item \textbf{Funktionstyp:}
+	\begin{itemize}
+		\item unmarkierter Satzmodus
+		\item kann für unterschiedliche Sprechakte verwendet werden (Behauptung, Mitteilung, Vermutung, Aufforderung, \dots )
+	\end{itemize}
+	
+	\ea Du machst heute deine Hausaufgaben.
+	\z
+	
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Interrogativ: E-Interrogativ}
+
+%\iftoggle{sectoc}{
+%	\frame{
+%		\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+%		\end{multicols}
+%	}
+%}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Interrogativ: E-Interrogativ}
+
+\begin{itemize}
+	\item Auch: Entscheidungsfrage(satz)
+	\item \textbf{Satztyp:} V1-Fragesatz $|$ VL-Fragesatz $+$ \MyPobj{ob}
+	\begin{itemize}
+		\item Subkategorisierung: Kein W-Fragewort $|$ \MyPobj{ob} in LSK
+		\item Verbstellung: V1 (V in LSK), VF leer $|$  VL (V in RSK)
+		\item Verbmodus: Indikativ (oder Konjunktiv)
+		\item Intonation: steigend
+	\end{itemize}
+	\item \textbf{Funktionstyp:}
+	\begin{itemize}
+		\item relativ unmarkierter Satzmodus
+		\item kann für unterschiedliche Sprechakte verwendet werden: Fragen, Bitten, Aufforderung, \dots
+		\item Eine Antwort wird verlangt.
+	\end{itemize}
+	
+	\eal
+	\ex Machst du heute deine Hausaufgaben?
+	\ex Ob du heute deine Hausaufgaben machst?
+	\zl
+	
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Interrogativ: K-Interrogativ}
+
+%\iftoggle{sectoc}{
+%	\frame{
+%		\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+%		\end{multicols}
+%	}
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Interrogativ: K-Interrogativ}
+
+\begin{itemize}
+	\item Auch: Konstituentenfrage(satz)
+	\item \textbf{Satztyp:} V2-Fragesatz
+	\begin{itemize}
+		\item Subkategorisierung: W-Fragewort im VF
+		\item Verbstellung: V2 (V in LSK)
+		\item Verbmodus: Indikativ (oder Konjunktiv)
+		\item Intonation: steigend
+	\end{itemize}
+	\item \textbf{Funktionstyp:}
+	\begin{itemize}
+		\item Eine Antwort wird dem Fragewort entsprechend verlangt.
+	\end{itemize}
+	
+	\eal
+	\ex Was machst du heute?
+	\ex Wer macht heute seine Hausaufgaben?
+	\zl
+	
+\end{itemize}
+
+\nocite{MyP18e} \nocite{MyP18g} \nocite{MyP18i} \nocite{MyP18p}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Imperativ}
+
+%\iftoggle{sectoc}{
+%	\frame{
+%		\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+%		\end{multicols}
+%	}
+%}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Imperativ}
+
+\begin{itemize}
+	\item \textbf{Satztyp:} V1-Imperativsatz (auch V2 möglich)
+	\begin{itemize}
+		\item Subkategorisierung: kein W-Fragewort, Subjekt in \textsc{2.sg} und \textsc{pl} wird getilgt
+		\item Verbstellung: V1 oder V2 (V in LSK)
+		\item Verbmodus: Imperativ
+		\item Intonation: fallend
+	\end{itemize}
+	\item \textbf{Funktionstyp:}
+	\begin{itemize}
+		\item zum Ausdrücken von Aufforderungen, Bitten, Befehlen, Drohungen, \dots
+	\end{itemize}
+	
+	\eal
+	\ex Mach heute deine Hausaufgaben!
+	\ex Machen Sie heute Ihre Hausaufgaben!
+	\ex Jetzt macht doch eure Hausaufgaben!
+	\zl
+	
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Exklamativ}
+
+%\iftoggle{sectoc}{
+%	\frame{
+%		\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+%		\end{multicols}
+%	}
+%}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Exklamativ}
+
+\begin{itemize}
+	\item \textbf{Satztyp:} V1-Exklamativsatz (auch V2 möglich)
+	\begin{itemize}
+		\item Subkategorisierung: keine Negation, kann W-Wort enthalten, häufig Verwendung von Partikeln
+		\item Verbstellung: V1, V2 oder VL
+		\item Verbmodus: eher Indikativ
+		\item Intonation: fallend
+	\end{itemize}
+	\item \textbf{Funktionstyp:}
+	\begin{itemize}
+		\item zum Ausdrücken von Überraschungen (nicht dialogisch!)
+	\end{itemize}
+	
+	\eal
+	\ex Hat er (aber auch) tolle Hausaufgaben abgegeben!
+	\ex Er hat (aber auch) tolle Hausaufgaben abgegeben!
+	\ex Was für tolle Hausaufgaben er abgegeben hat!
+	\ex Was für tolle Hausaufgaben hat er abgegeben!
+	\zl
+		
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Optativ}
+
+%\iftoggle{sectoc}{
+%	\frame{
+%		\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+%		\end{multicols}
+%	}
+%}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Optativ}
+
+\begin{itemize}
+	\item \textbf{Satztyp:} V1-Optativsatz $|$ VL $+$ \MyPobj{wenn}
+	\begin{itemize}
+		\item Subkategorisierung: kein W-Fragewort, häufig Verwendung von \MyPobj{nur} oder \MyPobj{doch} $|$ \MyPobj{wenn} $+$ VL
+		\item Verbstellung: V1 $|$ VL
+		\item Verbmodus: Konjunktiv
+		\item Intonation: fallend
+	\end{itemize}
+	\item \textbf{Funktionstyp:}
+	\begin{itemize}
+		\item zum Ausdrücken von irrealen Wünschen (nicht dialogisch!)
+	\end{itemize}
+	
+	\eal
+	\ex Hätte er (doch/""nur) tolle Hausaufgaben abgegeben! 
+	\ex Wenn er (doch/""nur) tolle Hausaufgaben abgegeben hätte!
+	\zl
+		
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Hausaufgabe}
+%\frame{
+%\frametitle{~}
+%	\tableofcontents[currentsection]
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}
+\frametitle{Hausaufgabe}
+
+\begin{itemize}
+	\item Bestimmen Sie den Satzmodus der folgenden Sätze, geben Sie dabei die Merkmale zur Bestimmung des Satztyps, sowie den möglichen Funktionstyp an. 
+\end{itemize}
+
+
+\ea \label{ex:Rechnung} Wir haben unsere Rechnungen bezahlt. 
+%\ex \label{ex:krank} Ob ich morgen noch krank bin? 
+%\ex \label{ex:Wagen} Er hätte einen Wagen kaufen können. 
+\ex \label{ex:Folien} Hast du endlich die Folien fertig?
+\ex \label{ex:Iss} Iss!
+\ex \label{ex:Geld} Wenn ich nur Geld hätte!
+%\ex \label{ex:spät} Kannst du mir sagen, wie spät es ist?
+%\ex \label{ex:Störung} Verzeihen Sie die Störung.
+\ex \label{ex:geschlagen} Wen hast du geschlagen?
+\ex \label{ex:gewonnen} Ich habe gewonnen!
+%\ex \label{ex:Prüfung} Wenn ich doch die Prüfung bestehe, kaufe ich mir ein Auto.
+%\ex \label{ex:Baum} Was für einen tollen Baum hat er gemalt? 
+%\ex \label{ex:leise} Sie sind jetzt aber leise!
+%\ex \label{ex:Verständnis} Wir bitten um Verständnis.
+\z
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+\begin{frame}
+\frametitle{Hausaufgabe}
+
+\begin{itemize}
+	\item Geben Sie eine Analyse der folgenden Sätze (\textbf{inkl. Nebensätze}) nach dem topologischen Feldermodell.
+\end{itemize}
+
+	\ea \label{ex:Top1} Wenn ich die Prüfung bestehe, werde ich mir ein Buch von Chomsky kaufen.
+	\ex \label{ex:Top2} Werde ich mir das Buch kaufen, wenn ich bestehe?
+	\z 		
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+
+\iftoggle{ha-loesung}{
+	
+	\input{loesungen/06c-ha-loesung-include}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%		
